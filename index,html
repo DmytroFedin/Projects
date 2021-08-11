@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="top-menu">
+          <ul class="menu-main">
+            <li class="left-item"><a href="">Work</a></li>
+            <li class="left-item"><a href="">About</a></li>
+            <li class="left-item"><a href="">Story</a></li>
+            <li class="right-item">
+              <span class="lang_option">
+                <select id="lang" onchange="top.location=this.value">
+                  <option>Language</option>
+                  <option value="index_en.html">English</option>
+                  <option value="index_ukr.html">Українська</option>
+                </select>
+              </span>
+            </li>
+            <li class="right-item"><a href="">Shop</a></li>
+            <li class="right-item"><a href="">Gallery</a></li>
+          </ul>
+          <a href=""><img class="navbar-logo" src="./Logo.png" /></a>
+        </nav>
+      </header>
+
+      <div class="footer_bottom section"></div>
+      <div class="agileits-w3layouts-footer">
+        <div class="container">
+          <div class="col-md-4 w3-agile-grid">
+            <h5>О нас</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              bibendum urna non nisi ornare, condimentum iaculis ipsum blandit.
+              Duis auctor vulputate metus nec luctus.
+            </p>
+            <div class="w3_agileits_social_media team_agile_w3l team footer">
+              <ul class="social-icons3">
+                <li>
+                  <a href="#" class="wthree_facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="wthree_twitter"
+                    ><i class="fa fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="wthree_dribbble"
+                    ><i class="fa fa-dribbble" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="wthree_behance"
+                    ><i class="fa fa-behance" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 w3-agile-grid">
+            <h5>Недавние Посты</h5>
+            <div class="w3ls-post-grids">
+              <div class="w3ls-post-grid">
+                <div class="w3ls-post-img">
+                  <a href="#"><img src="images/g2.jpg" alt="" /></a>
+                </div>
+                <div class="w3ls-post-info">
+                  <h6>
+                    <a href="#" data-toggle="modal" data-target="#myModal"
+                      >Proin scelerisque, sem a facilisis mollis</a
+                    >
+                  </h6>
+                  <p>Nov 24,2016</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="w3ls-post-grid">
+                <div class="w3ls-post-img">
+                  <a href="#"><img src="images/g4.jpg" alt="" /></a>
+                </div>
+                <div class="w3ls-post-info">
+                  <h6>
+                    <a href="#" data-toggle="modal" data-target="#myModal"
+                      >Proin scelerisque, sem a facilisis mollis</a
+                    >
+                  </h6>
+                  <p>Dec 25,2016</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="w3ls-post-grid">
+                <div class="w3ls-post-img">
+                  <a href="#"><img src="images/g7.jpg" alt="" /></a>
+                </div>
+                <div class="w3ls-post-info">
+                  <h6>
+                    <a href="#" data-toggle="modal" data-target="#myModal"
+                      >Proin scelerisque, sem a facilisis mollis</a
+                    >
+                  </h6>
+                  <p>Jan 06,2017</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 w3-agile-grid">
+            <h5>Адрес</h5>
+            <div class="w3-address">
+              <div class="w3-address-grid">
+                <div class="w3-address-left">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+                <div class="w3-address-right">
+                  <h6>Телефонный номер</h6>
+                  <p>+1 234 567 8901</p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="w3-address-grid">
+                <div class="w3-address-left">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="w3-address-right">
+                  <h6>Адрес электронной</h6>
+                  <p>
+                    Email :<a href="mailto:example@email.com">
+                      mail@example.com</a
+                    >
+                  </p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+              <div class="w3-address-grid">
+                <div class="w3-address-left">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <div class="w3-address-right">
+                  <h6>Расположение</h6>
+                  <p>
+                    Ваш адрес, NY 10002, Украина.
+                    <span>Telephone : +00 111 222 3333</span>
+                  </p>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          © 2020 Name Site. All rights reserved | Design by
+          <a href="#">DmytroLab</a>
+        </p>
+      </div>
+    </div>
+    <!-- CDN подключение иконок fontawesome -->
+    <script src="/Sidebar.js"></script>
+</body>
+</html>
