@@ -69,11 +69,40 @@
 .navbar-logo {
   max-width: 90px;
 }
-.flex_iframe{
-display: flex;
-justify-content: center;
+h1,
+h2 {
+  text-align: center;
 }
-
+audio {
+  margin: 0 0 0 40px;
+}
+ol {
+  margin: 0 0 0 40px;
+}
+aside {
+  margin: 0 0 0 40px;
+  color: white;
+}
+form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.dance {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.flex_iframe {
+  display: flex;
+  justify-content: center;
+}
+main {
+  font-size: 1cm;
+  background-color: #22655b;
+}
 body {
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   overflow-x: hidden;
