@@ -74,7 +74,7 @@ h2 {
   text-align: center;
 }
 audio {
-  margin: 0 0 0 40px;
+  margin: 0 0 0 14.7%;
 }
 ol {
   margin: 0 0 0 40px;
@@ -83,29 +83,44 @@ aside {
   margin: 0 0 0 40px;
   color: white;
 }
+
 form {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 20%;
+  width: 95%;
+}
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 .flex_iframe {
   display: flex;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-.work_photo{
+
+.work_photo {
   display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 20px calc(50vw - 250px);
-	background-position: center top;
-	box-sizing: border-box;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center top;
+  box-sizing: border-box;
 }
 main {
   font-size: 2em;
-  background:#22655b;
+  background: #22655b;
 }
 body {
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
@@ -264,14 +279,12 @@ ul.social-icons3 li a {
   -moz-transition: 0.5s all;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
   -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
   -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
   line-height: 30px;
   color: #fff;
   border-radius: 50%;
   -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   -o-border-radius: 50%;
   text-align: center;
 }
