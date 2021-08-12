@@ -24,9 +24,7 @@
             <a href="./story.html">Story</a>
           </li>
           <li class="left-item">
-            <a href="./form.html"
-              >Form</a
-            >
+            <a href="./form.html">Form</a>
           </li>
           <li class="right-item">
             <a href="./Video.html">Video</a>
@@ -66,11 +64,23 @@
       </ol>
       <h2>Listen some music and relax, while checking my homework</h2>
       <audio controls src="./Mozart.mp3"></audio>
-      <picture class="dance">
-        <source srcset="dance.jpg" media="(min-width: 600px)" />
-        <img src="./Dance.jpg" alt="MDN" />
-      </picture>
+      <div class="work_photo">
+        <picture class="dance">
+          <source
+            srcset="
+              Dance_320.jpg   320w,
+              Dance_800.jpg   800w,
+              Dance_1200.jpg 1200w
+            "
+            sizes="(min-width: 60rem) 70vw,
+                     (min-width: 40rem) 90vw,
+                     100vw"
+          />
+          <img src="Dance_320.jpg" alt="Image description" />
+        </picture>
+      </div>
     </main>
+
     <div class="footer_bottom section"></div>
     <div class="agileits-w3layouts-footer">
       <div class="container">

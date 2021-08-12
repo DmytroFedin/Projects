@@ -89,19 +89,23 @@ form {
   margin-right: auto;
   width: 20%;
 }
-.dance {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-}
 .flex_iframe {
   display: flex;
   justify-content: center;
 }
+.work_photo{
+  display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px calc(50vw - 250px);
+	background-position: center top;
+	box-sizing: border-box;
+}
 main {
-  font-size: 1cm;
-  background-color: #22655b;
+  font-size: 2em;
+  background:#22655b;
 }
 body {
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
