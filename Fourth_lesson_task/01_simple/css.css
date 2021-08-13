@@ -1,0 +1,31 @@
+body {
+    margin: 0 30% 0 30%;
+    align-items: center;
+  width: 40vw;
+  height: auto;
+}
+header {
+  background: #A52A2A;
+  color: white;
+  text-align: center;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+.img_container {
+  text-align: center;
+  border: black dashed;
+}
+.main_photo{
+    width: 0vw;
+    height: auto;
+}
+.cars{
+    text-align: center;
+} 
+.main_text{
+  font-size: 16px;
+}
