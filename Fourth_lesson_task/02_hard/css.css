@@ -1,80 +1,87 @@
-body{
-  background: #990909;  
+body {
+  background: #990909;
   align-items: center;
-height: auto;
+  height: auto;
 }
 header {
-    display: flex;
-background: #990909;
-color: white;
-text-align: center;
-justify-content: center ;
-height: 3vw;
+  display: flex;
+  background: #990909;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  margin-top: 5px;
+  height: 40px;
+  width: auto;
 }
 footer {
-background-color: #e95b11;
-color: white;
-text-align: center;
-font-size: 18px;
+  background-color: #e95b11;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 5px 0 5px;
 }
-.main_info{
-    display: flex; 
-    align-items: stretch;
-    min-height: 31vw;
-    padding: 10px;
+.main_info {
+  display: flex;
+  align-items: stretch;
+  min-height: 25vw;
+  padding: 10px;
 }
-.page{
- display: flex;
- flex-direction: column;
+.page {
+  display: flex;
+  flex-direction: column;
 }
 .image_row {
-display: flex;
-justify-content: space-around;
-background: black;
-padding: 1.5vw 2vw 0.25vw 2vw ;
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  padding: 2vw 4vw 5px 4vw;
+  margin: 0 5px 0 5px;
 }
-.top_images{
+.top_images {
   max-width: 150%;
   height: auto;
-  width: 11vw;
+  width: 18vw;
 }
-strong{
-      font-size: 1vw;
+strong {
+  font-size: 16px;
 }
-span{
-  margin: 0.25vw 0 0 0;
+span {
+  margin: 5px 0 0vw 0;
 }
-    .name{
-        display: flex;
-        flex-direction: column;
-        color: white;
-      text-align: center;
-    }
-.main_photo{
+.name {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+.main_photo {
   width: 0vw;
   height: auto;
 }
-.cars{
+.cars {
   text-align: center;
-} 
-.main_text{
-font-size: 18px;
 }
-.side_bar{
+.main_text {
+  font-size: 18px;
+}
+.side_bar {
   display: flex;
   flex-direction: column;
   background-color: #7d0909;
   width: 20vw;
   align-items: flex-start;
 }
-.sidebar_items{
+.sidebar_items:nth-child(1) {
+  padding: 0 0 20px 0;
+}
+.sidebar_items {
   padding: 20px 0 20px 0;
 }
-main{
-  color: white;;
+main {
+  color: white;
   width: 65vw;
 }
-.right_side{
+.right_side {
   width: 15vw;
   background: #e3dddd;
 }
@@ -82,15 +89,15 @@ a:link {
   color: #e95b11;
   background-color: transparent;
 }
-.tittle_right{
+.tittle_right {
   background: #bdbdbd;
   text-align: center;
   margin: 0;
 }
-hr{
-  width: 4vw;
+hr {
+  width: 6vw;
   color: #9a9a9a;
 }
-p{
+p {
   margin-left: 5px;
 }

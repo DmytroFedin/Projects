@@ -1,11 +1,11 @@
-body {
-    margin: 0 30% 0 30%;
-    align-items: center;
+.wrapper {
+  margin: 0 30% 0 30%;
+  align-items: center;
   width: 40vw;
   height: auto;
 }
 header {
-  background: #A52A2A;
+  background: #a52a2a;
   color: white;
   text-align: center;
   margin: 20px 0 0 0;
@@ -20,13 +20,12 @@ footer {
   text-align: center;
   border: black dashed;
 }
-.main_photo{
-    width: 0vw;
-    height: auto;
+.main_photo {
+  width: 40vw;
 }
-.cars{
-    text-align: center;
-} 
-.main_text{
+.cars {
+  text-align: center;
+}
+.main_text {
   font-size: 16px;
 }
