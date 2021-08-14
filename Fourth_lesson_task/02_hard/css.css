@@ -72,10 +72,10 @@ font-size: 18px;
 }
 main{
   color: white;;
-  width: 70vw;
+  width: 65vw;
 }
 .right_side{
-  width: 10vw;
+  width: 15vw;
   background: #e3dddd;
 }
 a:link {
@@ -90,4 +90,7 @@ a:link {
 hr{
   width: 4vw;
   color: #9a9a9a;
+}
+p{
+  margin-left: 5px;
 }
