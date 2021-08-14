@@ -20,7 +20,7 @@ font-size: 18px;
 .main_info{
     display: flex; 
     align-items: stretch;
-    min-height: 26vw;
+    min-height: 31vw;
     padding: 10px;
 }
 .page{
@@ -31,24 +31,24 @@ font-size: 18px;
 display: flex;
 justify-content: space-around;
 background: black;
-padding: 35px 30px 0px 30px ;
+padding: 1.5vw 2vw 0.25vw 2vw ;
 }
-img{
-  max-width: 100%;
+.top_images{
+  max-width: 150%;
+  height: auto;
+  width: 11vw;
 }
-.names_photo{
-    display: flex;
-    justify-content: space-around;
-    background: black;
-    padding: 0 30px 0 30px ;
-    color: white;
-    }  
+strong{
+      font-size: 1vw;
+}
+span{
+  margin: 0.25vw 0 0 0;
+}
     .name{
         display: flex;
         flex-direction: column;
         color: white;
       text-align: center;
-      flex-shrink: inherit;
     }
 .main_photo{
   width: 0vw;
@@ -63,10 +63,12 @@ font-size: 18px;
 .side_bar{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   background-color: #7d0909;
   width: 20vw;
   align-items: flex-start;
+}
+.sidebar_items{
+  padding: 20px 0 20px 0;
 }
 main{
   color: white;;
@@ -74,4 +76,18 @@ main{
 }
 .right_side{
   width: 10vw;
+  background: #e3dddd;
+}
+a:link {
+  color: #e95b11;
+  background-color: transparent;
+}
+.tittle_right{
+  background: #bdbdbd;
+  text-align: center;
+  margin: 0;
+}
+hr{
+  width: 4vw;
+  color: #9a9a9a;
 }
