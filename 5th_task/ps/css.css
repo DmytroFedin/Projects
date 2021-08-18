@@ -1,3 +1,6 @@
+body{
+  max-width: fit-content;
+}
 a {
   color: #19c8fa;
   text-decoration: none;
