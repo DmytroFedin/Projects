@@ -83,6 +83,7 @@
 }
 .header_links {
   padding-top: -10px;
+  text-decoration: none;
 }
 .logo_text {
   width: 82px;
@@ -94,8 +95,6 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-
-  /* identical to box height, or 147% */
 
   color: #000000;
 }
