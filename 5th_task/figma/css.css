@@ -138,7 +138,7 @@ img.header_bluedot {
   height: 20px;
 }
 .header_4link a {
-  padding-left: 42px;
+  margin-left: 42px;
 }
 .header_linkdecoration {
   text-decoration: none;
