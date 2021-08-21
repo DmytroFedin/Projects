@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #121116;
+}
 a {
   color: #19c8fa;
   text-decoration: none;
@@ -16,7 +19,7 @@ a {
 }
 .social_hr {
   background-color: rgb(255, 255, 255);
-  width: 230px;
+  width: 16rem;
   height: 1px;
   margin-top: 20px;
 }
@@ -32,19 +35,19 @@ a {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: 100vh;
-  background-color: #121116;
+
 }
 .icon_nav {
-  text-align: center;
   margin-top: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .header {
   margin-top: 120px;
 }
 .icon {
-  padding-left: 26px;
+  margin-left: 26px;
+}
+.icon:first-child{
+  margin: 0;
 }
