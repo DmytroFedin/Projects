@@ -6,166 +6,57 @@
 }
 
 /* end of reset */
-.wrapper {
-    background-color: #ffffff;
-
-  }
-  
-
-.header_item1 {
-        position: absolute;
-        left: 443px;
-        top: 73px;
-        width: 24px;
-        height: 30px;
-        z-index: 8;
-      }
-      
-
-
-  .header_item2 {
-
-        position: absolute;
-        left: 762px;
-        top: 75px;
-        width: 26px;
-        height: 26px;
-        z-index: 20;
-      
+body{
+  color: black;
+}
+.wrapper{
+  display: flex;
+  text-align: center;
+  gap: 5vw;
+  flex-wrap: wrap;
+ justify-content: center;
+ align-content: center;
+flex-direction: row;
+width: 100vw;
+height: 100vh;
+}
+.item1,
+.item2,
+.item3{
+width: 300px;
 
 }
-.header_item2:hover{
-    fill: #2a69a6;
+h2{
+  line-height: 2.6;
 }
-.header_background2:hover{
-background-color:white ;
-border-radius: 1px #2a69a6 solid;
+p{
+  line-height: 1.6;
+ 
 }
-.header_item3 {
+.bg_svg{
+  margin: 0 auto;
+  background-color:white;
+width: 67px;
+height: 67px;
+border-radius: 50%;
+border: #2a69a6 1px solid;
 
-        position: absolute;
-        left: 1081px;
-        top: 74px;
-        width: 28px;
-        height: 24px;
-        z-index: 14;
-
-  }
-  .header_background1{
-        position: absolute;
-        left: 419px;
-        top: 53px;
-        width: 69px;
-        height: 67px;
-        z-index: 7;
-      }
-      
-      .header_background3 {
-        
-        position: absolute;
-        left: 1062px;
-        top: 56px;
-        width: 65px;
-        height: 63px;
-        z-index: 13;
-      }
-      .header_background2 {
-            border-radius: 50%;
-            background-color: rgb(18, 117, 185);
-            position: absolute;
-            left: 742px;
-            top: 56px;
-            width: 65px;
-            height: 63px;
-            z-index: 19;
-          }
-          
-      .header_link1{
-        
-            font-size: 14px;
-            font-family: "ProximaNova";
-            color: rgb(0, 0, 0);
-            text-transform: uppercase;
-            line-height: 1.714;
-            text-align: center;
-            position: absolute;
-            left: 383.938px;
-            top: 132.002px;
-            z-index: 6;
-            text-decoration: none;
-          
-      }
-      .header_link2{
-        
-            font-size: 14px;
-            font-family: "ProximaNova";
-            color: rgb(0, 0, 0);
-            text-transform: uppercase;
-            line-height: 1.714;
-            text-align: center;
-            position: absolute;
-            left: 714.938px;
-            top: 132.002px;
-            z-index: 18;
-            text-decoration: none;
-          
-    }
-    .header_link3{
-
-            font-size: 14px;
-            font-family: "ProximaNova";
-            color: rgb(0, 0, 0);
-            text-transform: uppercase;
-            line-height: 1.714;
-            text-align: center;
-            position: absolute;
-            left: 1026.938px;
-            top: 132.002px;
-            z-index: 12;
-            text-decoration: none;
-    }
-      .text_main1{
-        
-            font-size: 14px;
-            font-family: "ProximaNova";
-            color: rgb(157, 157, 157);
-            line-height: 1.429;
-            text-align: center;
-            position: absolute;
-            left: 335.084px;
-            top: 189.25px;
-            width: 220px;
-            height: 52px;
-            z-index: 9;
-          
-      }
-      .text_main2{
-        font-size: 14px;
-            font-family: "ProximaNova";
-            color: rgb(157, 157, 157);
-            line-height: 1.429;
-            text-align: center;
-            position: absolute;
-            left: 655.084px;
-            top: 189.25px;
-            width: 220px;
-            height: 52px;
-            z-index: 21;
-          
-      }
-      .text_main3{
-    
-            font-size: 14px;
-            font-family: "ProximaNova";
-            color: rgb(157, 157, 157);
-            line-height: 1.429;
-            text-align: center;
-            position: absolute;
-            left: 975.084px;
-            top: 189.25px;
-            width: 220px;
-            height: 52px;
-            z-index: 15;
-           
-    }
-  
+}
+.bg_svg:hover{
+  margin: 0 auto;
+  background-color: #2a69a6;
+width: 67px;
+height: 67px;
+border-radius: 50%;
+}
+.bg_svg svg path{
+  transition: all 0.5s;
+}
+.bg_svg:hover svg path {
+  fill: #fff;
+}
+svg{
+  margin-top: 20px;
+  height: 25px;
+  width: 25px;
+}
