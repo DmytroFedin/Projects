@@ -6,7 +6,7 @@
 }
 .background_wrappper {
   border: #2b81ac 25px solid;
-  height: 100vh;
+  height: auto;
   margin: 0 auto;
   background-color: #3399cc;
   font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
@@ -27,7 +27,7 @@
   border: white 3px solid;
   display: inline-block;
   text-align: center;
-  height: 15vh;
+  height: 20vh;
   padding: 40px 10px 10px;
   font-size: 28px;
   line-height: 1.6;
