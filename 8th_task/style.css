@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Miso Regular";
-    src: url("miso-regular.ttf");
+    src: url("./miso-bold.ttf");
   }
   
   @font-face {
     font-family: "Miso Bold";
-    src: url("./miso-bold.ttfgo");
+    src: url("./miso-bold.ttf");
   }
 * {
   box-sizing: border-box;
