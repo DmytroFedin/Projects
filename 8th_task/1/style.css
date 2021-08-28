@@ -7,10 +7,12 @@ body {
   background-color: cadetblue;
   font-family: "HansKendrick";
 }
+.wrapper{
+    margin-top: 40px;
+}
 .container {
-  margin: 30px auto;
-  width: 100vw;
-  height: 100%;
+  margin: 0.78125vw auto;
+  width: 95vw;
   display: flex;
   flex-wrap: wrap;
   gap: 0.78125vw;
@@ -18,22 +20,25 @@ body {
 }
 .item1 {
   text-align: center;
-  background-color: white;
-  width: 38.541666666666664vw;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  height: 28.125vw;
+  background-color: cadetblue;
 }
 .item {
   text-align: center;
   background-color: white;
   width: 18.9vw;
+  height: 28.125vw;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .big-photo {
   width: 38.541666666666664vw;
-  height: 100%;
+  
+
+  max-height: 540px;
 }
 .small-photo {
-  width: 18.9vw;
+  width: 100%;
 }
 .overflow_text {
   color: white;
@@ -55,15 +60,17 @@ body {
 .small_posts {
   text-align: start;
   padding-left: 1.6041666666666665vw;
-  margin-top: 2.2870864461045888vh;
+  margin-top: 1.2870864461045888vh;
 }
 .main_text {
   font-size: 1.1458333333333333vw;
-  margin-top: 0.26680896478121663vh;
+  margin-top: 0.16680896478121663vh;
   font-weight: 900;
 }
 .left_bottom_icon {
+    /* position: relative;
+    top: 20%;
+    left: -35%; */
+ margin: 30% 0 0 -70%;
   width: 2.6041666666666665vw;
-  margin: 7.4706510138740665vh 0 0 -13.020833333333334vw;
-  text-align: left;
 }
