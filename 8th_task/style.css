@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+        background-color: #fdde7e;  
+    }
+.wrapper{
+    font-family: "Dosis", sans-serif;
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px 0 40px 0;
+    flex-wrap: wrap;
+    padding: 0 20px 0 20px;
+}
+.column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    min-height: 500px;
+    min-width: 240px;
+    width: 20vw;
+    
+    margin-top: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: white;
+
+}
+.column_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+}
+.column1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    min-height: 500px;
+    min-width: 240px;
+    width: 20vw;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.column .Miso{
+    margin-top: 5vh;
+}
+.Miso{
+    font-size: 70px;
+    color: yellowgreen;
+    }
+    h2{
+        letter-spacing: 4px;
+        /* margin-top: 7vh; */
+    }
+    img{
+        /* margin-top: 7vh; */
+        padding-left: 20px;
+        width: 135px;
+        height: 135px;
+    }
+    .bttm{
+        /* margin-top: 7vh; */
+    }
