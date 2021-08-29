@@ -41,7 +41,7 @@ body {
   color: white;
   z-index: 1;
   position: relative;
-  top: -30%;
+  top: -25%;
   text-align: start;
   padding-left: 3.9041666666666665vw;
 }
@@ -51,25 +51,24 @@ body {
 }
 .first_text {
   font-size: 2.25vw;
-  margin-top: 0.26680896478121663vh;
+  margin-top: 0.26680896478121663vW;
   font-weight: 900;
 }
 .small_posts {
   text-align: start;
   padding: 0 1vw 0 1.6041666666666665vw;
-  margin-top: 1.2870864461045888vh;
+  margin-top: 1.870864461045888vw;
 }
 .main_text {
   font-size: 1.65vw;
-  margin-top: 0.052083333333333336vw;
   font-weight: 900;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 .left_bottom_icon {
-  margin: 5vw 0 0 -14vw;
+  margin: 8vw 0 0 -22vw;
   width: 2.6041666666666665vw;
 }
