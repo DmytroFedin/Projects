@@ -21,23 +21,21 @@ body {
 .item1 {
   text-align: center;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  height: 28.125vw;
+  height: 40.520833333333336vw;
   background-color: cadetblue;
 }
 .item {
   text-align: center;
   background-color: white;
-  width: 18.9vw;
-  height: 28.125vw;
+  flex-basis: 28.88333%;
+  height: 40.520833333333336vw;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .big-photo {
-  width: 38.541666666666664vw;
-
-  max-height: 540px;
+  width: 55.541666666666664vw;
 }
 .small-photo {
-  width: 100%;
+  width: 100%
 }
 .overflow_text {
   color: white;
@@ -48,11 +46,11 @@ body {
   padding-left: 3.9041666666666665vw;
 }
 .gray_title {
-  font-size: 0.6770833333333334vw;
+  font-size: 0.975vw;
   color: #818181;
 }
 .first_text {
-  font-size: 1.5625vw;
+  font-size: 2.25vw;
   margin-top: 0.26680896478121663vh;
   font-weight: 900;
 }
@@ -62,14 +60,14 @@ body {
   margin-top: 1.2870864461045888vh;
 }
 .main_text {
-  font-size: 1.1458333333333333vw;
+  font-size: 1.65vw;
   margin-top: 0.052083333333333336vw;
   font-weight: 900;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 .left_bottom_icon {
   margin: 5vw 0 0 -14vw;
