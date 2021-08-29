@@ -69,7 +69,7 @@ body {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
-  height: 2.3958333333333335vw;
+  line-height: 1.5;
 }
 .left_bottom_icon {
   margin: 5vw 0 0 -14vw;
