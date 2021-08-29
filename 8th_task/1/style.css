@@ -58,13 +58,17 @@ body {
 }
 .small_posts {
   text-align: start;
-  padding-left: 1.6041666666666665vw;
+  padding: 0 1vw 0 1.6041666666666665vw;
   margin-top: 1.2870864461045888vh;
 }
 .main_text {
   font-size: 1.1458333333333333vw;
   margin-top: 0.052083333333333336vw;
   font-weight: 900;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 .left_bottom_icon {
   margin: 5vw 0 0 -14vw;
