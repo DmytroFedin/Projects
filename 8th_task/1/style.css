@@ -7,8 +7,8 @@ body {
   background-color: cadetblue;
   font-family: "HansKendrick";
 }
-.wrapper{
-    margin-top: 40px;
+.wrapper {
+  margin-top: 40px;
 }
 .container {
   margin: 0.78125vw auto;
@@ -33,7 +33,6 @@ body {
 }
 .big-photo {
   width: 38.541666666666664vw;
-  
 
   max-height: 540px;
 }
@@ -44,9 +43,9 @@ body {
   color: white;
   z-index: 1;
   position: relative;
-  top: -20%;
+  top: -30%;
   text-align: start;
-  padding-left: 2.6041666666666665vw;
+  padding-left: 3.9041666666666665vw;
 }
 .gray_title {
   font-size: 0.6770833333333334vw;
@@ -64,13 +63,10 @@ body {
 }
 .main_text {
   font-size: 1.1458333333333333vw;
-  margin-top: 0.16680896478121663vh;
+  margin-top: 0.052083333333333336vw;
   font-weight: 900;
 }
 .left_bottom_icon {
-    /* position: relative;
-    top: 20%;
-    left: -35%; */
- margin: 30% 0 0 -70%;
+  margin: 5vw 0 0 -14vw;
   width: 2.6041666666666665vw;
 }
