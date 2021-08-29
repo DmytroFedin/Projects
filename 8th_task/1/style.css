@@ -4,7 +4,7 @@
   padding: 0px;
 }
 body {
-  background-color: cadetblue;
+  background-color: #e2e7ec;
   font-family: "HansKendrick";
 }
 .wrapper {
@@ -22,7 +22,7 @@ body {
   text-align: center;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   height: 40.520833333333336vw;
-  background-color: cadetblue;
+  background-color: #e2e7ec;
 }
 .item {
   text-align: center;
@@ -30,6 +30,10 @@ body {
   flex-basis: 28.88333%;
   height: 40.520833333333336vw;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.item1:hover,
+.item:hover{
+  transform: scale(1.02);
 }
 .big-photo {
   width: 55.541666666666664vw;
@@ -51,7 +55,7 @@ body {
 }
 .first_text {
   font-size: 2.25vw;
-  margin-top: 0.26680896478121663vW;
+  margin-top: 0.26680896478121663vw;
   font-weight: 900;
 }
 .small_posts {
@@ -67,8 +71,20 @@ body {
   -webkit-line-clamp: 2;
   overflow: hidden;
   line-height: 1.3;
+  color: black;
 }
 .left_bottom_icon {
-  margin: 8vw 0 0 -22vw;
   width: 2.6041666666666665vw;
+}
+.items_link{
+  text-decoration: none;
+  height: 40.520833333333336vw;
+display: block;
+}
+.author_link{
+  width: 2.6041666666666665vw;
+  height: 2.6041666666666665vw;
+  margin: -4.5vw 0 0 1vw;
+  display: block;
+
 }
