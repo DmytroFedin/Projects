@@ -87,8 +87,29 @@ body {
   background-color: #ff545b;
   transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.circle:hover {
-  transform: scale(1.05);
+.top-left:hover {
+  transform: translate(-10px, -10px);
+}
+.top:hover {
+  transform: translate(0, -10px);
+}
+.top-right:hover {
+  transform: translate(10px, -10px);
+}
+.right:hover {
+  transform: translate(10px);
+}
+.bottom-right:hover {
+  transform: translate(10px, 10px);
+}
+.bottom:hover {
+  transform: translate(0, 10px);
+}
+.bottom-left:hover {
+  transform: translate(-10px, 10px);
+}
+.left:hover {
+  transform: translate(-10px);
 }
 .outside {
   width: 24.375vw;
