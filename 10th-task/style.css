@@ -147,9 +147,22 @@ body {
   animation-timing-function: ease;
   animation-timing-function: linear;
 }
-.central-circle:hover ~ .flower > div.circle {
-  transform: scale(0.8);
-}
+.central-circle:hover ~ .flower > .top-left {
+  transform: translate(20px, 20px);}
+  .central-circle:hover ~ .flower > .top {
+    transform: translate(0, 20px);}
+    .central-circle:hover ~ .flower > .top-right {
+      transform: translate(-20px, 20px);}
+      .central-circle:hover ~ .flower > .right {
+        transform: translate(-20px, 0px);}
+        .central-circle:hover ~ .flower > .bottom-right {
+          transform: translate(-20px,-20px);}
+          .central-circle:hover ~ .flower > .bottom {
+            transform: translate(0px, -20px);}
+            .central-circle:hover ~ .flower > .bottom-left {
+              transform: translate(20px, 0px);}
+              .central-circle:hover ~ .flower > .left {
+                transform: translate(20px, 0px);}
 .top-left {
   left: calc(20% - 4.427083333333333vw);
   top: calc(20% - 4.427083333333333vw);
