@@ -1,27 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div class="wrapper">
-        <header>
-            <div class="black_header">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="27" viewBox="0 0 28 27">
-                    <defs>
-                  
-                    </defs>
-                    <image id="ic_format_align_justify_white_24dp" class="cls-1" width="28" height="27" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAAAfElEQVRIieWVIQ6AMBRDC5lDIrEcC4tEcAMOyhW4wZJPvq5uJ37lMy/rumyKiAfGzE5ZpgF4iQqTlVpPOKTSjahYeBIVZkilH1Fhaqx0ISoW3kTFwkZULOxEhcmVWu+wxrO4iIqFK1Fh7JXmaKz/YY2VHkTFwt0p9FYK4AdSfhqeIcuWEgAAAABJRU5ErkJggg=="/>
-                  </svg>
-            </div>
-        </header>
-        <div class="main_wrapper">
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <div class="nine-one_wrapper">
+      <header class="nine-one_header">
+        <div class="nine-one_header_wrapper">
+          <div class="nine-one_black-header">
+            <p class="nine-one_proxima_header">TITLE</p>
+            <p class="nine-one_playfair">Like Tears In Ra</p>
+            <hr />
+          </div>
+          <div class="nine-one_config">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="38"
+              height="32"
+              viewBox="0 0 38 32"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+                </style>
+              </defs>
+              <image
+                id="ic_format_color_text_white_24dp"
+                class="cls-1"
+                width="38"
+                height="32"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAgCAYAAAB+ZAqzAAAB7klEQVRYhe2X30obQRSHv8RY/EMRVBCqKFYrGK2xN+1tH8jH8T18C8ELb7RUhSK0ouBFizdVUePKkN/CqScbd7LZELA/GHLmzDmHLzuzszOVJEkoqFFgCxhXmb/ANnBTpGzVeeK1ZKCQvVS0aC/ANpynvS9KRcFmgGXnbflmnDdCRcEapsaxGvIVempFwIaBj6a/q5ZqQzF9BwtQb2VfAWdqV/KFsXWX1QewhrEPgETt0Pg3XVbJYLPAnOxH4MSMnciHYmZddolgYRqHZP8ELszYOfBL9lC309kN2BiwavpHmsJUiXyp6sopHewDMCE7fH6+uYjWOruWPaGc0sHsgt43AFbXGkvVcBEvqNZ52OkdsGic08BXF9XSlLHfK/fCRWUoFuzTs35dLW9ubrCYqRyJgGinumrkUswTC+skPd7cA9+BOxf1r94IaFjHoVBjz0W1UQyY/S6GTXTHRbSX3cvW84LlncqFZzv4kYvIlo0NX4L5zMguwNaAiuw/wKmLyNapclCNtczISLBJ4LPp/4g8z98oJ9UX1eyoPJeRUZ1Gw4IP+g3cuqjOGjH7WngRLl/6c724JZWiXlxGXhdYLWY37qcC2Ip+HweEKcziQwBqan8ZlLcgcDT/L/5Y1QRXHbA1Vg1gD+ZOOAiqAM0n1BBS1fTu4o0AAAAASUVORK5CYII="
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="30"
+              height="23"
+              viewBox="0 0 30 23"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+                </style>
+              </defs>
+              <image
+                id="ic_format_size_white_24dp"
+                class="cls-1"
+                width="30"
+                height="23"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAXCAYAAAAcP/9qAAAA5ElEQVRIie2USwrCUAxFT/0gfgeKIjhxFy7ETThxJU5ckrgC1+DIkYqCKFYrDyotL6UNr9qJHniU3CS9NE3rBUGAgikw0hQqOVWUhX2gK1R3miVl61Uo+bhojRtCyfnE2lFvgbtQIwZANRY/gJ2oijhrlyuLGTCM1RyBZVqPdtRZeFbejgVm1D2hZmPGdAivThjjuUOjDyyAm8gocR31UygFGefeSFfjmmaB0jDveGXlx+GJswk/kTd+eD5qPEkwXgN70Z2DpFHXhQIdoXzBuBD+xn/j3zA2v0ObcsZ9WlbcTq0GXrOLIEW/BtbIAAAAAElFTkSuQmCC"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="28"
+              height="27"
+              viewBox="0 0 28 27"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+                </style>
+              </defs>
+              <image
+                id="ic_insert_photo_white_24dp"
+                class="cls-1"
+                width="28"
+                height="27"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAABK0lEQVRIie2WPU8CQRBAn6gVhT2hM7b+Czr/Dr/ISEMC+EGihYk2FFY2NioaG0MhJijGgsiSiQOuO3fnhbhU97qd2d23sx+5W3PO7QB7wBZxeQOORVgHypFlcz5KK5QJ5ZIJRaYQFsJCaCiEeRkB41UJJ8A+0DSZBPIIv0zkN13gBXgCLkw24C/hM3AADEzmmx5w7bUvgXvTyyNL+AkcAQ9AR75lQb4PnAcxB7SBVzObkiU88SobqNRpe6jtpO2WhR0CU5PJEMpZ3ASxO+BMb6Ms5t2M+kHO89REgQ0TgVs9iySuVDxMyIVI3yqwm1ah0wNveFsXMs0pm9PSAhbz+RVK8BGoAJtm6HJMdM5tYD0USrW1fxKlknZpogrD9xWTsQjlPclfcWxGQGcGbTVHyw1pV4QAAAAASUVORK5CYII="
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="20"
+              height="26"
+              viewBox="0 0 20 26"
+            >
+              <image
+                id="ic_format_bold_white_24dp"
+                width="20"
+                height="26"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAABfElEQVRIia2VPSxDURiGnzYkJgkDqQXBZDcZjSSIxEDCaDQJo1XsJgmrUWIgkbCQGCVNDJowMIifiAFN5ZWPe7XO6enPbZ/kpOnbc99+5zvnPTcl6YH6eAIugB3gDPj897SSUZB0KWlJEqUjqWHMh6R1SenYtFFDRdXOx4bWQ5Xp4CPw7qnQAnQDaUe/AsaAu1CFM25votEpaSNaqsu4zXH/qRrPwBqwV2beiFUeMkx5SpEv4NRTf1vRGjKsxmCZ363vhZDhvacUmQIWPRWOrfrQLh8BOU+FdmAi+izlAJgG8qFdroespL74JISWXCvXwBxwE89v1DADrAA9f0oTlmycSMokiR5R/DKeCpvAaqjCUPRsdEnakpR3nnmVNJCkh3YhLwOHjm5HaTRkWCl6RLf0uafCUMiwFvrLzAleDpWiZyxEyXDJhXY5FD2jA5gE2hzdbqHh0C4nYVtSqlmGlufeZmTZsHfzLHBrX+zUvyUwsRRlgV1gH3j5UYFvvxzogmAZq7MAAAAASUVORK5CYII="
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="19"
+              height="22"
+              viewBox="0 0 19 22"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+                </style>
+              </defs>
+              <image
+                id="ic_format_italic_white_24dp"
+                class="cls-1"
+                width="19"
+                height="22"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAWCAYAAAAinad/AAABGUlEQVQ4jZ2UsWoCQRCGvxNFRAhRsUtpZWFIUvkseQafyc6HkSCKCmlSWCQEQlKYGFDQk8ELHDO758Svupn777+Z3Z1N0jQlQAt4tOlC1uXI6wrQNNli6iWTOhEs9wy/MbNYvoh6rM0t8Jo974E2UFOaN9XBd2wDNINsU/5YAcNL2ukrI+HJqJxm9yr+ApZG5TDrZuuVZwwcjNJhdqfiDbAwKofZDdBRuSnwY5QOs1sgycVyROZG5TC7Bnoq9wy8G6XDTKqq5mI5jBOjcpjJkD+onFT0YpQOM6nqSuXGRhVAmyWBQ/oBzOynFpnNgaq0oVQy9Ovcj0fAp3ECyoG501TVFMiautr0EL1mLjGLfiNtyi3wH3ZBMXAE9JkvodmMzxAAAAAASUVORK5CYII="
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="22"
+              height="27"
+              viewBox="0 0 22 27"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+                </style>
+              </defs>
+              <image
+                id="ic_format_underline_white_24dp"
+                class="cls-1"
+                width="22"
+                height="27"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAbCAYAAAB4Kn/lAAABLElEQVRIie2VP0sDQRBH352KRBDsVBBTiGJhYyU2Fnba+AEkX9JGbCwUFBsrWyvBP6VIUAm6sjJrJjO35lCvEPLguNzubx5hb5grQggAO8AGfU6AY+qxDWyp5AVwWMrDs1G81JRWZT9dpYv9ESPxSOz5v+LCrAeXzGOzhRa/m82xrMZjs29a3DWbs648z5zZ6WrxLdBTm6s15fOSTfTENSC+V4EJYBdoOVWfKRm342rtTq6Bdjs1hW2gA6yYl1vKWtxbNDVfjjToE3bgJ26AR/k9Ayy4BJwDRzlxZA9Yd2Xfcwkc6ESVGPnUbA45Y+RrcVZxjFkx0hVrwJK0lO75+KKvgSvgwVUOEScmgWm5R16BJ7lnqSP+EY1Nt9jc+xVD6LeEKF5u4h83cxTAB3zCQPDJjshyAAAAAElFTkSuQmCC"
+              />
+            </svg>
 
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="28"
+              height="27"
+              viewBox="0 0 28 27"
+            >
+              <image opacity: 0.5; id="ic_format_align_justify_white_24dp"
+              class="cls-1" width="28" height="27"
+              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAAAfElEQVRIieWVIQ6AMBRDC5lDIrEcC4tEcAMOyhW4wZJPvq5uJ37lMy/rumyKiAfGzE5ZpgF4iQqTlVpPOKTSjahYeBIVZkilH1Fhaqx0ISoW3kTFwkZULOxEhcmVWu+wxrO4iIqFK1Fh7JXmaKz/YY2VHkTFwt0p9FYK4AdSfhqeIcuWEgAAAABJRU5ErkJggg=="/>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="28"
+              height="27"
+              viewBox="0 0 28 27"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+                </style>
+              </defs>
+              <image
+                id="ic_format_align_left_white_24dp"
+                class="cls-1"
+                width="28"
+                height="27"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAAAo0lEQVRIieWVMQrCQBBFXySdpaVtjmVraZEbeAxP4YnSBgTxAkHYMPUXsgyZsdhXPlg++/OXdKWUO4kcMsOMHpjEBmKVpt7wL5WexfpYgHdN4FWsjxfw2Dq5Z6VVY7AbfsT62KyTZlZ6FBscOIoNDuzFBgd+xQZiK039hm08i5tYHzPwrAk8ifWx1Jzas9JOzA9sNKn/wzZWehEbHDhkBuZWCqzqtSRgX/DWfgAAAABJRU5ErkJggg=="
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="28"
+              height="27"
+              viewBox="0 0 28 27"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+                </style>
+              </defs>
+              <image
+                id="ic_format_align_center_white_24dp"
+                class="cls-1"
+                width="28"
+                height="27"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAAAuUlEQVRIieWVwQ3CMAxFXymCQzsAAzAWF9iADTixRhfrAB2AEwIF+ezajVTZHPqOv45+8/OVNKWUB4nsMs2EPTAqNRCJNHWHf4nU4gS0xrclvsA0N+MZ3oCDUut4A8+5SS/SNYdrrvV2KJH0Sq3jZU1to6WdUoMN70oNNvSKE2L4UWog0tLUM9z25X1dedMMSl0wlNfiqNQ6zB/1Im2UUo+51itNyHvoGYbgRRqClOaSbXjONMyNFPgBx6kkkT3M1goAAAAASUVORK5CYII="
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="28"
+              height="27"
+              viewBox="0 0 28 27"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    opacity: 0.5;
+                  }
+                </style>
+              </defs>
+              <image
+                id="ic_format_align_right_white_24dp"
+                class="cls-1"
+                width="28"
+                height="27"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAbCAYAAABvCO8sAAAAlUlEQVRIie2VMQqAMBAENyI2liIItr5IWz/hD3yoP/ALQuQKq22OcHcWOuU0SzZLknLOOwKpIsOEGsBB1hGpNPSEr1SqoQfQRAYuAAayBWgrNbto7QlPq0q/sdKWrHPgRtY5UDscs8CLrCOy0tA7/B/vhxnASNYxUH6LjmwB2koTmUK0ozH7D7+x0pWsc+AUGRhbKYAbTUIbve3FUn8AAAAASUVORK5CYII="
+              />
+            </svg>
+          </div>
         </div>
-        <footer></footer>
+      </header>
+      <div class="nine-one_main-wrapper">
+        <div class="nine-one_main_border">
+          <div class="nine-one_main_proxima-wrapper">
+            <p class="nine-one_proxima">ROY BATTY, 2019</p>
+          </div>
+          <p class="nine-one_futura">LIKE TEARS IN RAIN</p>
+          <p class="nine-one_georgia italic">
+            Where am I going? How long have I got?
+          </p>
+          <p class="nine-one_georgia">
+            I've seen things you people wouldn't believe. Attack ships on fire
+            off the shoulder of Orion. I watched C-beams glitter in the dark
+            near the Tannhauser gate. All those moments will be lost in time...
+            like tears in rain... <em>Time to die.</em> <br />
+            <br />
+            I don't know why he saved my life. Maybe in those last moments he
+            loved life more than he ever had before. Not just his life -
+            anybody's life; my life. All he'd wanted were the same answers...
+          </p>
+        </div>
+      </div>
+      <footer></footer>
     </div>
-</body>
+  </body>
 </html>

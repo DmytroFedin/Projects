@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+      background-color: #464f54;
+  }
+  .nine-one_header_wrapper{
+      display: flex;
+      flex-flow: column;
+      align-items: flex-end;
+      margin: 3.9vw 0 -10.4vw 0 ;
+  }
+  .nine-one_black-header{
+      background-color: #181818;
+      color: #b4b4b4;
+      width: 68.4%;
+      height: 12.159457092819614vw;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      padding-left: 4.278283712784588vw;
+      
+  }
+  .nine-one_config{
+      display: flex;
+      align-items: center;
+      background-color: #f0b82b;
+      width: 64.2%;
+      height: 4.980991243432574vw;
+      padding-left: 2.9vw;
+  }
+  svg{
+    margin-left: 1.5vw ;
+    width: 1.9791666666666667vw;
+  }
+  svg:nth-child(1){
+      margin: 0;
+  }
+  .nine-one_main-wrapper{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      color: black;
+      background-color: white;
+      width: 69.05vw;
+      height: auto;
+      margin: 0 auto;
+      padding: 0 4.49353765323993vw;
+  }
+  .nine-one_main_border{
+    padding: 0 3.50353765323993vw;
+      border-left: 1px solid #e8eced;
+  }
+.nine-one_playfair{
+    font-family: "Playfair Regular";
+    color: white;
+    font-size: 3.5vw;
+}
+.nine-one_main_proxima-wrapper{
+    padding-top: 12.950963222416814vw;
+}
+.nine-one_proxima_header{
+    font-size: 1.125vw;
+    letter-spacing: 0.15625vw;
+}
+  .nine-one_proxima{
+      color: #b4b4b4;
+      font-size: 1.12533333333333334vw;
+      font-family: "ProximaNova";
+      letter-spacing: 0.2708333333333333vw;
+  }
+  .nine-one_futura{
+    font-family: 'pro-reg', sans-serif;
+      margin-top: 2.2vw;
+      /* letter-spacing: -0.07vw;
+      word-spacing: -1.1vw; */
+      font-size: 4.708854166666667vw;
+  }
+  .nine-one_georgia{
+      line-height: 1.5;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      margin-top: 3.00768826619965vw;
+      font-size: 1.7020833333333333vw;
+  }
+  .italic{
+      color: #8f8f8f;
+      margin-top: 0vw;
+font-size: 1.949970227670753vw;
+font-style: italic;
+line-height:1.15 ;
+  }
