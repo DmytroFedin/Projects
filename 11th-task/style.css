@@ -15,9 +15,9 @@
   margin: 0 auto;
 }
 .c-slider-block {
-  margin: 50px;
-  width: 800px;
-  height: 600px;
+  margin: 2.6041666666666665vw;
+  width: 41.666666666666664vw;
+  height: 31.25vw;
 }
 .c-slider-block__wrapper {
   background-image: url("./img/Slider_background.png");
@@ -29,20 +29,20 @@
   align-items: center;
 }
 .c-slider__inner-block{
-  width: 686px;
-  height: 391px;
+  width: 35.729166666666664vw;
+  height: 20.364583333333332vw;
 }
 .c-slider__inner-block__wrapper{
   background-color: #111a28;
   width: 100%;
   height: 100%;; 
-  box-shadow: 0px 0px 26px 5px rgba(17,26,40,0.81);
+  box-shadow: 0px 0px 1.3541666666666667vw 0.2604166666666667vw rgba(17,26,40,0.81);
   display: flex;
 }
 .c-slider__product-logo{
-  width: 65px;
-  height: 33px;
-  margin: 25px 0 0 20px;
+  width: 3.3854166666666665vw;
+  height: 1.71875vw;
+  margin: 1.3020833333333333vw 0 0 1.0416666666666667vw;
 }
 .c-slider__product-logo__wrapper{
   width: 100%;
@@ -54,22 +54,23 @@
 }
 
 .c-slider__slider-image{
-  margin: 125px 0 0 -50px;
-  width: 330px;
-  height: 160px;
+  margin: 6.510416666666667vw 0 0 -2.6041666666666665vw;
+  width: 17.1875vw;
+  height: 8.333333333333334vw;
 }
 .c-slider__slider-image__wrapper{
   width: 100%;
   height: 100%;
 
 }
-.e-mage{
-  width: 500px;
+.e-image{
+  width: 17.1875vw;
+  height: 8.333333333333334vw;
 }
 .c-slider__slider-radio-button{
-  margin: 72px auto 0 auto;
-width: 70px;
-height: 20px;
+  margin: 3.75vw auto 0 auto;
+width: 3.6458333333333335vw;
+height: 1.0416666666666667vw;
 
 }
 
@@ -79,7 +80,7 @@ height: 20px;
   display: flex;
   justify-content: center;
   align-content: center;
-  gap: 10px;
+  gap: 0.5208333333333334vw;
 }
 .accent-color-blue{
   accent-color:#1f273f;
@@ -94,24 +95,24 @@ height: 20px;
   accent-color:#29e3ea;
 }
 .e-radio-button{
-  width: 10px;
-  height: 10px;
+  width: 0.5208333333333334vw;
+  height: 0.5208333333333334vw;
 }
 .c-slider__product-info{
-  width: 184px;
+  width: 9.583333333333334vw;
   color: #e1e1e1;
-  margin: 78px 0 0 81px;
+  margin: 4.0625vw 0 0 4.21875vw;
 }
 .c-slider__product-name{
-  font-size: 20px;
+  font-size: 1.0416666666666667vw;
 }
 .c-slider__product-description{
-  margin-top: 15px;
-  font-size: 10px;
+  margin-top: 0.78125vw;
+  font-size: 0.5208333333333334vw;
   color: #49505a;
 }
 .c-slider__product-review{
-  margin-top: 24px;
+  margin-top: 1.25vw;
 }
 
 .e-rating  {
@@ -120,7 +121,7 @@ height: 20px;
   justify-content: start;
   overflow: hidden;
   flex-direction: row-reverse;
-  height: 12px;
+  height: 0.625vw;
   position: relative;
 }
 
@@ -131,8 +132,8 @@ height: 20px;
 
 .e-rating  > label {
   cursor: pointer;
-  width: 12px;
-  height: 12px;
+  width: 0.625vw;
+  height: 0.625vw;
   margin-top: auto;
   background-image: url("./img/star.svg");
   background-repeat: no-repeat;
@@ -157,26 +158,27 @@ height: 20px;
 }
 
 .c-slider__product-config{
-  margin-top: 27px;
-  height: 32px;
-  width: 150px;
+  margin-top: 1.40625vw;
+  height: 1.6666666666666667vw;
+  width: 7.8125vw;
 }
 .c-slider__product-config__wrapper{
 display: flex;
   height: 100%;
   width: 100%;
-  gap: 5px;
+  gap: 0.2604166666666667vw;
 }
 .e-product-config{
-  width: 70px;
-  height: 32px;
+  width: 3.6458333333333335vw;
+  height: 1.6666666666666667vw;
 }
 
 .custom{
   border: 1px solid #4f5560;
   color:#adafb3 ;
-padding-left: 10px;
+padding-left: 0.5208333333333334vw;
 background-color:#111a28 ;
+font-size: 0.7291666666666666vw;
 }
 
 select {
@@ -192,9 +194,9 @@ select {
 }
 
 .c-slider__buy-btn{
-  margin-top: 30px;
-  width: 184px;
-  height: 40px;
+  margin-top: 1.5625vw;
+  width: 9.583333333333334vw;
+  height: 2.0833333333333335vw;
 
 }
 .c-slider__buy-btn__wrapper{
@@ -203,8 +205,8 @@ select {
  
 }
 .c-buy-btn{
-width: 184px;
-height: 40px;
+width: 9.583333333333334vw;
+height: 2.0833333333333335vw;
 }
 .gray-btn:active{
   border: #adafb3 1px solid;
@@ -212,5 +214,6 @@ height: 40px;
 .gray-btn{
   color:#adafb3; ;
   background-color: #202835;
-  border: #4f5560 1px solid
+  border: #4f5560 1px solid;
+  font-size: 0.7291666666666666vw;
 }
