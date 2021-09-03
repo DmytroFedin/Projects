@@ -88,28 +88,28 @@ body {
   transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .top-left:hover {
-  transform: translate(-10px, -10px);
+  transform: translate(-0.5208333333333334vw, -0.5208333333333334vw);
 }
 .top:hover {
-  transform: translate(0, -10px);
+  transform: translate(0, -0.5208333333333334vw);
 }
 .top-right:hover {
-  transform: translate(10px, -10px);
+  transform: translate(0.5208333333333334vw, -0.5208333333333334vw);
 }
 .right:hover {
-  transform: translate(10px);
+  transform: translate(0.5208333333333334vw);
 }
 .bottom-right:hover {
-  transform: translate(10px, 10px);
+  transform: translate(0.5208333333333334vw, 0.5208333333333334vw);
 }
 .bottom:hover {
-  transform: translate(0, 10px);
+  transform: translate(0, 0.5208333333333334vw);
 }
 .bottom-left:hover {
-  transform: translate(-10px, 10px);
+  transform: translate(-0.5208333333333334vw, 0.5208333333333334vw);
 }
 .left:hover {
-  transform: translate(-10px);
+  transform: translate(-0.5208333333333334vw);
 }
 .outside {
   width: 24.375vw;
@@ -148,21 +148,29 @@ body {
   animation-timing-function: linear;
 }
 .central-circle:hover ~ .flower > .top-left {
-  transform: translate(20px, 20px);}
-  .central-circle:hover ~ .flower > .top {
-    transform: translate(0, 20px);}
-    .central-circle:hover ~ .flower > .top-right {
-      transform: translate(-20px, 20px);}
-      .central-circle:hover ~ .flower > .right {
-        transform: translate(-20px, 0px);}
-        .central-circle:hover ~ .flower > .bottom-right {
-          transform: translate(-20px,-20px);}
-          .central-circle:hover ~ .flower > .bottom {
-            transform: translate(0px, -20px);}
-            .central-circle:hover ~ .flower > .bottom-left {
-              transform: translate(20px, 0px);}
-              .central-circle:hover ~ .flower > .left {
-                transform: translate(20px, 0px);}
+  transform: translate(1.0416666666666667vw, 1.0416666666666667vw);
+}
+.central-circle:hover ~ .flower > .top {
+  transform: translate(0, 1.0416666666666667vw);
+}
+.central-circle:hover ~ .flower > .top-right {
+  transform: translate(-1.0416666666666667vw, 1.0416666666666667vw);
+}
+.central-circle:hover ~ .flower > .right {
+  transform: translate(-1.0416666666666667vw, 0px);
+}
+.central-circle:hover ~ .flower > .bottom-right {
+  transform: translate(-1.0416666666666667vw, -1.0416666666666667vw);
+}
+.central-circle:hover ~ .flower > .bottom {
+  transform: translate(0px, -1.0416666666666667vw);
+}
+.central-circle:hover ~ .flower > .bottom-left {
+  transform: translate(1.0416666666666667vw, 0px);
+}
+.central-circle:hover ~ .flower > .left {
+  transform: translate(1.0416666666666667vw, 0px);
+}
 .top-left {
   left: calc(20% - 4.427083333333333vw);
   top: calc(20% - 4.427083333333333vw);

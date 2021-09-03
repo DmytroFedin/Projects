@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./font.css" />
+    <!-- Main style -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./Slider.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <!-- Layout for products -->
+    <div class="l-products">
+      <div class="l-products__wrapper">
+        <!-- Slider-item-background -->
+        <div class="c-slider-block">
+          <div class="c-slider-block__wrapper">
+            <!-- Slider-inner-body -->
+            <div class="c-slider__inner-block">
+              <div class="c-slider__inner-block__wrapper">
+                <!-- Slider-product-logo -->
+                <div class="c-slider__product-logo">
+                  <div class="c-slider__product-logo__wrapper">
+                    <div class="e-logo">
+                      <img src="./img/logo.png" alt="LOGO" />
+                    </div>
+                  </div>
+                </div>
+                <!-- Slider-photo-carousel -->
+                <div class="c-slider__product-container">
+                  <div class="c-slider__product-container_wrapper">
+                    <div class="c-slider__slider-image">
+                      <div class="c-slider__slider-image__wrapper" id="slider">
+
+                          <img class="e-image"
+                            src="./img/Nike-SB-Stefan-Janoski-Max.png"
+                            alt="Nike-SB-Stefan-Janoski-Max"
+                          />
+
+                      </div>
+                    </div>
+                    <div class="c-slider__slider-radio-button">
+                      <form class="c-slider__slider-radio-button__wrapper">
+                        <div class="e-radio-button accent-color-blue">
+                          <input
+                            type="radio"
+                            name="field"
+                            value="one"
+                            onclick="check_value(1)"
+                          />
+                        </div>
+                        <div class="e-radio-button accent-color-white">
+                          <input
+                            type="radio"
+                            name="field"
+                            value="two"
+                            onclick="check_value(2)"
+                          />
+                        </div>
+                        <div class="e-radio-button accent-color-red">
+                          <input
+                            type="radio"
+                            name="field"
+                            value="three"
+                            onclick="check_value(3)"
+                          />
+                        </div>
+                        <div class="e-radio-button accent-color-teal">
+                          <input
+                            type="radio"
+                            name="field"
+                            value="four"
+                            onclick="check_value(4)"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slider-main-info & buy-config -->
+                <div class="c-slider__product-info">
+                  <div class="c-slider__product-info_wrapper">
+                    <!-- Slider-product-model&description -->
+                    <div class="c-slider__product-model">
+                      <div class="c-slider__product-model__wrapper">
+                        <div class="c-slider__product-name">
+                          <div class="c-slider__product-name__wrapper">
+                            <h4 class="e-product-name">
+                              Nike SB Stefan <br />
+                              Janoski Max
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="c-slider__product-description">
+                          <div class="c-slider__product-description__wrapper">
+                            <div class="e-product-description">
+                              Unisex Skateboarding Shoe
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slider-product-stars -->
+                    <div class="c-slider__product-review">
+                      <div class="c-slider__product-review__wrapper">
+                        <div class="c-slider__product-stars">
+                          <div class="c-slider__product-stars__wrapper">
+                            <div class="e-rating">
+                              <input type="radio" name="rating" id="rating-5" />
+                              <label for="rating-5"></label>
+                              <input type="radio" name="rating" id="rating-4" />
+                              <label for="rating-4"></label>
+                              <input type="radio" name="rating" id="rating-3" />
+                              <label for="rating-3"></label>
+                              <input type="radio" name="rating" id="rating-2" />
+                              <label for="rating-2"></label>
+                              <input type="radio" name="rating" id="rating-1" />
+                              <label for="rating-1"></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slider-product-configurations -->
+                  <div class="c-slider__product-config">
+                    <div class="c-slider__product-config__wrapper">
+                      <div class="c-slider__product-size">
+                        <div class="c-slider__product-size__wrapper">
+                          <select class="e-product-config custom">
+                            <option>Size</option>
+                            <option>A</option>
+                            <option>R</option>
+                            <option>T</option>
+                            <option>H</option>
+                            <option>U</option>
+                            <option>R</option>
+                            <option>!</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="c-slider__product-quantity">
+                        <div class="c-slider__product-quantity__wrapper">
+                          <select class="e-product-config custom">
+                            <option>Qty</option>
+                            <option>S</option>
+                            <option>O</option>
+                            <option>L</option>
+                            <option>O</option>
+                            <option>D</option>
+                            <option>K</option>
+                            <option>U</option>
+                            <option>I</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slider-buy-button -->
+                  <div class="c-slider__buy-btn">
+                    <div class="c-slider__buy-btn_wrapper">
+                      <button class="c-buy-btn gray-btn">
+                        Add to the cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-slider-block">
+          <div class="c-slider-block__wrapper">
+            <!-- Slider-inner-body -->
+            <div class="c-slider__inner-block">
+              <div class="c-slider__inner-block__wrapper">
+                <!-- Slider-product-logo -->
+                <div class="c-slider__product-logo">
+                  <div class="c-slider__product-logo__wrapper">
+                    <div class="e-logo">
+                      <img src="./img/logo.png" alt="LOGO" />
+                    </div>
+                  </div>
+                </div>
+                <!-- Slider-photo-carousel -->
+                <div class="c-slider__product-container">
+                  <div class="c-slider__product-container_wrapper">
+                    <div class="c-slider__slider-image">
+                      <div class="c-slider__slider-image__wrapper" id="slider1">
+                          <img class="e-image"
+                            src="./img/Nike-SB-Stefan-Janoski-Max.png"
+                            alt="Nike-SB-Stefan-Janoski-Max"
+                          />
+                      </div>
+                    </div>
+                    <div class="c-slider__slider-radio-button">
+                      <form class="c-slider__slider-radio-button__wrapper">
+                        <div class="e-radio-button accent-color-blue">
+                          <input
+                            type="radio"
+                            name="field"
+                            value="one"
+                            onclick="check_value1(1)"
+                          />
+                        </div>
+                        <div class="e-radio-button accent-color-white">
+                          <input
+                            type="radio"
+                            name="field"
+                            value="two"
+                            onclick="check_value1(2)"
+                          />
+                        </div>
+                        <div class="e-radio-button accent-color-red">
+                          <input
+                            type="radio"
+                            name="field"
+                            value="three"
+                            onclick="check_value1(3)"
+                          />
+                        </div>
+                        <div class="e-radio-button accent-color-teal">
+                          <input
+                            type="radio"
+                            name="field"
+                            value="four"
+                            onclick="check_value1(4)"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slider-main-info & buy-config -->
+                <div class="c-slider__product-info">
+                  <div class="c-slider__product-info_wrapper">
+                    <!-- Slider-product-model&description -->
+                    <div class="c-slider__product-model">
+                      <div class="c-slider__product-model__wrapper">
+                        <div class="c-slider__product-name">
+                          <div class="c-slider__product-name__wrapper">
+                            <h4 class="e-product-name">
+                              Nike SB Stefan <br />
+                              Janoski Max
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="c-slider__product-description">
+                          <div class="c-slider__product-description__wrapper">
+                            <div class="e-product-description">
+                              Unisex Skateboarding Shoe
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Slider-product-stars -->
+                    <div class="c-slider__product-review">
+                      <div class="c-slider__product-review__wrapper">
+                        <div class="c-slider__product-stars">
+                          <div class="c-slider__product-stars__wrapper">
+                            <div class="e-rating second-use">
+                              <input type="radio" name="rating" id="rating-5" />
+                              <label for="rating-5"></label>
+                              <input type="radio" name="rating" id="rating-4" />
+                              <label for="rating-4"></label>
+                              <input type="radio" name="rating" id="rating-3" />
+                              <label for="rating-3"></label>
+                              <input type="radio" name="rating" id="rating-2" />
+                              <label for="rating-2"></label>
+                              <input type="radio" name="rating" id="rating-1" />
+                              <label for="rating-1"></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slider-product-configurations -->
+                  <div class="c-slider__product-config">
+                    <div class="c-slider__product-config__wrapper">
+                      <div class="c-slider__product-size">
+                        <div class="c-slider__product-size__wrapper">
+                          <select class="e-product-config custom">
+                            <option>Size</option>
+                            <option>A</option>
+                            <option>R</option>
+                            <option>T</option>
+                            <option>H</option>
+                            <option>U</option>
+                            <option>R</option>
+                            <option>!</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="c-slider__product-quantity">
+                        <div class="c-slider__product-quantity__wrapper">
+                          <select class="e-product-config custom">
+                            <option>Qty</option>
+                            <option>S</option>
+                            <option>O</option>
+                            <option>L</option>
+                            <option>O</option>
+                            <option>D</option>
+                            <option>K</option>
+                            <option>U</option>
+                            <option>I</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Slider-buy-button -->
+                  <div class="c-slider__buy-btn">
+                    <div class="c-slider__buy-btn_wrapper">
+                      <button class="c-buy-btn gray-btn">
+                        Add to the cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>

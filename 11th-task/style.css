@@ -1,0 +1,216 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.l-products {
+  background-color: #c5c5c8;
+  width: 100wv;
+  height: auto;
+  display: flex;
+      font-family: "MuseoModerno regular";
+}
+.l-products__wrapper {
+  display: flex;
+  margin: 0 auto;
+}
+.c-slider-block {
+  margin: 50px;
+  width: 800px;
+  height: 600px;
+}
+.c-slider-block__wrapper {
+  background-image: url("./img/Slider_background.png");
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-slider__inner-block{
+  width: 686px;
+  height: 391px;
+}
+.c-slider__inner-block__wrapper{
+  background-color: #111a28;
+  width: 100%;
+  height: 100%;; 
+  box-shadow: 0px 0px 26px 5px rgba(17,26,40,0.81);
+  display: flex;
+}
+.c-slider__product-logo{
+  width: 65px;
+  height: 33px;
+  margin: 25px 0 0 20px;
+}
+.c-slider__product-logo__wrapper{
+  width: 100%;
+  height: 100%;
+}
+.c-slider__product-container_wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+.c-slider__slider-image{
+  margin: 125px 0 0 -50px;
+  width: 330px;
+  height: 160px;
+}
+.c-slider__slider-image__wrapper{
+  width: 100%;
+  height: 100%;
+
+}
+.e-mage{
+  width: 500px;
+}
+.c-slider__slider-radio-button{
+  margin: 72px auto 0 auto;
+width: 70px;
+height: 20px;
+
+}
+
+.c-slider__slider-radio-button__wrapper{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+.accent-color-blue{
+  accent-color:#1f273f;
+}
+.accent-color-white{
+  accent-color:white;
+}
+.accent-color-red{
+  accent-color:#ed3333;
+}
+.accent-color-teal{
+  accent-color:#29e3ea;
+}
+.e-radio-button{
+  width: 10px;
+  height: 10px;
+}
+.c-slider__product-info{
+  width: 184px;
+  color: #e1e1e1;
+  margin: 78px 0 0 81px;
+}
+.c-slider__product-name{
+  font-size: 20px;
+}
+.c-slider__product-description{
+  margin-top: 15px;
+  font-size: 10px;
+  color: #49505a;
+}
+.c-slider__product-review{
+  margin-top: 24px;
+}
+
+.e-rating  {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  height: 12px;
+  position: relative;
+}
+
+
+.e-rating > input {
+  display: none;
+}
+
+.e-rating  > label {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  margin-top: auto;
+  background-image: url("./img/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 76%;
+  transition: .3s;
+}
+
+.e-rating > input:checked ~ label,
+.e-rating  > input:checked ~ label ~ label {
+  background-image: url("./img/star-gold.svg");
+}
+.second-use > input:checked ~ label,
+.second-use  > input:checked ~ label ~ label {
+  background-image: url("./img/star-gold.svg");
+}
+
+
+.e-rating  > input:not(:checked) ~ label:hover,
+.e-rating  > input:not(:checked) ~ label:hover ~ label {
+  background-image: url("./img/star-darker-gold.svg");
+}
+
+.c-slider__product-config{
+  margin-top: 27px;
+  height: 32px;
+  width: 150px;
+}
+.c-slider__product-config__wrapper{
+display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 5px;
+}
+.e-product-config{
+  width: 70px;
+  height: 32px;
+}
+
+.custom{
+  border: 1px solid #4f5560;
+  color:#adafb3 ;
+padding-left: 10px;
+background-color:#111a28 ;
+}
+
+select {
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+.c-slider__buy-btn{
+  margin-top: 30px;
+  width: 184px;
+  height: 40px;
+
+}
+.c-slider__buy-btn__wrapper{
+  width: 100%;
+  height: 100%;
+ 
+}
+.c-buy-btn{
+width: 184px;
+height: 40px;
+}
+.gray-btn:active{
+  border: #adafb3 1px solid;
+}
+.gray-btn{
+  color:#adafb3; ;
+  background-color: #202835;
+  border: #4f5560 1px solid
+}
