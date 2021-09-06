@@ -7,21 +7,19 @@
   background-color: #c5c5c8;
   width: 100vw;
   height: 100vh;
-      font-family: "MuseoModerno regular";
+  font-family: "MuseoModerno regular";
 }
 .l-products__wrapper {
   display: flex;
   margin: 0 auto;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 .c-slider-block {
   margin: 2.6041666666666665vw;
   width: 41.666666666666664vw;
   height: 31.25vw;
   min-width: 315px;
-
 }
 .c-slider-block__wrapper {
   background-image: url("./img/Slider_background.png");
@@ -34,63 +32,60 @@
 
   flex-wrap: wrap;
 }
-.c-slider__inner-block{
+.c-slider__inner-block {
   width: 35.729166666666664vw;
   height: 20.364583333333332vw;
-  
 }
-.c-slider__inner-block__wrapper{
+.c-slider__inner-block__wrapper {
   background-color: #111a28;
   width: 100%;
-  height: 100%;; 
-  box-shadow: 0px 0px 1.3541666666666667vw 0.2604166666666667vw rgba(17,26,40,0.81);
+  height: 100%;
+  box-shadow: 0px 0px 1.3541666666666667vw 0.2604166666666667vw
+    rgba(17, 26, 40, 0.81);
   display: flex;
-
 }
-.c-slider__product-logo{
+.c-slider__product-logo {
   width: 3.3854166666666665vw;
   height: 1.71875vw;
   margin: 1.3020833333333333vw 0 0 1.0416666666666667vw;
 }
-.c-slider__product-logo__wrapper{
+.c-slider__product-logo__wrapper {
   width: 100%;
   height: 100%;
 }
-.e-logo{
+.e-logo {
   width: 3.3854166666666665vw;
-  height: 1.71875vw;  
+  height: 1.71875vw;
 }
-.c-slider__product-container{
-  height:12.333333333333334vw ;
+.c-slider__product-container {
+  height: 12.333333333333334vw;
   width: 17.1875vw;
   margin: 6.510416666666667vw 0 0 -2.6041666666666665vw;
 }
-.c-slider__product-container_wrapper{
+.c-slider__product-container_wrapper {
   width: 100%;
   height: 100%;
 }
 
-.c-slider__slider-image{
+.c-slider__slider-image {
   width: 17.1875vw;
   height: 8.333333333333334vw;
 }
-.c-slider__slider-image__wrapper{
+.c-slider__slider-image__wrapper {
   width: 100%;
   height: 100%;
-
 }
-.e-image{
+.e-image {
   width: 17.1875vw;
   height: 8.333333333333334vw;
 }
-.c-slider__slider-radio-button{
+.c-slider__slider-radio-button {
   margin: 3.75vw auto 0 auto;
-width: 3.6458333333333335vw;
-height: 1.0416666666666667vw;
-
+  width: 3.6458333333333335vw;
+  height: 1.0416666666666667vw;
 }
 
-.c-slider__slider-radio-button__wrapper{
+.c-slider__slider-radio-button__wrapper {
   height: 100%;
   width: 100%;
   display: flex;
@@ -98,49 +93,48 @@ height: 1.0416666666666667vw;
   align-content: center;
   gap: 0.5208333333333334vw;
 }
-.accent-color-blue{
-  accent-color:#1f273f;
+.accent-color-blue {
+  accent-color: #1f273f;
 }
-.accent-color-white{
-  accent-color:white;
+.accent-color-white {
+  accent-color: white;
 }
-.accent-color-red{
-  accent-color:#ed3333;
+.accent-color-red {
+  accent-color: #ed3333;
 }
-.accent-color-teal{
-  accent-color:#29e3ea;
+.accent-color-teal {
+  accent-color: #29e3ea;
 }
-.e-radio-button{
+.e-radio-button {
   width: 0.5208333333333334vw;
   height: 0.5208333333333334vw;
 }
-.c-slider__product-info{
+.c-slider__product-info {
   width: 9.583333333333334vw;
   color: #e1e1e1;
   margin: 4.0625vw 0 3.90625vw 4.21875vw;
 }
-.c-slider__product-name{
+.c-slider__product-name {
   font-size: 1.0416666666666667vw;
   word-break: break-all;
 }
-.e-product-name{
+.e-product-name {
   max-width: 9.583333333333334vw;
-  
 }
-.c-slider__product-description{
+.c-slider__product-description {
   margin-top: 0.78125vw;
   font-size: 0.5208333333333334vw;
   color: #49505a;
   word-break: break-all;
 }
-.e-product-description{
+.e-product-description {
   max-width: 9.583333333333334vw;
 }
-.c-slider__product-review{
+.c-slider__product-review {
   margin-top: 1.25vw;
 }
 
-.e-rating  {
+.e-rating {
   display: flex;
   width: 100%;
   justify-content: start;
@@ -150,12 +144,11 @@ height: 1.0416666666666667vw;
   position: relative;
 }
 
-
 .e-rating > input {
   display: none;
 }
 
-.e-rating  > label {
+.e-rating > label {
   cursor: pointer;
   width: 0.625vw;
   height: 0.625vw;
@@ -164,83 +157,67 @@ height: 1.0416666666666667vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 76%;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .e-rating > input:checked ~ label,
-.e-rating  > input:checked ~ label ~ label {
+.e-rating > input:checked ~ label ~ label {
   background-image: url("./img/star-gold.svg");
 }
 .second-use > input:checked ~ label,
-.second-use  > input:checked ~ label ~ label {
+.second-use > input:checked ~ label ~ label {
   background-image: url("./img/star-gold.svg");
 }
 
-
-.e-rating  > input:not(:checked) ~ label:hover,
-.e-rating  > input:not(:checked) ~ label:hover ~ label {
+.e-rating > input:not(:checked) ~ label:hover,
+.e-rating > input:not(:checked) ~ label:hover ~ label {
   background-image: url("./img/star-darker-gold.svg");
 }
 
-.c-slider__product-config{
+.c-slider__product-config {
   margin-top: 1.40625vw;
   height: 1.6666666666666667vw;
   width: 7.8125vw;
 }
-.c-slider__product-config__wrapper{
-display: flex;
+.c-slider__product-config__wrapper {
+  display: flex;
   height: 100%;
   width: 100%;
   gap: 0.2604166666666667vw;
   margin-left: 0.15625vw;
 }
-.e-product-config{
+.e-product-config {
   width: 3.6458333333333335vw;
   height: 1.6666666666666667vw;
 }
 
-.custom{
+.blueandwhite {
   border: 1px solid #4f5560;
-  color:#adafb3 ;
-padding-left: 0.5208333333333334vw;
-background-color:#111a28 ;
-font-size: 0.4291666666666666vw;
+  color: #adafb3;
+  padding-left: 0.5208333333333334vw;
+  background-color: #111a28;
+  font-size: 0.7291666666666666vw;
 }
 
-select {
-  background-color: transparent;
-  border: none;
-  padding: 0 1em 0 0;
-  margin: 0;
-  width: 100%;
-  font-family: inherit;
-  font-size: inherit;
-  cursor: inherit;
-  line-height: inherit;
-}
-
-.c-slider__buy-btn{
+.c-slider__buy-btn {
   margin-top: 1.5625vw;
   width: 9.583333333333334vw;
   height: 2.0833333333333335vw;
   margin-left: 0.15625vw;
-
 }
-.c-slider__buy-btn__wrapper{
+.c-slider__buy-btn__wrapper {
   width: 100%;
   height: 100%;
-  
- 
 }
-.c-buy-btn{
-width: 9.583333333333334vw;
-height: 2.0833333333333335vw;
+.c-buy-btn {
+  width: 9.583333333333334vw;
+  height: 2.0833333333333335vw;
 }
-.gray-btn:active{
+.gray-btn:active {
   border: #adafb3 1px solid;
 }
-.gray-btn{
-  color:#adafb3; ;
+.gray-btn {
+  color: #adafb3;
   background-color: #202835;
   border: #4f5560 1px solid;
   font-size: 0.7291666666666666vw;

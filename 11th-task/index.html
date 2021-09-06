@@ -13,7 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" href="./img/favicon5.ico" />
     <link rel="stylesheet" href="./font.css" />
     <!-- Main style -->
     <link rel="stylesheet" href="./style.css" />
@@ -33,17 +33,16 @@
                 <!-- Slider-product-logo -->
                 <div class="c-slider__product-logo">
                   <div class="c-slider__product-logo__wrapper">
-
-                      <img class="e-logo" src="./img/logo.png" alt="LOGO" />
-
+                    <img class="e-logo" src="./img/logo.png" alt="LOGO" />
                   </div>
                 </div>
                 <!-- Slider-photo-carousel -->
                 <div class="c-slider__product-container">
                   <div class="c-slider__product-container_wrapper">
                     <div class="c-slider__slider-image">
-                      <div class="c-slider__slider-image__wrapper" id="slider">
+                      <div class="c-slider__slider-image__wrapper">
                         <img
+                          id="slider"
                           class="e-image"
                           src="./img/Nike-SB-Stefan-Janoski-Max.png"
                           alt="Nike-SB-Stefan-Janoski-Max"
@@ -52,38 +51,38 @@
                     </div>
                     <div class="c-slider__slider-radio-button">
                       <form class="c-slider__slider-radio-button__wrapper">
-                        <div class="e-radio-button accent-color-blue">
+                        <label class="e-radio-button accent-color-blue">
                           <input
                             type="radio"
                             name="field"
                             value="one"
                             onclick="check_value(1)"
                           />
-                        </div>
-                        <div class="e-radio-button accent-color-white">
+                        </label>
+                        <label class="e-radio-button accent-color-white">
                           <input
                             type="radio"
                             name="field"
                             value="two"
                             onclick="check_value(2)"
                           />
-                        </div>
-                        <div class="e-radio-button accent-color-red">
+                        </label>
+                        <label class="e-radio-button accent-color-red">
                           <input
                             type="radio"
                             name="field"
                             value="three"
                             onclick="check_value(3)"
                           />
-                        </div>
-                        <div class="e-radio-button accent-color-teal">
+                        </label>
+                        <label class="e-radio-button accent-color-teal">
                           <input
                             type="radio"
                             name="field"
                             value="four"
                             onclick="check_value(4)"
                           />
-                        </div>
+                        </label>
                       </form>
                     </div>
                   </div>
@@ -116,18 +115,43 @@
                       <div class="c-slider__product-review__wrapper">
                         <div class="c-slider__product-stars">
                           <div class="c-slider__product-stars__wrapper">
-                            <div class="e-rating">
-                              <input type="radio" name="rating" id="rating-5" />
-                              <label for="rating-5"></label>
-                              <input type="radio" name="rating" id="rating-4" />
-                              <label for="rating-4"></label>
-                              <input type="radio" name="rating" id="rating-3" />
-                              <label for="rating-3"></label>
-                              <input type="radio" name="rating" id="rating-2" />
-                              <label for="rating-2"></label>
-                              <input type="radio" name="rating" id="rating-1" />
-                              <label for="rating-1"></label>
-                            </div>
+                            <form class="e-rating" action="" method="get">
+                              <input
+                                type="radio"
+                                value="fivestar"
+                                name="rating"
+                                id="rating-5*2"
+                              />
+                              <label for="rating-5*2"></label>
+                              <input
+                                type="radio"
+                                value="fourstar"
+                                name="rating"
+                                id="rating-4*2"
+                              />
+                              <label for="rating-4*2"></label>
+                              <input
+                                type="radio"
+                                value="threestar"
+                                name="rating"
+                                id="rating-3*2"
+                              />
+                              <label for="rating-3*2"></label>
+                              <input
+                                type="radio"
+                                value="twostar"
+                                name="rating"
+                                id="rating-2*2"
+                              />
+                              <label for="rating-2*2"></label>
+                              <input
+                                type="radio"
+                                value="onestar"
+                                name="rating"
+                                id="rating-1*2"
+                              />
+                              <label for="rating-1*2"></label>
+                            </form>
                           </div>
                         </div>
                       </div>
@@ -138,7 +162,7 @@
                       <div class="c-slider__product-config__wrapper">
                         <div class="c-slider__product-size">
                           <div class="c-slider__product-size__wrapper">
-                            <select class="e-product-config custom">
+                            <select class="e-product-config blueandwhite">
                               <option>Size</option>
                               <option>A</option>
                               <option>R</option>
@@ -152,7 +176,7 @@
                         </div>
                         <div class="c-slider__product-quantity">
                           <div class="c-slider__product-quantity__wrapper">
-                            <select class="e-product-config custom">
+                            <select class="e-product-config blueandwhite">
                               <option>Qty</option>
                               <option>S</option>
                               <option>O</option>
@@ -171,7 +195,7 @@
                     <div class="c-slider__buy-btn">
                       <div class="c-slider__buy-btn_wrapper">
                         <button class="c-buy-btn gray-btn">
-                          Add to the cart
+                          <span> Add to the cart</span>
                         </button>
                       </div>
                     </div>
@@ -189,17 +213,16 @@
                 <!-- Slider-product-logo -->
                 <div class="c-slider__product-logo">
                   <div class="c-slider__product-logo__wrapper">
-
-                      <img class="e-logo" src="./img/logo.png" alt="LOGO" />
-
+                    <img class="e-logo" src="./img/logo.png" alt="LOGO" />
                   </div>
                 </div>
                 <!-- Slider-photo-carousel -->
                 <div class="c-slider__product-container">
                   <div class="c-slider__product-container_wrapper">
                     <div class="c-slider__slider-image">
-                      <div class="c-slider__slider-image__wrapper" id="slider1">
+                      <div class="c-slider__slider-image__wrapper">
                         <img
+                          id="slider1"
                           class="e-image"
                           src="./img/Nike-SB-Stefan-Janoski-Max.png"
                           alt="Nike-SB-Stefan-Janoski-Max"
@@ -208,38 +231,38 @@
                     </div>
                     <div class="c-slider__slider-radio-button">
                       <form class="c-slider__slider-radio-button__wrapper">
-                        <div class="e-radio-button accent-color-blue">
+                        <label class="e-radio-button accent-color-blue">
                           <input
                             type="radio"
                             name="field"
                             value="one"
                             onclick="check_value1(1)"
                           />
-                        </div>
-                        <div class="e-radio-button accent-color-white">
+                        </label>
+                        <label class="e-radio-button accent-color-white">
                           <input
                             type="radio"
                             name="field"
                             value="two"
                             onclick="check_value1(2)"
                           />
-                        </div>
-                        <div class="e-radio-button accent-color-red">
+                        </label>
+                        <label class="e-radio-button accent-color-red">
                           <input
                             type="radio"
                             name="field"
                             value="three"
                             onclick="check_value1(3)"
                           />
-                        </div>
-                        <div class="e-radio-button accent-color-teal">
+                        </label>
+                        <label class="e-radio-button accent-color-teal">
                           <input
                             type="radio"
                             name="field"
                             value="four"
                             onclick="check_value1(4)"
                           />
-                        </div>
+                        </label>
                       </form>
                     </div>
                   </div>
@@ -272,18 +295,43 @@
                       <div class="c-slider__product-review__wrapper">
                         <div class="c-slider__product-stars">
                           <div class="c-slider__product-stars__wrapper">
-                            <div class="e-rating second-use">
-                              <input type="radio" name="rating" id="rating-5" />
+                            <form class="e-rating" action="" method="get">
+                              <input
+                                type="radio"
+                                value="fivestar"
+                                name="rating"
+                                id="rating-5"
+                              />
                               <label for="rating-5"></label>
-                              <input type="radio" name="rating" id="rating-4" />
+                              <input
+                                type="radio"
+                                value="fourstar"
+                                name="rating"
+                                id="rating-4"
+                              />
                               <label for="rating-4"></label>
-                              <input type="radio" name="rating" id="rating-3" />
+                              <input
+                                type="radio"
+                                value="threestar"
+                                name="rating"
+                                id="rating-3"
+                              />
                               <label for="rating-3"></label>
-                              <input type="radio" name="rating" id="rating-2" />
+                              <input
+                                type="radio"
+                                value="twostar"
+                                name="rating"
+                                id="rating-2"
+                              />
                               <label for="rating-2"></label>
-                              <input type="radio" name="rating" id="rating-1" />
+                              <input
+                                type="radio"
+                                value="onestar"
+                                name="rating"
+                                id="rating-1"
+                              />
                               <label for="rating-1"></label>
-                            </div>
+                            </form>
                           </div>
                         </div>
                       </div>
@@ -294,7 +342,7 @@
                       <div class="c-slider__product-config__wrapper">
                         <div class="c-slider__product-size">
                           <div class="c-slider__product-size__wrapper">
-                            <select class="e-product-config custom">
+                            <select class="e-product-config blueandwhite">
                               <option>Size</option>
                               <option>A</option>
                               <option>R</option>
@@ -308,7 +356,7 @@
                         </div>
                         <div class="c-slider__product-quantity">
                           <div class="c-slider__product-quantity__wrapper">
-                            <select class="e-product-config custom">
+                            <select class="e-product-config blueandwhite">
                               <option>Qty</option>
                               <option>S</option>
                               <option>O</option>
