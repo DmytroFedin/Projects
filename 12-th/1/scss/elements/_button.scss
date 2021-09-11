@@ -1,0 +1,31 @@
+.e-sign-in {
+  background-color: $c-white;
+  transition: $t-normal;
+  cursor: pointer;
+  padding: 20px;
+  outline: none;
+  border: none;
+
+  // &:hover {
+  // background-color: $c-orange;
+  // }
+  &__button-submit {
+    height: 42px;
+    width: 263px;
+    cursor: pointer;
+    &--teal {
+      border: none;
+      outline: none;
+      background-color: $c-teal;
+      color: $c-white;
+      font-size: $fs-big;
+      & > .e-button__text {
+        color: $c-white;
+      }
+      &:active {
+        background-color: $c-red;
+      }
+    }
+  }
+  
+}

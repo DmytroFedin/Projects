@@ -1,0 +1,42 @@
+mixin inside(args)
+  //- //- Static
+  //- - let content = args?.content || '';
+  //- - let title = args?.title || '';
+  //- - let count = args?.count || '';
+  //- - let show = args?.show || '';
+  //- //- Custom
+
+  //- - let contentWithCount = content + ' ' + count;
+
+  .c-sign-in__container
+    .c-sign-in__container__wrapper
+      .c-sign-in__form-swapper
+        .c-sign-in__form-swapper__wrapper
+          .c-sign-in__form-swapper__title
+            a(href="#").e-sign-in__switch-title--form-indicator Sign in
+            a(href="#").e-sign-in__switch-title--form-indicator Join us
+          form(action="" method="post").c-sign-in__form-swapper__form-block
+            label.c-sign-in__form-item 
+              span.c-sign-in__item-name Username
+              input(type="text" name='Username' placeholder=' ' required).e-sign-in__input.e-sign-in__input--transparent-white-border
+            label.c-sign-in__form-item 
+              span.c-sign-in__item-name Password
+              input(type="password" name='Password' placeholder=' ' required, pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}").e-sign-in__input.e-sign-in__input--transparent-white-border
+
+            label.c-sign-in__form-item.c-sign-in__form-item--flex-reversed 
+              span.c-sign-in__item-name Keep me signed in
+              input(type="checkbox" name='Consent').e-sign-in__input-checkbox--big-green
+            .c-sign-in__form-submit
+              button(type='submit').e-sign-in__button-submit.e-sign-in__button-submit--teal
+                span.e-sign-in__button-text Sign In
+
+            .c-sign-in__form-help 
+              .c-sign-in__form-help__items
+                a(href="#").e-sign-in__help-links Forgot password
+              .c-sign-in__form-help__items
+                a(href="#").e-sign-in__help-links Create an account
+
+//- p= count
+//- if show
+//-   p додатковий контент
+//-   p Lorem ipsum dolor sit amet consectetur adipisicing elit. A velit ipsam eum alias deleniti harum, illo ab sint perferendis aliquam adipisci veritatis iure provident nostrum vitae doloribus ea debitis ex in beatae iusto neque tempora! Delectus atque esse, neque aperiam optio nisi eum, culpa labore animi minima laboriosam fugit sit quas cupiditate, laborum ipsam! Tempora nesciunt ut harum deleniti at, laudantium repellat doloremque tempore aut sed magni porro maiores error nam? Cum maxime quasi, est commodi explicabo fugit optio quas sapiente sequi reprehenderit incidunt, ea nulla, laborum obcaecati voluptas excepturi corporis totam? Itaque pariatur corporis velit libero rem maxime labore.

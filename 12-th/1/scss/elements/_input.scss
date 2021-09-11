@@ -1,0 +1,31 @@
+.e-sign-in {
+  width: 261px;
+  height: 42px;
+
+  &__input {
+    width: 261px;
+    height: 42px;
+
+    &:invalid:not(:focus):not(:placeholder-shown) {
+      // Show a light reminder
+      background: pink;
+      & + label {
+        opacity: 0;
+      }
+    }
+
+    &--transparent-white-border {
+      margin-top: 7px;
+      background-color: transparent;
+      outline: none;
+      border: 2px solid $c-gray;
+      color: $c-white;
+      opacity: 0.5;
+      padding-left: 5px;
+    }
+    &__input-checkbox {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
