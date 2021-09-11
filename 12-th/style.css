@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin-bottom: 0;
+  }
+  img {
+    width: 100%;
+  }
+  body{
+    background-color: silver;
+    font-family: "Avenir next";
+  }
+  
+  .c-contact_us__form-container{
+    background-color: #11364E;
+    width: 100vw;
+    height: 100vw;
+    color: white;
+}
+.c-contact_us__form-container__wrapper{
+    display: flex;
+    flex-flow: column;
+padding-right: 5px;
+    width: 100%;
+}
+.c-contact_us__title{
+    width: 370px;
+    margin: 135px auto 0 auto;
+    text-align: center;
+}
+.c-contact_us__title_wrapper{
+    width: 100%;
+}
+    .e-contact_us__tittle{
+      font-size: 38px;
+      letter-spacing: -0.5px;
+      line-height: 1.448;
+    }
+
+.c-contact_us__form{
+  margin: 31px auto;
+    display: flex;
+    flex-flow: column;
+    width: 370px;
+
+}
+.c-contact_us__form__item{
+  border-bottom: 1px solid silver;
+  display: flex;
+  flex-flow: column;
+  margin-top: 43px;
+  font-size: 13px;
+
+}
+.c-contact_us__form__item:nth-child(1){
+margin-top: 0px;
+}
+input{
+    background-color: transparent;
+color: white;
+mix-blend-mode: normal;
+margin-top: 15px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+input:nth-child(1){
+  
+}
+.e-contact_us__input-textarea{
+  margin-top: 15px;
+    background-color: transparent;
+    color: white;
+    height: 90px;
+
+mix-blend-mode: normal;
+resize: vertical;
+outline: none;
+border: none;
+font-size: 16px;
+padding-bottom: 5px;
+
+}
+button{
+  color: white;
+  height: 60px;
+  margin-top: 33px;
+    background-color: #FF7F57;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 17px;
+    font-weight: 600;
+}
