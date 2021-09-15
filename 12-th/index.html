@@ -13,7 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="icon" href="./img/favicon5.ico" />
+    <link rel="icon" href="./favicon5.ico" />
     <link rel="stylesheet" href="./fonts.css" />
     <!-- Main style -->
     <link rel="stylesheet" href="./style.css" />
@@ -30,20 +30,39 @@
         <form method="GET" action="" class="c-contact_us__form">
           <label class="c-contact_us__form__item">
             <span>Full Name</span>
-            <input class="e-contact_us__input-text" type="text" placeholder="Ram Kaji" />
+            <div class="c-contact_us__input-text__wrapper">
+            <input
+              class="e-contact_us__input-text e-contact_us__input--transparent"
+              type="text"
+              placeholder="Ram Kaji"
+              name="Customer name"
+            /></div>
           </label>
           <label class="c-contact_us__form__item">
             <span>Your Email Address</span>
-            <input class="e-contact_us__input-text" type="text" placeholder="hello@lastdoor.store" />
+            <div class="c-contact_us__input-text__wrapper">
+            <input
+              class="e-contact_us__input-text e-contact_us__input--transparent"
+              type="text"
+              placeholder="hello@lastdoor.store"
+              name="Email"
+            /></div>
           </label>
           <label class="c-contact_us__form__item">
             <span>Your Message</span>
-            <textarea class="e-contact_us__input-textarea"
-              name="contact-us-textarea"
-              placeholder="Type your message here..."
-            ></textarea>
+            <div class="c-contact_us__text-area__wrapper">
+              <textarea
+                class="e-contact_us__input-textarea e-contact_us__input--transparent"
+                name="Customer message"
+                placeholder="Type your message here..."
+              ></textarea>
+            </div>
           </label>
-          <button class="e-contact_us__submit-button e-cont"><span>Submit Your Message</span></button>
+          <div class="c-contact_us__form__submit-btn">
+            <button class="e-contact_us__submit-button e-contact_us__submit-button--orange">
+              <span>Submit Your Message</span>
+            </button>
+          </div>
         </form>
       </div>
     </div>
