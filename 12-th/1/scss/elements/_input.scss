@@ -1,10 +1,9 @@
 .e-sign-in {
   width: 261px;
-  height: 42px;
+    height: 42px;
 
   &__input {
-    width: 261px;
-    height: 42px;
+   
 
     &:invalid:not(:focus):not(:placeholder-shown) {
       // Show a light reminder
@@ -15,6 +14,8 @@
     }
 
     &--transparent-white-border {
+      width: 261px;
+      height: 42px;
       margin-top: 7px;
       background-color: transparent;
       outline: none;

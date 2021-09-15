@@ -1,6 +1,6 @@
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -22,7 +22,7 @@
   width: 100%;
   max-height: 500px;
   -webkit-box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
-  box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
+          box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
 }
 
 .c-sign-in__form-swapper {
@@ -50,7 +50,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  color: #f9faff;
+  color: #F9FAFF;
 }
 
 .c-sign-in__form-swapper__form-block {
@@ -61,8 +61,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .c-sign-in__form-item {
@@ -72,8 +72,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column;
-  flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
 .c-sign-in__form-item:nth-child(1) {
@@ -85,12 +85,12 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   font-size: 13px;
   gap: 5.5px;
   width: -webkit-fit-content;
@@ -116,8 +116,8 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row;
-  flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
   gap: 35px;
   font-size: 13px;
 }
@@ -130,7 +130,7 @@
 }
 
 .e-sign-in {
-  background-color: #f9faff;
+  background-color: #F9FAFF;
   -webkit-transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -149,12 +149,12 @@
   border: none;
   outline: none;
   background-color: #23ae92;
-  color: #f9faff;
+  color: #F9FAFF;
   font-size: 18px;
 }
 
 .e-sign-in__button-submit--teal > .e-button__text {
-  color: #f9faff;
+  color: #F9FAFF;
 }
 
 .e-sign-in__button-submit--teal:active {
@@ -180,8 +180,7 @@ a {
   border-bottom: 1px solid transparent;
 }
 
-.e-sign-in__switch-title--form-indicator:hover,
-.e-sign-in__switch-title--form-indicator:active {
+.e-sign-in__switch-title--form-indicator:hover, .e-sign-in__switch-title--form-indicator:active {
   opacity: 1;
   border-bottom: 1px solid #e66a64;
 }
@@ -202,11 +201,6 @@ a {
   height: 42px;
 }
 
-.e-sign-in__input {
-  width: 261px;
-  height: 42px;
-}
-
 .e-sign-in__input:invalid:not(:focus):not(:placeholder-shown) {
   background: pink;
 }
@@ -216,11 +210,13 @@ a {
 }
 
 .e-sign-in__input--transparent-white-border {
+  width: 261px;
+  height: 42px;
   margin-top: 7px;
   background-color: transparent;
   outline: none;
   border: 2px solid #d0d1dc;
-  color: #f9faff;
+  color: #F9FAFF;
   opacity: 0.5;
   padding-left: 5px;
 }

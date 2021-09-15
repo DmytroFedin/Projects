@@ -18,14 +18,14 @@ mixin inside(args)
           form(action="" method="post").c-sign-in__form-swapper__form-block
             label.c-sign-in__form-item 
               span.c-sign-in__item-name Username
-              input(type="text" name='Username' placeholder=' ' required).e-sign-in__input.e-sign-in__input--transparent-white-border
+              input(type="text" name='Username' placeholder=' ' required).e-sign-in__input--transparent-white-border
             label.c-sign-in__form-item 
               span.c-sign-in__item-name Password
-              input(type="password" name='Password' placeholder=' ' required, pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}").e-sign-in__input.e-sign-in__input--transparent-white-border
+              input(type="password" name='Password' placeholder=' ' required, pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}").e-sign-in__input--transparent-white-border
 
             label.c-sign-in__form-item.c-sign-in__form-item--flex-reversed 
               span.c-sign-in__item-name Keep me signed in
-              input(type="checkbox" name='Consent').e-sign-in__input-checkbox--big-green
+              input(type="checkbox" name='Consent' value="consent").e-sign-in__input-checkbox
             .c-sign-in__form-submit
               button(type='submit').e-sign-in__button-submit.e-sign-in__button-submit--teal
                 span.e-sign-in__button-text Sign In
