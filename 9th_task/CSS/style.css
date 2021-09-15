@@ -23,7 +23,7 @@
       padding-left: 5.178283712784588vw;
       
   }
-  hr{
+  .nine-one_header_line{
       opacity: 0.2;
   }
   .nine-one_config{
@@ -64,6 +64,7 @@
     padding-top: 16.50963222416814vw;
 }
 .nine-one_proxima_header{
+  margin-top: 4.041666666666665vw;
     font-size: 1.125vw;
     letter-spacing: 0.15625vw;
 }
@@ -88,6 +89,9 @@ font-weight: 700;
       font-size: 2.2020833333333333vw;
       letter-spacing: 0.1px;
     word-spacing: 1px;
+  }
+  .nine-one_georgia p:nth-child(2){
+    margin-top: 21px;
   }
   .italic{
       color: #8f8f8f;
