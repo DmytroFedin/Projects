@@ -1,0 +1,57 @@
+.c-about-us {
+  width: 100%;
+  height: 100vh;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__banner {
+    width: 100%;
+    height: 100%;
+    // background-image: url(../../assets/icons/about-usBg.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background
+
+    &__wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    
+    &__info {
+      margin: 0 auto;
+      margin-top: 80px;
+      text-align: center;
+      color: white;
+     
+    }
+    &__title {
+      
+      font-size: em(54);
+      font-weight: 700;
+    }
+    &__text{
+      margin-top: 30px;
+      line-height: 1.85;
+    }
+    &__scroll{
+      margin-top: 250px;
+    }
+  }
+
+  &__logo {
+    margin-top: -41.15%;
+  }
+  &__background{
+    width: 100%;
+}
+}

@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.c-landing-page {
+  width: 100vw;
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'lato';
+  }
+
+  &__fullscreen-block {
+    width: 100%;
+    height: 150vh;
+   
+
+    &__wrapper{
+      width: 100%;
+      height: 150vh;
+  }
+}
+}

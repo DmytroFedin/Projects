@@ -1,0 +1,11 @@
+.e-about-us__logo{
+  @include size (75);
+  margin: 0 auto;
+
+  > svg{
+    @include size (75);
+    stroke: white;
+    fill: transparent;
+    
+  }
+}
