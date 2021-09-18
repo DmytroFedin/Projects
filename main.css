@@ -201,11 +201,6 @@ a {
   height: 42px;
 }
 
-.e-sign-in__input {
-  width: 261px;
-  height: 42px;
-}
-
 .e-sign-in__input:invalid:not(:focus):not(:placeholder-shown) {
   background: pink;
 }
@@ -215,6 +210,8 @@ a {
 }
 
 .e-sign-in__input--transparent-white-border {
+  width: 261px;
+  height: 42px;
   margin-top: 7px;
   background-color: transparent;
   outline: none;
