@@ -83,7 +83,7 @@ body {
 .e-contact_us__input-textarea {
 
 
-height: 100%;
+min-height: 95px;
 width: 100%;
   
   resize: vertical;
