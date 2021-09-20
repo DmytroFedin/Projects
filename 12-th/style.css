@@ -28,6 +28,7 @@ body {
   background-color: #11364e;
   width: 100vw;
   height: 100vw;
+  color:white;
 }
 .c-contact_us__form-container__wrapper {
   display: flex;
