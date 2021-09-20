@@ -28,7 +28,6 @@ body {
   background-color: #11364e;
   width: 100vw;
   height: 100vw;
-  color: white;
 }
 .c-contact_us__form-container__wrapper {
   display: flex;
@@ -76,12 +75,12 @@ body {
 }
 .c-contact_us__text-area__wrapper {
   margin-top: 15px;
-  height: 90px;
+  min-height: 90px;
   font-size: 16px;
   padding-bottom: 5px;
 }
 .e-contact_us__input-textarea {
-  color: white;
+
 
 height: 100%;
 width: 100%;
@@ -96,6 +95,7 @@ width: 100%;
   outline: none;
   border: none;
   background-color: transparent;
+  color: white;
 }
 .c-contact_us__form__submit-btn{
   height: 60px;
