@@ -1,4 +1,5 @@
-mixin background()
+mixin background(args)
+  - let src = args.src || '/assets/icons/about-usBg.jpg';
+  - let alt = args.alt || 'Фон';
 
-  .e-about-us__background
-    img(src="./assets/icons/about-usBg.jpg", alt="muzhyk").e-about-us__background-image
+    img(src=src, alt=alt).e-background__image

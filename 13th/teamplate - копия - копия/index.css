@@ -2609,11 +2609,10 @@ fieldset:disabled .btn {
   }
 }
 
-.e-about-us__background-image {
+.e-background__image {
   position: relative;
   top: 0;
   z-index: -1;
-  width: 100%;
 }
 
 .e-about-us__logo {
@@ -2632,7 +2631,6 @@ fieldset:disabled .btn {
 .e-about-us__scroll {
   width: 37px;
   height: 37px;
-  margin: 0 auto;
 }
 
 .e-about-us__scroll > svg {
@@ -2650,7 +2648,7 @@ fieldset:disabled .btn {
 }
 
 .c-landing-page {
-  width: 100vw;
+  width: 100%;
 }
 
 .c-landing-page__wrapper {
@@ -2670,12 +2668,12 @@ fieldset:disabled .btn {
 
 .c-landing-page__fullscreen-block {
   width: 100%;
-  height: 150vh;
+  height: 157.5vh;
 }
 
 .c-landing-page__fullscreen-block__wrapper {
   width: 100%;
-  height: 150vh;
+  height: 157.5vh;
 }
 
 .c-about-us {
@@ -2728,15 +2726,20 @@ fieldset:disabled .btn {
 .c-about-us__banner__title {
   font-size: 3.375em;
   font-weight: 700;
+  letter-spacing: 7px;
 }
 
 .c-about-us__banner__text {
+  font-weight: 400;
   margin-top: 30px;
-  line-height: 1.85;
+  line-height: 1.24;
+  font-size: 1.5em;
 }
 
 .c-about-us__banner__scroll {
-  margin-top: 250px;
+  margin: 238px auto 0 auto;
+  width: 37px;
+  height: 37px;
 }
 
 .c-about-us__logo {
@@ -2747,8 +2750,104 @@ fieldset:disabled .btn {
   width: 100%;
 }
 
+.c-about-us__background > * {
+  width: 100%;
+}
+
+.c-about-us__description {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 15.3125em;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  padding: 0 10.3125em 1.5625em 10.3125em;
+}
+
+.c-about-us__description::before, .c-about-us__description::after {
+  content: '';
+  position: absolute;
+}
+
+.c-about-us__description::before {
+  top: 9%;
+  left: 0%;
+  bottom: 0;
+  width: 15.3125em;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.c-about-us__description::after {
+  top: 9%;
+  right: 0%;
+  bottom: 0;
+  width: 245px;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.c-about-us__description__header {
+  font-size: 2.25em;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.c-about-us__description__text {
+  margin-top: 50px;
+  letter-spacing: 0.9px;
+  line-height: 1.5;
+}
+
+.c-about-us__description__text:nth-child(2) {
+  margin-top: 45px;
+}
+
+.c-services__background {
+  width: 100%;
+}
+
+.c-services__background > * {
+  width: 100%;
+}
+
+.c-services__banner__info {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 15.3125em;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  padding: 0 10.3125em 1.5625em 10.3125em;
+}
+
+.c-services__banner__info::before, .c-services__banner__info::after {
+  content: '';
+  position: absolute;
+}
+
+.c-services__banner__info::before {
+  top: 9%;
+  left: 0%;
+  bottom: 0;
+  width: 15.3125em;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.c-services__banner__info::after {
+  top: 9%;
+  right: 0%;
+  bottom: 0;
+  width: 15.3125em;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+
 .c-contact-us {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
@@ -2767,5 +2866,40 @@ fieldset:disabled .btn {
 .c-contact-us__banner {
   width: 100%;
   height: 100%;
-  background-image: url(../../img/about-usBg.png);
+}
+
+.c-contact-us__background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-contact-us__background > :nth-child(2), .c-contact-us__background :nth-child(5) {
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  max-width: 795px;
+  width: 100%;
+}
+
+@media (max-width: 1919px) {
+  .c-contact-us__background > :nth-child(2), .c-contact-us__background :nth-child(5) {
+    max-width: 544px;
+    height: 237px;
+  }
+}
+
+.c-contact-us__background > :nth-child(1), .c-contact-us__background :nth-child(3), .c-contact-us__background :nth-child(4), .c-contact-us__background :nth-child(6) {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  max-width: 544px;
+  width: 100%;
 }

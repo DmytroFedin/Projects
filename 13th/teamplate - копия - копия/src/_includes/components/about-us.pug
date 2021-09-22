@@ -5,7 +5,10 @@ mixin about-us()
       .c-about-us__banner
         .c-about-us__banner__wrapper
           .c-about-us__background
-            +background()
+            +background({
+              src: './assets/icons/about-usBg.jpg',
+              alt: 'myzhuk'
+            })
           .c-about-us__logo
             +logo()
           .c-about-us__banner__info
@@ -15,6 +18,6 @@ mixin about-us()
               +scroll
       .c-about-us__description
         .c-about-us__description__wrapper
-          .c-about-us__header
-          .c-about-us__text--center
-          .c-about-us__text--center
+          .c-about-us__description__header ABOUT US
+          .c-about-us__description__text When you work with us, you are part of a team of committed collaborators. <br> All aspects of our software development process are integrated, iterative and agile.
+          .c-about-us__description__text Our approach unifies design, development and <br> product management to create exceptional products. <br> We start each project by understanding your business goals, <br> the user’s needs and the product requirements. <br> Then we help translate them into effective and elegant solutions.
