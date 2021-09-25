@@ -9,13 +9,17 @@ mixin about-us()
               src: './assets/icons/about-usBg.jpg',
               alt: 'myzhuk'
             })
-          .c-about-us__logo
-            +logo()
-          .c-about-us__banner__info
-            h1.c-about-us__banner__title WORKING <br> WITH DESIGN LAB
-            p.c-about-us__banner__text We’ve been helping startups launch and grow their businesses. <br> We help you to fill the gap between development. <br> Design and product management.
-            .c-about-us__banner__scroll
-              +scroll
+          .c-about-us__info__wrapper
+            .c-about-us__logo
+              +logo({
+              class: 'icon icon-logo',
+              logo: '#icon-logo'
+              })
+            .c-about-us__banner__info
+              .c-about-us__banner__title WORKING <br> WITH DESIGN LAB
+              .c-about-us__banner__text We’ve been helping startups launch and grow their businesses. <br> We help you to fill the gap between development. <br> Design and product management.
+              .c-about-us__banner__scroll
+                +scroll
       .c-about-us__description
         .c-about-us__description__wrapper
           .c-about-us__description__header ABOUT US

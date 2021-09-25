@@ -16,12 +16,21 @@
 
   &__fullscreen-block {
     width: 100%;
-    height: 157.5vh;
+    height: fit-content;
    
 
     &__wrapper{
       width: 100%;
-      height: 157.5vh;
+      height: fit-content;
   }
 }
+}
+.c-services__description__title,
+.c-services__banner__title,
+.c-about-us__description__header,
+.c-about-us__banner__title,
+.c-contact-us__description__title{
+  @include media ('<screen'){
+    font-size: em(24);
+    }
 }

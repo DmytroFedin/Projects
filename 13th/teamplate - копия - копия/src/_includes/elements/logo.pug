@@ -1,5 +1,8 @@
-mixin logo()
+mixin logo(args)
+  - let test = args.logo || 'icon-logo';
+  - let name = args.class || 'icon';
 
-  .e-about-us__logo
-      svg(class="icon icon-logo")
-        use(xlink:href="#icon-logo")
+
+      .e-logo
+         svg(class=name)
+           use(xlink:href=test)

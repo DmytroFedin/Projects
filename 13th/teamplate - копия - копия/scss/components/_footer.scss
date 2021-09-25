@@ -1,0 +1,17 @@
+.c-footer{
+  margin-top: 65px;
+  color: $c-black;
+  height: 120px;
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  &__text{
+    padding-left: 35px;
+  }
+  &__logo{
+    padding-left: 25px;
+  }
+}

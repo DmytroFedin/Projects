@@ -1,11 +1,35 @@
-.e-about-us__logo{
-  @include size (75);
-  margin: 0 auto;
-
-  > svg{
-    @include size (75);
-    stroke: white;
-    fill: transparent;
-    
+.e-logo{
+  // margin: 0 auto;
+  
   }
+.icon-logo{
+  @include size (75);
+  stroke: white;
+  fill: transparent;
+  
+  &--black{
+    margin: 0;
+    @include size (40);
+    stroke: $c-black;
+    fill: transparent;
+  }
+}
+
+.icon-caligraphy{
+  @include size (85);
+  stroke: transparent;
+  fill: black;
+  
+}
+.icon-dev{
+  @include size (80);
+  stroke: transparent;
+  fill: black;
+  
+}
+.icon-task{
+  @include size (90);
+  stroke: transparent;
+  fill: black;
+  
 }

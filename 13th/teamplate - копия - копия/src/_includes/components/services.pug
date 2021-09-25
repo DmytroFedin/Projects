@@ -9,14 +9,36 @@ mixin services()
               src: './assets/icons/services.jpg',
               alt: 'services'
             })
-          .e-services__logo
           .c-services__banner__info
-            h1.c-about-us__banner__title WORKING <br> WITH DESIGN LAB
-            p.c-about-us__banner__text We’ve been helping startups launch and grow their businesses. <br> We help you to fill the gap between development. <br> Design and product management.
+            .c-services__banner__title SERVICES
+            .c-services__banner__text Before we sign a contract or write a line of code our team will spend the necessary time needed to understand your product vision. <br> The outcome of this scoping session is a proposal or high-level statement of work. <br>Based on your requirements, we can provide a complete offering or just the pieces you need. 
       .c-services__description
         .c-services__description__wrapper
-          .c-services__header
-          .c-services__header__wrapper
-          .c-services__description__item--center
-          .c-services__description__item--center
-          .c-services__description__item--center
+          .c-services__description__title WHAT WE DO
+          .c-services__description__item
+            .c-services__item__logo 
+              +logo({
+                class: 'icon icon-caligraphy',
+                logo: '#icon-Caligraphy'
+              })
+            .c-services__item__title DESIGN
+            .c-services__item__text Our design practice offers a full range of services including branding strategy, interaction and visual design and user experience testing. Throughout your project, our designers create and implement visual designs and workflows, solicit user feedback, and work with you to make sure what gets built is what is needed. 
+
+          .c-services__description__item
+            .c-services__item__logo 
+              +logo({
+                class: 'icon icon-dev',
+                logo: '#icon-dev'
+              })
+            .c-services__item__title DEVELOPMENT
+            .c-services__item__text All engineers are fluent in the latest enterprise, mobile and web development technologies. They collaborate with your team to write, test, and improve code on a daily basis, using proven practices such as test-driven development and pair programing.
+
+
+          .c-services__description__item
+            .c-services__item__logo 
+              +logo({
+                class: 'icon icon-task',
+                logo: '#icon-task'
+              })
+            .c-services__item__title--bigger-margin PRODUCT MANAGEMENT
+            .c-services__item__text--bigger-margin Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. This iterative process allows for changes as business requirements evolve. 
