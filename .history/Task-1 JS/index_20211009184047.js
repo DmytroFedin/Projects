@@ -69,16 +69,16 @@
 // }
 
 /*------------- Task-3 ----------------*/
-// let checkNumber = prompt('Введите трёхзначное число');
-// let checkText = 'Нима';
+let checkNumber = prompt('Введите трёхзначное число');
+let checkText = 'Нима';
 
-// for (let m = 0; m < checkNumber.length; m++)
-//    {
-//    if (checkNumber.split (checkNumber [m]).length > 2) {
-//     checkText = 'Муха павтарюха';
-//     }
-//    }
-// alert (checkText);
+for (let m = 0; m < checkNumber.length; m++)
+   {
+   if (checkNumber.split (checkNumber [m]).length > 2) {
+    checkText = 'Муха павтарюха';
+    }
+   }
+alert (checkText);
 
 /*------------- Task-4 ----------------*/
 // let year = prompt('Када радитса Бох?','');
@@ -100,24 +100,24 @@
 
 
 /*------------- Task-6 ----------------*/
-let converterSum = prompt('write down sum to exchange, $','');
-let currency = prompt('choose currency beetween UAH-1, AZN-2 and EUR-3','');
+// let converterSum = prompt('write down sum to exchange, $','');
+// let currency = prompt('choose currency beetween UAH-1, AZN-2 and EUR-3','');
 
-if (currency === null || currency === ' ') {
-  alert('Идешь к местному барыге?');
-}
-else if (currency === '3' || currency.toUpperCase() === 'EUR') {
-  alert(converterSum * 0.87 + ' ' + 'Euro');
-}
-else if (currency === '1' || currency.toUpperCase() === 'UAH') {
-  alert(converterSum * 26.3 + ' ' + 'UAH');
-}
-else if (currency === '2' || currency.toUpperCase() === 'AZN') {
-  alert(converterSum * 1.70 + ' ' + 'AZN');
-}
-else {
-  alert('Lavochka zakrita');
-}
+// if (currency === null || currency === ' ') {
+//   alert('Идешь к местному барыге?');
+// }
+// else if (currency === '3' || currency.toUpperCase() === 'EUR') {
+//   alert(converterSum * 0.87 + ' ' + 'Euro');
+// }
+// else if (currency === '1' || currency.toUpperCase() === 'UAH') {
+//   alert(converterSum * 26.3 + ' ' + 'UAH');
+// }
+// else if (currency === '2' || currency.toUpperCase() === 'AZN') {
+//   alert(converterSum * 1.70 + ' ' + 'AZN');
+// }
+// else {
+//   alert('Lavochka zakrita');
+// }
 
 /*------------- Task-7 ----------------*/
 // let purchaseSum = +prompt('What is your sum of purchase?','');
