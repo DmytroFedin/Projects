@@ -101,27 +101,27 @@
 
 
 /*------------- Task-6 ----------------*/
-// let converterSum = prompt('write down sum to exchange, $','');
-// let currency = prompt('choose currency beetween UAH-1, AZN-2 and EUR-3','');
+let converterSum = prompt('write down sum to exchange, $','');
+let currency = prompt('choose currency beetween UAH-1, AZN-2 and EUR-3','');
 
-// if (currency === null || currency === ' ') {
-//   alert('Идешь к местному барыге?');
-// }
-// else if (currency === '3' || currency.toUpperCase() === 'EUR') {
-//   alert(converterSum * 0.87 + ' ' + 'Euro');
-// }
-// else if (currency === '1' || currency.toUpperCase() === 'UAH') {
-//   alert(converterSum * 26.3 + ' ' + 'UAH');
-// }
-// else if (currency === '2' || currency.toUpperCase() === 'AZN') {
-//   alert(converterSum * 1.70 + ' ' + 'AZN');
-// }
-// else {
-//   alert('Lavochka zakrita');
-// }
+if (currency === null || currency === ' ') {
+  alert('Идешь к местному барыге?');
+}
+else if (currency === '3' || currency.toUpperCase() === 'EUR') {
+  alert(converterSum * 0.87 + ' ' + 'Euro');
+}
+else if (currency === '1' || currency.toUpperCase() === 'UAH') {
+  alert(converterSum * 26.3 + ' ' + 'UAH');
+}
+else if (currency === '2' || currency.toUpperCase() === 'AZN') {
+  alert(converterSum * 1.70 + ' ' + 'AZN');
+}
+else {
+  alert('Lavochka zakrita');
+}
 
 /*------------- Task-7 ----------------*/
-// let purchaseSum = +prompt('What is your sum of purchase?','');
+// let purchaseSum = prompt('What is your sum of purchase?','');
 // let smallDiscount = 0.97;
 // let mediumDiscount = 0.95;
 // let bigDiscount = 0.93;
@@ -146,7 +146,7 @@
 // }
 
 /*------------- Task-8 ----------------*/
-// let perimeter = +prompt('write down your perimetr','');
+// let perimeter = prompt('write down your perimetr','');
 // let circumference = prompt('write down your circumference','');
 // let diagonal = perimeter/(2*(2**(1/2)))
 

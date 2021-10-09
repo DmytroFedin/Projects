@@ -82,17 +82,17 @@
 // alert (checkText);
 
 /*------------- Task-4 ----------------*/
-// let year = prompt('Када радитса Бох?','');
+let year = +prompt('Када радитса Бох?','');
 
-// if (year % 400 === 0 || year % 4 === 0 && year % 100 != 0 ){
-//   alert('Высакоста года');
-// }
-// else if (year === '' || year === null) {
-//   alert('Павтарити');
-// }
-// else {
-//   alert('Не угадал');
-// }
+if (year % 400 === 0 && year % 4 === 0 && year % 100 != 0 ){
+  alert('Высакоста года');
+}
+else if (year === '' || year === null) {
+  alert('Павтарити');
+}
+else {
+  alert('Не угадал');
+}
 
  /*------------- Task-5 ----------------*/ 
 // let isPalindrom = prompt('wanna check word if its a palindrom? Do it!','');
@@ -121,7 +121,7 @@
 // }
 
 /*------------- Task-7 ----------------*/
-// let purchaseSum = +prompt('What is your sum of purchase?','');
+// let purchaseSum = prompt('What is your sum of purchase?','');
 // let smallDiscount = 0.97;
 // let mediumDiscount = 0.95;
 // let bigDiscount = 0.93;
@@ -146,7 +146,7 @@
 // }
 
 /*------------- Task-8 ----------------*/
-// let perimeter = +prompt('write down your perimetr','');
+// let perimeter = prompt('write down your perimetr','');
 // let circumference = prompt('write down your circumference','');
 // let diagonal = perimeter/(2*(2**(1/2)))
 

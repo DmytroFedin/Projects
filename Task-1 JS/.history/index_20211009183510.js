@@ -146,19 +146,19 @@
 // }
 
 /*------------- Task-8 ----------------*/
-// let perimeter = +prompt('write down your perimetr','');
-// let circumference = prompt('write down your circumference','');
-// let diagonal = perimeter/(2*(2**(1/2)))
+let perimeter = +prompt('write down your perimetr','');
+let circumference = prompt('write down your circumference','');
+let diagonal = perimeter/(2*(2**(1/2)))
 
-// if (circumference === null || circumference === '') {
-//   alert('Не хош как хош');
-// }
-// else if (circumference <= diagonal) {
-//   alert('Voshel');
-// }
-// else{
-//   alert ('Впихнуть не впихуемое');
-// }
+if (circumference === null || circumference === '') {
+  alert('Не хош как хош');
+}
+else if (circumference <= diagonal) {
+  alert('Voshel');
+}
+else{
+  alert ('Впихнуть не впихуемое');
+}
 
 /*------------- Task-9 ----------------*/
 // let firstQuestion = prompt('Arthur is a good tutor?(1-Yes/2-No/3-Who is Arthur?)','');

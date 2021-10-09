@@ -69,10 +69,10 @@
 // }
 
 /*------------- Task-3 ----------------*/
-// let checkNumber = prompt('Введите трёхзначное число');
+// let checkNumber = +prompt('Введите трёхзначное число');
 // let checkText = 'Нима';
 
-// for (let m = 0; m < checkNumber.length; m++)
+// for (let m = 0; m < checkNumber.length; m)
 //    {
 //    if (checkNumber.split (checkNumber [m]).length > 2) {
 //     checkText = 'Муха павтарюха';
@@ -82,17 +82,14 @@
 // alert (checkText);
 
 /*------------- Task-4 ----------------*/
-// let year = prompt('Када радитса Бох?','');
-
-// if (year % 400 === 0 || year % 4 === 0 && year % 100 != 0 ){
-//   alert('Высакоста года');
-// }
-// else if (year === '' || year === null) {
-//   alert('Павтарити');
-// }
-// else {
-//   alert('Не угадал');
-// }
+ let number = prompt('Enter the number from 100 to 999', 0);
+    number = number + '';
+    if (number[0] == number[1] || number[0] == number[2] || number[1] == number[2])
+    {
+        alert('TRUE');
+    }
+    else
+        alert('FALSE');*/
 
  /*------------- Task-5 ----------------*/ 
 // let isPalindrom = prompt('wanna check word if its a palindrom? Do it!','');
@@ -121,7 +118,7 @@
 // }
 
 /*------------- Task-7 ----------------*/
-// let purchaseSum = +prompt('What is your sum of purchase?','');
+// let purchaseSum = prompt('What is your sum of purchase?','');
 // let smallDiscount = 0.97;
 // let mediumDiscount = 0.95;
 // let bigDiscount = 0.93;
@@ -146,7 +143,7 @@
 // }
 
 /*------------- Task-8 ----------------*/
-// let perimeter = +prompt('write down your perimetr','');
+// let perimeter = prompt('write down your perimetr','');
 // let circumference = prompt('write down your circumference','');
 // let diagonal = perimeter/(2*(2**(1/2)))
 

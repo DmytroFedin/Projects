@@ -1,8 +1,11 @@
 
-/*------------- Task-1 ----------------*/
+// /*------------- Task-1 ----------------*/
 // let age = prompt('Сколько вам лет?','');
 
-// if (age <= 2 && age >= 0) {
+// if (age === null || age === '') {
+//   alert('Не сильно и хотелось');
+// }
+// else if (age <= 2 && age >= 0) {
 //   alert('You are molokosos');
 // }
 // else if (age < 12 && age > 2) {
@@ -25,66 +28,66 @@
 // };
 
 /*------------- Task-2 ----------------*/
-// let number = prompt('Выберите число от 1-9','')
+let number = prompt('Выберите число от 1-9','')
 
-// switch (number) {
-// case '1':
-//   alert('!');
-//   break;
+switch (number) {
+case '1':
+  alert('!');
+  break;
 
-// case '2':
-//   alert('@');
-//   break;
+case '2':
+  alert('@');
+  break;
 
-// case '3':
-//   alert('#');
-//   break;
+case '3':
+  alert('#');
+  break;
 
-// case '4':
-//   alert('$');
-//   break;
+case '4':
+  alert('$');
+  break;
 
-// case '5':
-//   alert('%');
-//   break;
+case '5':
+  alert('%');
+  break;
 
-// case '6':
-//   alert('^');
-//   break;
+case '6':
+  alert('^');
+  break;
 
-// case '7':
-//   alert('&');
-//   break;
+case '7':
+  alert('&');
+  break;
 
-// case '8':
-//   alert('*');
-//   break;
+case '8':
+  alert('*');
+  break;
 
-// case '9':
-//   alert('(');
-//   break;
+case '9':
+  alert('(');
+  break;
 
-// default:
-//   alert('Сделай \'Это\' со мной');
-// }
+default:
+  alert('Сделай \'Это\' со мной');
+}
 
 /*------------- Task-3 ----------------*/
 // let checkNumber = prompt('Введите трёхзначное число');
 // let checkText = 'Нима';
 
-// for (let m = 0; m < checkNumber.length; m++)
+// for (let m = 0; m < checkNumber.length; m)
 //    {
 //    if (checkNumber.split (checkNumber [m]).length > 2) {
 //     checkText = 'Муха павтарюха';
 //     break;
-//     }
+ //    }
 //    }
 // alert (checkText);
 
 /*------------- Task-4 ----------------*/
 // let year = prompt('Када радитса Бох?','');
 
-// if (year % 400 === 0 || year % 4 === 0 && year % 100 != 0 ){
+// if ((year % 400 === 0 && year % 4 === 0) && year % 100 != 0 ){
 //   alert('Высакоста года');
 // }
 // else if (year === '' || year === null) {
@@ -104,7 +107,7 @@
 // let converterSum = prompt('write down sum to exchange, $','');
 // let currency = prompt('choose currency beetween UAH-1, AZN-2 and EUR-3','');
 
-// if (currency === null || currency === ' ') {
+// if (currency === null || currency === '') {
 //   alert('Идешь к местному барыге?');
 // }
 // else if (currency === '3' || currency.toUpperCase() === 'EUR') {
@@ -121,7 +124,7 @@
 // }
 
 /*------------- Task-7 ----------------*/
-// let purchaseSum = +prompt('What is your sum of purchase?','');
+// let purchaseSum = prompt('What is your sum of purchase?','');
 // let smallDiscount = 0.97;
 // let mediumDiscount = 0.95;
 // let bigDiscount = 0.93;
@@ -146,7 +149,7 @@
 // }
 
 /*------------- Task-8 ----------------*/
-// let perimeter = +prompt('write down your perimetr','');
+// let perimeter = prompt('write down your perimetr','');
 // let circumference = prompt('write down your circumference','');
 // let diagonal = perimeter/(2*(2**(1/2)))
 

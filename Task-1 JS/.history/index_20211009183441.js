@@ -121,32 +121,32 @@
 // }
 
 /*------------- Task-7 ----------------*/
-// let purchaseSum = +prompt('What is your sum of purchase?','');
-// let smallDiscount = 0.97;
-// let mediumDiscount = 0.95;
-// let bigDiscount = 0.93;
+let purchaseSum = +prompt('What is your sum of purchase?','');
+let smallDiscount = 0.97;
+let mediumDiscount = 0.95;
+let bigDiscount = 0.93;
 
-// if (purchaseSum >= 200 && purchaseSum < 300) {
-//   alert('Your sum after discount is:' + ' ' + Math.round(purchaseSum*smallDiscount));
-// }
-// else if (purchaseSum >= 300 && purchaseSum < 500) {
-//   alert('Your sum after discount is:' + ' ' + Math.round(purchaseSum*mediumDiscount));
-// }
-// else if (purchaseSum >= 500) {
-//   alert('Your sum after discount is:' + ' ' + Math.round(purchaseSum*bigDiscount));
-// }
-// else if (purchaseSum < 0) {
-//   alert('HA HA HA');
-// }
-// else if (purchaseSum == null || purchaseSum == '') {
-//   alert('Приходьте ще');
-// }
-// else {
-//   alert('Нищеброд');
-// }
+if (purchaseSum >= 200 && purchaseSum < 300) {
+  alert('Your sum after discount is:' + ' ' + Math.round(purchaseSum*smallDiscount));
+}
+else if (purchaseSum >= 300 && purchaseSum < 500) {
+  alert('Your sum after discount is:' + ' ' + Math.round(purchaseSum*mediumDiscount));
+}
+else if (purchaseSum >= 500) {
+  alert('Your sum after discount is:' + ' ' + Math.round(purchaseSum*bigDiscount));
+}
+else if (purchaseSum < 0) {
+  alert('HA HA HA');
+}
+else if (purchaseSum == null || purchaseSum == '') {
+  alert('Приходьте ще');
+}
+else {
+  alert('Нищеброд');
+}
 
 /*------------- Task-8 ----------------*/
-// let perimeter = +prompt('write down your perimetr','');
+// let perimeter = prompt('write down your perimetr','');
 // let circumference = prompt('write down your circumference','');
 // let diagonal = perimeter/(2*(2**(1/2)))
 
