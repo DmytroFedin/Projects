@@ -1,10 +1,8 @@
 
 /*------------- Task-1 ----------------*/
 let age = prompt('Сколько вам лет?','');
-if (age === null || age === '') {
-  alert('Не сильно и хотелось');
-}
-else if (age <= 2 && age >= 0) {
+
+if (age <= 2 && age >= 0) {
   alert('You are molokosos');
 }
 else if (age < 12 && age > 2) {
