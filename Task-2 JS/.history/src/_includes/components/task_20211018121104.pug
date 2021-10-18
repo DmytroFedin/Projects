@@ -1,0 +1,8 @@
+mixin task(args)
+  - let text = args.text || 'default text';
+  - let taskId = args.taskId || 'default taskId';
+
+  .e-task
+      h2.e-task__text=text
+      button(id=taskId).e-task__btn
+        span.e-task__btn__text Click me, Senpai

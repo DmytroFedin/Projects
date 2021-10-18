@@ -1,0 +1,17 @@
+.e-task{
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid #343642;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  background-color: #80203E;
+  box-shadow: 3px 4px 7px rgba(black, .8);
+
+  &__text{
+    padding: 0 20px 0 20px;
+  }
+}
