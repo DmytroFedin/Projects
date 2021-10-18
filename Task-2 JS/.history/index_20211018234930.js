@@ -1,4 +1,25 @@
 
+(function() {
+ 
+  const elements = document.getElementsByClassName('e-task__btn')
+  
+  // iterate through using a loop
+  for (let i = 0, len = elements.length; i < len; i++) {
+    // add mouseover event to given element index
+    elements[i].addEventListener('mouseenter', e => { 
+      e.target.classList.remove('hover-teal');
+      e.target.classList.add('hover-white');
+    });
+    // add mouseout event to given element index
+    elements[i].addEventListener('mouseleave', e => { 
+      e.target.classList.remove('hover-white');
+      e.target.classList.add('hover-teal');
+    });
+  }
+ 
+})();
+
+
 
   func = {
 
@@ -103,7 +124,7 @@
       }
       console.log(arr);
     },
-    task8: function repeat() {
+    task8: () => {
       let day = ['Monday','Tuesday','Thirsday','Wendesday', 'Friday', 'Saturday', 'Sunday',];
       let currDay = 0
       
@@ -129,42 +150,81 @@ for (; number <= i;number++)
 }
     },
     task10: () => {
-      const arr = Array(100).fill(1).map((v,i) => v + i);
-      function binaryGuess(arr) {
-        if (arr.length === 1) {
-          return alert('Загаданое число было ' + arr[0]);
-        };
-        if (arr.length < 1) {
-          return alert('Где то меня обманули');
-        };
-        let nextIdx = Math.floor(arr.length / 2); 
-        
-        if (confirm('Ответ ' + arr[nextIdx] + ' ?')) {
-          return alert('Я это итак знал');
-        } else {
-          if (confirm('Больше ?')) {
-            binaryGuess(arr.slice(nextIdx));
-          } else {
-            binaryGuess(arr.slice(0, nextIdx - 1));
-          };	
-        };
-      };
-      
-      function startGuessing(r) {
-        binaryGuess(arr);
-        if (confirm('Повторим ?')) {
-          startGuessing();
-        };	
-      };
-      
-      startGuessing();
-      
+
     },
   }
 
+
+/*------------- Task-2 ----------------*/
+
+
+
+/*------------- Task-3 ----------------*/
+
+
+/*------------- Task-4 ----------------*/
+
+
+ /*------------- Task-5 ----------------*/ 
+ 
+
+/*------------- Task-6 ----------------*/
+document.getElementById("js-task6").addEventListener("click", function() {
+
+})
+
+/*------------- Task-7 ----------------*/
+document.getElementById("js-task7").addEventListener("click", function() {
+
+})
+
+/*------------- Task-8 ----------------*/
+document.getElementById("js-task8").addEventListener("click", function repeat () {
+
+})
+
+/*------------- Task-9 ----------------*/
+document.getElementById("js-task9").addEventListener("click", function() {
+
+})
+
+/*------------- Task-10 ----------------*/
+document.getElementById("js-task10").addEventListener("click", function() {
+  const arr = Array(100).fill(1).map((v,i) => v + i);
+function binaryGuess(arr) {
+  if (arr.length === 1) {
+    return alert('Загаданое число было ' + arr[0]);
+  };
+  if (arr.length < 1) {
+    return alert('Где то меня обманули');
+  };
+  let nextIdx = Math.floor(arr.length / 2); 
+  
+  if (confirm('Ответ ' + arr[nextIdx] + ' ?')) {
+    return alert('Я это итак знал');
+  } else {
+    if (confirm('Больше ?')) {
+      binaryGuess(arr.slice(nextIdx));
+    } else {
+      binaryGuess(arr.slice(0, nextIdx - 1));
+    };	
+  };
+};
+
+function startGuessing(r) {
+  binaryGuess(arr);
+  if (confirm('Повторим ?')) {
+    startGuessing(rand());
+  };	
+};
+
+startGuessing();
+
+})
+
 const execute = (e) => {
   const quantity = 10;
-  for (let i = 1; i <= quantity; i++) {
+  for (let i = 1; i < quantity; i++) {
     const item = document.getElementById('js-task' + i);
     item.addEventListener('click', () => {
       func['task' + i]();
@@ -173,22 +233,3 @@ const execute = (e) => {
   }
 
   execute();
-
-  (function() {
-    const elements = document.getElementsByClassName('e-task__btn');
-
-    for (let i = 0, len = elements.length; i < len; i++) {
-      elements[i].addEventListener('mouseenter', e => { 
-        e.target.classList.remove('hover-teal');
-        e.target.classList.add('hover-white');
-      });
-      elements[i].addEventListener('mouseleave', e => { 
-        e.target.classList.remove('hover-white');
-        e.target.classList.add('hover-teal');
-      });
-    }
-   
-  })();
-  
-  
-  

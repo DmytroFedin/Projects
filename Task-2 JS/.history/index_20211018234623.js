@@ -1,7 +1,27 @@
 
+(function() {
+ 
+  const elements = document.getElementsByClassName('e-task__btn')
+  
+  // iterate through using a loop
+  for (let i = 0, len = elements.length; i < len; i++) {
+    // add mouseover event to given element index
+    elements[i].addEventListener('mouseenter', e => { 
+      e.target.classList.remove('hover-teal');
+      e.target.classList.add('hover-white');
+    });
+    // add mouseout event to given element index
+    elements[i].addEventListener('mouseleave', e => { 
+      e.target.classList.remove('hover-white');
+      e.target.classList.add('hover-teal');
+    });
+  }
+ 
+})();
+
+
 
   func = {
-
     task1: () => {
       let highNumber = +prompt('1 number','');
       let lowNumber = +prompt('2 number?','');
@@ -16,7 +36,7 @@
         sumNumber += lowNumber;  
       }
       return console.log(sumNumber);
-      },
+    },
     task2: () => {
       let checkNumberOne = +prompt('1 number','');
       let checkNumberTwo = +prompt('2 number?','');
@@ -103,7 +123,7 @@
       }
       console.log(arr);
     },
-    task8: function repeat() {
+    task8: function repeat () {
       let day = ['Monday','Tuesday','Thirsday','Wendesday', 'Friday', 'Saturday', 'Sunday',];
       let currDay = 0
       
@@ -119,14 +139,14 @@
       }
     },
     task9: () => {
-let number = 1;
-let i = 10;
-
-for (; number <= i;number++)
-  for (let k = 0; k <= 10; k++) {
-    let sum = number * k;
-    console.log(sum)
-}
+      let number = 1;
+      let i = 10;
+      
+      for (; number <= i;number++)
+        for (let k = 0; k <= 10; k++) {
+          let sum = number * k;
+          console.log(sum)
+      }
     },
     task10: () => {
       const arr = Array(100).fill(1).map((v,i) => v + i);
@@ -153,18 +173,17 @@ for (; number <= i;number++)
       function startGuessing(r) {
         binaryGuess(arr);
         if (confirm('Повторим ?')) {
-          startGuessing();
+          startGuessing(rand());
         };	
       };
       
-      startGuessing();
-      
+      return startGuessing();
     },
   }
 
 const execute = (e) => {
   const quantity = 10;
-  for (let i = 1; i <= quantity; i++) {
+  for (let i = 1; i < quantity; i++) {
     const item = document.getElementById('js-task' + i);
     item.addEventListener('click', () => {
       func['task' + i]();
@@ -173,22 +192,3 @@ const execute = (e) => {
   }
 
   execute();
-
-  (function() {
-    const elements = document.getElementsByClassName('e-task__btn');
-
-    for (let i = 0, len = elements.length; i < len; i++) {
-      elements[i].addEventListener('mouseenter', e => { 
-        e.target.classList.remove('hover-teal');
-        e.target.classList.add('hover-white');
-      });
-      elements[i].addEventListener('mouseleave', e => { 
-        e.target.classList.remove('hover-white');
-        e.target.classList.add('hover-teal');
-      });
-    }
-   
-  })();
-  
-  
-  

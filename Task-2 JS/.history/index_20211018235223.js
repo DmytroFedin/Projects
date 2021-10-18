@@ -1,4 +1,25 @@
 
+(function() {
+ 
+  const elements = document.getElementsByClassName('e-task__btn')
+  
+  // iterate through using a loop
+  for (let i = 0, len = elements.length; i < len; i++) {
+    // add mouseover event to given element index
+    elements[i].addEventListener('mouseenter', e => { 
+      e.target.classList.remove('hover-teal');
+      e.target.classList.add('hover-white');
+    });
+    // add mouseout event to given element index
+    elements[i].addEventListener('mouseleave', e => { 
+      e.target.classList.remove('hover-white');
+      e.target.classList.add('hover-teal');
+    });
+  }
+ 
+})();
+
+
 
   func = {
 
@@ -162,6 +183,7 @@ for (; number <= i;number++)
     },
   }
 
+
 const execute = (e) => {
   const quantity = 10;
   for (let i = 1; i <= quantity; i++) {
@@ -173,22 +195,3 @@ const execute = (e) => {
   }
 
   execute();
-
-  (function() {
-    const elements = document.getElementsByClassName('e-task__btn');
-
-    for (let i = 0, len = elements.length; i < len; i++) {
-      elements[i].addEventListener('mouseenter', e => { 
-        e.target.classList.remove('hover-teal');
-        e.target.classList.add('hover-white');
-      });
-      elements[i].addEventListener('mouseleave', e => { 
-        e.target.classList.remove('hover-white');
-        e.target.classList.add('hover-teal');
-      });
-    }
-   
-  })();
-  
-  
-  
