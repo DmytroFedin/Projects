@@ -1,0 +1,14 @@
+.e-task{
+  max-width: 500px;
+  width: 100%;
+  border: 2px solid gray;
+  height: 400px;
+
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

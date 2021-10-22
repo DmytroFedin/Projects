@@ -1,0 +1,17 @@
+.c-homework{
+  width: 100%;
+  &__title{
+    text-align: center;
+  }
+
+  &__wrapper{
+    margin: 200px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px; 
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}

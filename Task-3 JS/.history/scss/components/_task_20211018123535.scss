@@ -1,0 +1,16 @@
+.e-task{
+  max-width: 500px;
+  width: 100%;
+  border: 2px solid #343642;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  background-color: #80203E;
+
+  &__text{
+    padding: 0 20px 0 20px;
+  }
+}

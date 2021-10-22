@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-.c-homework__title {
+.c-homework__header {
   text-align: center;
 }
 
@@ -22,6 +22,10 @@
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.c-homework__footer {
+  text-align: center;
 }
 
 .e-task {

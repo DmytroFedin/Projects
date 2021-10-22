@@ -1,0 +1,17 @@
+mixin task(args)
+  - let text = args.text || 'default text';
+  - let taskId = args.taskId || 'default taskId';
+  - let taskInput1 = args.taskInput1 || 'default taskInput1';
+  - let taskInput2 = args.taskInput2 || 'default taskInput2';
+  - let taskInput3 = args.taskInput3 || 'default taskInput3';
+
+  .e-task
+      h2.e-task__text=text
+      input(type="text" id=taskInput1)
+      input(type="text" id=taskInput2)
+      input(type="text" id=taskInput3)
+      input(type="text" id=taskInput4)
+      input(type="text" id=taskInput5)
+      input(type="text" id=taskInput6)
+      button(id=taskId).e-task__btn
+        span.e-task__btn__text Click me, Senpai

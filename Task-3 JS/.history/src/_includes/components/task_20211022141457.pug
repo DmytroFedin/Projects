@@ -1,0 +1,18 @@
+mixin task(args)
+  - let text = args.text || 'default text';
+  - let taskId = args.taskId || 'default taskId';
+  - let taskInput = args.taskInput || 'default taskInput1';
+
+  //- - let inputs = [input(type="text" id=taskInput1), input(type="text" id=taskInput2), input(type="text" id=taskInput3), input(type="text" id=taskInput4), input(type="text" id=taskInput5), input(type="text" id=taskInput6)];
+  - let inputQuantity = args.inputQuantity || '0';
+  
+
+  .e-task
+      h2.e-task__text=text
+      .e-task__input
+        - for (let i = 0; i < inputQuantity; i++) {
+        input(type="text" id='js-input'+ taskInput + '-' + i)
+        - } 
+
+      button(id=taskId).e-task__btn
+        span.e-task__btn__text Click me, Senpai

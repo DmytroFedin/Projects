@@ -1,0 +1,28 @@
+mixin task(args)
+  - let text = args.text || 'default text';
+  - let taskId = args.taskId || 'default taskId';
+  - let taskInput1 = args.taskInput1 || 'default taskInput1';
+  - let taskInput2 = args.taskInput2 || 'default taskInput2';
+  - let taskInput3 = args.taskInput3 || 'default taskInput3';
+  - let taskInput4 = args.taskInput4 || 'default taskInput4';
+  - let taskInput5 = args.taskInput5 || 'default taskInput5';
+  - let taskInput6 = args.taskInput6 || 'default taskInput6';
+  - let inputs = [input(type="text" id=taskInput1), input(type="text" id=taskInput2), input(type="text" id=taskInput3), input(type="text" id=taskInput4), input(type="text" id=taskInput5), input(type="text" id=taskInput6)]
+  - let inputQuantity = args.inputQuantity || '0';
+  - for (let i = 0; i < inputQuantity; i++) {
+    block input
+      input(type="text" id='js-input' + i)
+  }
+
+  .e-task
+      h2.e-task__text=text
+      .e-task__input
+      block input
+        //- input(type="text" id=taskInput1)
+        //- input(type="text" id=taskInput2)
+        //- input(type="text" id=taskInput3)
+        //- input(type="text" id=taskInput4)
+        //- input(type="text" id=taskInput5)
+        //- input(type="text" id=taskInput6)
+      button(id=taskId).e-task__btn
+        span.e-task__btn__text Click me, Senpai
