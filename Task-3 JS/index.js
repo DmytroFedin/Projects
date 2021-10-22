@@ -110,24 +110,30 @@ execute();
   })();
   
 function compareNumb (compareNumb1, compareNumb2) {
-  if (compareNumb1 < compareNumb2) {
-    return console.log('-1')
+  if (isFinite(compareNumb1) && isFinite(compareNumb2)) {
+    if (compareNumb1 < compareNumb2) {
+      return console.log('-1')
+    }
+    else if(compareNumb1 > compareNumb2) {
+      return console.log('1') 
+    }
+    else if(compareNumb1 === compareNumb2) {
+      return console.log('0') 
+    }
   }
-  else if(compareNumb1 > compareNumb2) {
-    return console.log('1') 
-  }
-  else if(compareNumb1 === compareNumb2) {
-    return console.log('0') 
-  }
+  else return console.log('Nice try');
 }
 
 function factor (checkFactorial) {
-  let factorial = 1
+  let factorial = 1;
   
   for (let i = 1; checkFactorial >= i; i++) {
-    factorial *=  i
+    factorial *=  i;
   }
+  if (isFinite(checkFactorial)) {
   return console.log(factorial);
+  }
+  else return console.log('Nice try');
 }
 
 function addToString (addNumberOne, addNumberTwo, addNumberThree) {
@@ -147,7 +153,7 @@ function sqrCalc (calcNumberOne, calcNumberTwo) {
     return console.log(sqr);
   }
   else {
-    alert('numbers dumbass o_0')
+    alert('Nice Try')
   }
 }
 
@@ -235,38 +241,43 @@ function showTime (hours, minutes, seconds) {
 
 function toSec (hours, minutes, seconds) {
   let newSeconds = 0;
+  if (isFinite(hours) && isFinite(minutes) && isFinite(seconds)) {
   return newSeconds = ((hours * 3600) + (minutes * 60) + seconds);
+  }
+  else return console.log('Nice try');
 }
 
 function fromSec(seconds) {
   let minutes = 0;
-    let hours = 0;
-    let days = 0;
-    let years = 0;
+  let hours = 0;
+  let days = 0;
+  let years = 0;
 
-    for (let i = 0; i < 4; i++) {
-        if (seconds >= 60) {
-        addMinutes = seconds / 60;
-        seconds %= 60;
-        minutes += Math.trunc(addMinutes);
+  for (let i = 0; i < 4; i++) {
+      if (seconds >= 60) {
+      addMinutes = seconds / 60;
+      seconds %= 60;
+      minutes += Math.trunc(addMinutes);
+    }
+    else if (minutes >= 60) {
+      addHours = minutes / 60;
+      minutes %= 60;
+      hours += Math.trunc(addHours);
+    }
+    else if (hours >= 24) {
+        addDays = hours / 24;
+        hours %= 24;
+        days += Math.trunc(addDays);
       }
-      else if (minutes >= 60) {
-        addHours = minutes / 60;
-        minutes %= 60;
-        hours += Math.trunc(addHours);
-      }
-      else if (hours >= 24) {
-          addDays = hours / 24;
-          hours %= 24;
-          days += Math.trunc(addDays);
-        }
-      else if (days > 365) {
-        years = days / 365;
-        days %= 365;
-      }
-      }
-            
-      return console.log('+'+ Math.trunc(years) + ' ' + 'years' + ' ' + Math.trunc(days) + ' ' + 'days'  + ': ' + hours + ':' + minutes + ':' + seconds);
+    else if (days > 365) {
+      years = days / 365;
+      days %= 365;
+    }
+    }
+    if (isFinite(hours) && isFinite(minutes) && isFinite(seconds)) {
+      console.log('+' + Math.trunc(years) + ' ' + 'years' + ' ' + Math.trunc(days) + ' ' + 'days'  + ': ' + hours + ':' + minutes + ':' + seconds);
+    }
+    else return console.log('Thats not a date');
   }
   
 function calcDiffDate (compareHour1,compareMinute1, compareSeconds1, compareHour2, compareMinute2, compareSeconds2) {
