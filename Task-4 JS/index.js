@@ -84,7 +84,10 @@ function calcTime () {
   if (restTime >= 1) {
     travelTime +=  Math.trunc(restTime);
   }
+  if (isFinite(travelTime)) {
   textResult.innerHTML = 'Вы приедете через - ' + `${travelTime.toPrecision(2)}` + ' hours,' + 'в том числе потратите -' + `${Math.trunc(restTime)}` + ' hours на отдых';
+}
+  else textResult.innerHTML = 'Не верный формат километража'
 }
 
     
