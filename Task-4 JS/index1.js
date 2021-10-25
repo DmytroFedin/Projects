@@ -77,7 +77,6 @@ execute();
 
 function upgr (numerator, denominator) {
   let i;
-  let y;
   if (numerator >= denominator) {
     i = numerator;
   }
@@ -98,21 +97,27 @@ function upgr (numerator, denominator) {
 }
 
 function greatestCommonDivisor (checkNumberOne, checkNumberTwo) {
-  for (;checkNumberOne != 0 && checkNumberTwo != 0;) {
+  if (isFinite(checkNumberOne) && isFinite(checkNumberTwo)) {
+    for (;checkNumberOne != 0 && checkNumberTwo != 0;) {
 
-      if (checkNumberOne > checkNumberTwo) {
-        checkNumberOne %= checkNumberTwo;
-        }
-      else {
-          checkNumberTwo %= checkNumberOne;
-        }
-  }
-  let divisor = checkNumberOne + checkNumberTwo;
-  return divisor;
+        if (checkNumberOne > checkNumberTwo) {
+          checkNumberOne %= checkNumberTwo;
+          }
+        else {
+            checkNumberTwo %= checkNumberOne;
+          }
+    }
+    let divisor = checkNumberOne + checkNumberTwo;
+    return divisor;
+}
+  else return 'Thats not a number';
 }
 
 function leastCommonMultiple (checkNumberOne, checkNumberTwo) {
-  return checkNumberTwo * checkNumberOne / greatestCommonDivisor(checkNumberOne, checkNumberTwo)
+  if (isFinite(checkNumberOne) && isFinite(checkNumberTwo)) {
+    return checkNumberTwo * checkNumberOne / greatestCommonDivisor(checkNumberOne, checkNumberTwo)
+  }
+    else return 'Thats not a number';
 }
 
 function mult (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
@@ -127,6 +132,9 @@ function mult (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
 }
 
 function sum (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
+  if (!(isFinite(numeratorOne) && isFinite(denominatorOne) && isFinite(numeratorTwo) && isFinite(denominatorTwo))) {
+    return 'Thats not a number';
+  }
   if (denominatorOne !== denominatorTwo) {
     let lcm;
     lcm = leastCommonMultiple(denominatorOne, denominatorTwo);
@@ -143,6 +151,12 @@ function sum (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
 }
 
 function minus (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
+  if (numeratorOne === 0 || denominatorOne === 0 || numeratorTwo === 0 || denominatorTwo === 0 ) {
+    return 0
+  }
+  if (!(isFinite(numeratorOne) && isFinite(denominatorOne) && isFinite(numeratorTwo) && isFinite(denominatorTwo))) {
+    return 'Thats not a number';
+  }
   if (denominatorOne !== denominatorTwo) {
     let lcm;
     lcm = leastCommonMultiple(denominatorOne, denominatorTwo);
@@ -154,9 +168,6 @@ function minus (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
   else if (denominatorOne === denominatorTwo) {
     numeratorsMult = numeratorOne - numeratorTwo;
     denominatorsMult = denominatorOne;
-  }
-  if (numeratorsMult === 0) {
-    return 0
   }
   return isNumber(numeratorsMult,denominatorsMult); 
 }
