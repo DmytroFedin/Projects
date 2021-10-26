@@ -24,7 +24,7 @@
   let compareMinute2;
   let compareSeconds2;
 
-  func = {
+ const func = {
     task1: () => {
       compareNumb (+compareNumb1, +compareNumb2);
     },
@@ -93,7 +93,7 @@ const execute = (e) => {
 
 execute();
 
-  (function() {
+  (() => {
     const elements = document.getElementsByClassName('e-task__btn');
 
     for (let i = 0, len = elements.length; i < len; i++) {
@@ -109,7 +109,7 @@ execute();
    
   })();
   
-function compareNumb (compareNumb1, compareNumb2) {
+const compareNumb = (compareNumb1, compareNumb2) => {
   if (isFinite(compareNumb1) && isFinite(compareNumb2)) {
     if (compareNumb1 < compareNumb2) {
       return console.log('-1')
@@ -124,7 +124,7 @@ function compareNumb (compareNumb1, compareNumb2) {
   else return console.log('Nice try');
 }
 
-function factor (checkFactorial) {
+const factor = (checkFactorial) => {
   let factorial = 1;
   
   for (let i = 1; checkFactorial >= i; i++) {
@@ -136,12 +136,12 @@ function factor (checkFactorial) {
   else return console.log('Nice try');
 }
 
-function addToString (addNumberOne, addNumberTwo, addNumberThree) {
+const addToString = (addNumberOne, addNumberTwo, addNumberThree) => {
   newNumb = addNumberOne + addNumberTwo + addNumberThree;
   return console.log(newNumb)
 }
 
-function sqrCalc (calcNumberOne, calcNumberTwo) {
+const sqrCalc = (calcNumberOne, calcNumberTwo) => {
   if (calcNumberOne === 0 || calcNumberOne === null) {
   sqr = calcNumberTwo*calcNumberTwo;
   }
@@ -157,7 +157,7 @@ function sqrCalc (calcNumberOne, calcNumberTwo) {
   }
 }
 
-function isPerfect(checkNumber) {
+const isPerfect = (checkNumber) => {
   let sum = 0;
   let answer
 
@@ -174,7 +174,7 @@ function isPerfect(checkNumber) {
 return console.log(answer)
 }
 
-function checkPerfect(minNumber, maxNumber) {
+const checkPerfect = (minNumber, maxNumber) => {
   let answer = [];
 
   if (isFinite(minNumber) && isFinite(maxNumber)) {
@@ -190,7 +190,7 @@ function checkPerfect(minNumber, maxNumber) {
   return console.log(answer);
 }
 
-function showTime (hours, minutes, seconds) {
+const showTime = (hours, minutes, seconds) => {
   let days = 0;
   let years = 0;
 
@@ -239,7 +239,7 @@ function showTime (hours, minutes, seconds) {
   else return console.log('Thats not a date');
 }
 
-function toSec (hours, minutes, seconds) {
+const toSec = (hours, minutes, seconds) => {
   let newSeconds = 0;
   if (isFinite(hours) && isFinite(minutes) && isFinite(seconds)) {
   return newSeconds = ((hours * 3600) + (minutes * 60) + seconds);
@@ -247,7 +247,7 @@ function toSec (hours, minutes, seconds) {
   else return console.log('Nice try');
 }
 
-function fromSec(seconds) {
+const fromSec = (seconds) => {
   let minutes = 0;
   let hours = 0;
   let days = 0;
@@ -280,7 +280,7 @@ function fromSec(seconds) {
     else return console.log('Thats not a date');
   }
   
-function calcDiffDate (compareHour1,compareMinute1, compareSeconds1, compareHour2, compareMinute2, compareSeconds2) {
+const calcDiffDate = (compareHour1,compareMinute1, compareSeconds1, compareHour2, compareMinute2, compareSeconds2) => {
     const arrDays = [toSec (+compareHour1, +compareMinute1, +compareSeconds1), toSec (+compareHour2, +compareMinute2, +compareSeconds2)];
     let result = arrDays[0] - arrDays[1];
     return fromSec ((Math.abs(result)));

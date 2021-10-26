@@ -180,7 +180,8 @@ const divide = (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) => {
   numeratorsMult = numeratorOne * denominatorTwo;
   denominatorsMult = denominatorOne * numeratorTwo;
   return isNumber(numeratorsMult,denominatorsMult);
-}}
+}
+}
 
 const showTime = (hours, minutes, seconds) => {
   let days = 0;

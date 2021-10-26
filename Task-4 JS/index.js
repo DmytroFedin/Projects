@@ -82,7 +82,7 @@ Object.values(Rsq8).forEach(item => {
   textRear.innerHTML += '<br>'
 })
 
-function calcTime () {
+const calcTime = () => {
   let travelTime;
   let restTime;
   travelTime = input.value / avrSpeed;
