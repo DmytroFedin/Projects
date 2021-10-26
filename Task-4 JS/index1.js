@@ -1,15 +1,15 @@
-let numeratorOne, numeratorTwo;
-let denominatorOne, denominatorTwo;
-let multNumeratorOne, multNumeratorTwo;
-let multDenominatorOne, multDenominatorTwo;
-let denominatorsMult, numeratorsMult;
-let sumNumeratorOne, sumNumeratorTwo;
-let sumDenominatorOne, sumDenominatorTwo;
-let minusNumeratorOne, minusNumeratorTwo;
-let minusDenominatorOne, minusDenominatorTwo;
-let dividerNumeratorOne, dividerNumeratorTwo;
-let dividerDenominatorOne, dividerDenominatorTwo;
-let hours, minutes, seconds;
+let numeratorOne, numeratorTwo,
+    denominatorOne, denominatorTwo,
+    multNumeratorOne, multNumeratorTwo,
+    multDenominatorOne, multDenominatorTwo,
+    denominatorsMult, numeratorsMult,
+    sumNumeratorOne, sumNumeratorTwo,
+    sumDenominatorOne, sumDenominatorTwo,
+    minusNumeratorOne, minusNumeratorTwo,
+    minusDenominatorOne, minusDenominatorTwo,
+    dividerNumeratorOne, dividerNumeratorTwo,
+    dividerDenominatorOne, dividerDenominatorTwo,
+    hours, minutes, seconds;
 
 const numb = {
   task1: () =>{ return mult (+multNumeratorOne, +multDenominatorOne, +multNumeratorTwo, +multDenominatorTwo)},
@@ -67,15 +67,15 @@ execute();
    
   })();
 
-  function isNumber (numeratorsMult, denominatorsMult) {
+const isNumber = (numeratorsMult, denominatorsMult) => {
     if (isFinite(numeratorsMult) && isFinite(denominatorsMult)) {
       const {numerator, denominator} = upgr(numeratorsMult, denominatorsMult);
       return numerator + '/' + denominator; 
     }
     else return 'Thats not a number';
-  }
+}
 
-function upgr (numerator, denominator) {
+const upgr = (numerator, denominator) => {
   let i;
   if (numerator >= denominator) {
     i = numerator;
@@ -96,7 +96,7 @@ function upgr (numerator, denominator) {
    return {numerator: numerator ,denominator: denominator,};
 }
 
-function greatestCommonDivisor (checkNumberOne, checkNumberTwo) {
+const greatestCommonDivisor = (checkNumberOne, checkNumberTwo) => {
   if (isFinite(checkNumberOne) && isFinite(checkNumberTwo)) {
     for (;checkNumberOne != 0 && checkNumberTwo != 0;) {
 
@@ -113,14 +113,14 @@ function greatestCommonDivisor (checkNumberOne, checkNumberTwo) {
   else return 'Thats not a number';
 }
 
-function leastCommonMultiple (checkNumberOne, checkNumberTwo) {
+const leastCommonMultiple = (checkNumberOne, checkNumberTwo) => {
   if (isFinite(checkNumberOne) && isFinite(checkNumberTwo)) {
     return checkNumberTwo * checkNumberOne / greatestCommonDivisor(checkNumberOne, checkNumberTwo)
   }
     else return 'Thats not a number';
 }
 
-function mult (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
+const mult = (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) => {
   if (numeratorOne === 0 || denominatorOne === 0 || numeratorTwo === 0 || denominatorTwo === 0 ) {
     return 0
   }
@@ -131,7 +131,7 @@ function mult (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
 }
 }
 
-function sum (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
+const sum = (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) => {
   if (!(isFinite(numeratorOne) && isFinite(denominatorOne) && isFinite(numeratorTwo) && isFinite(denominatorTwo))) {
     return 'Thats not a number';
   }
@@ -150,7 +150,7 @@ function sum (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
   return isNumber(numeratorsMult,denominatorsMult);
 }
 
-function minus (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
+const minus = (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) => {
   if (numeratorOne === 0 || denominatorOne === 0 || numeratorTwo === 0 || denominatorTwo === 0 ) {
     return 0
   }
@@ -172,7 +172,7 @@ function minus (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
   return isNumber(numeratorsMult,denominatorsMult); 
 }
 
-function divide (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
+const divide = (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) => {
   if (numeratorOne === 0 || denominatorOne === 0 || numeratorTwo === 0 || denominatorTwo === 0 ) {
     return 0
   }
@@ -182,7 +182,7 @@ function divide (numeratorOne, denominatorOne, numeratorTwo, denominatorTwo) {
   return isNumber(numeratorsMult,denominatorsMult);
 }}
 
-function showTime (hours, minutes, seconds) {
+const showTime = (hours, minutes, seconds) => {
   let days = 0;
   let years = 0;
 

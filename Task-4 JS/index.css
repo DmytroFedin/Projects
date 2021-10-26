@@ -47,7 +47,20 @@
   display: -ms-flexbox;
   display: flex;
   max-width: 1280px;
-  height: 720px;
+  max-height: 720px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.e-photo__rear__image {
+  max-height: 720px;
   width: 100%;
   top: 0;
   left: 0;
@@ -59,18 +72,42 @@
   transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transform: perspective(1280px) rotateY(-180deg);
-          transform: perspective(1280px) rotateY(-180deg);
-  background-image: url("./assets/image/Rsq8-rear.jpg");
+  -webkit-transform: perspective(200px) rotateY(-180deg);
+          transform: perspective(200px) rotateY(-180deg);
 }
 
 .e-photo__rear__text {
   width: 450px;
   position: absolute;
-  bottom: 8%;
+  margin-top: 50px;
   left: 1%;
   font-size: 1.5em;
   line-height: 1.5;
+  display: none;
+}
+
+@media (max-width: 1399px) {
+  .e-photo__rear__text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .e-photo__rear__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .e-photo__rear__text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  .e-photo__rear__text {
+    font-size: 6px;
+  }
 }
 
 .e-photo__toggle-btn {
@@ -86,6 +123,15 @@
 .e-photo .activeRear {
   -webkit-transform: perspective(1280px) rotateY(0deg);
           transform: perspective(1280px) rotateY(0deg);
+}
+
+.e-photo .display {
+  display: block;
+  opacity: 0;
+  -webkit-transform: translateY(3rem);
+          transform: translateY(3rem);
+  -webkit-animation: fadeInUp 1s ease 0s forwards;
+          animation: fadeInUp 1s ease 0s forwards;
 }
 
 .c-homework {
@@ -239,4 +285,20 @@ a {
 
 .hover-white {
   background-color: white;
+}
+
+@-webkit-keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }

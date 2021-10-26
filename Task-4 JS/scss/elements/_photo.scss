@@ -27,7 +27,23 @@
   &__rear{
     display: flex;
     max-width: 1280px;
-    height: 720px;
+    max-height: 720px;
+    height: fit-content;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    // border-radius: 10%;
+    // transition: .35s cubic-bezier(.4,0,.2,1);
+    // backface-visibility: hidden;
+    // transform: perspective(1280px) rotateY(-180deg);
+    // background-image:  url("./assets/image/Rsq8-rear.jpg");
+    // linear-gradient(90deg, rgba(2,0,36,0.6922969871542367) 0%, rgba(1,1,25,0.34215693113182777) 5%),
+
+    &__image{
+    max-height: 720px;
     width: 100%;
     top: 0;
     left: 0;
@@ -37,17 +53,30 @@
     border-radius: 10%;
     transition: .35s cubic-bezier(.4,0,.2,1);
     backface-visibility: hidden;
-    transform: perspective(1280px) rotateY(-180deg);
-    background-image:  url("./assets/image/Rsq8-rear.jpg");
-    // linear-gradient(90deg, rgba(2,0,36,0.6922969871542367) 0%, rgba(1,1,25,0.34215693113182777) 5%),
+    transform: perspective(200px) rotateY(-180deg);
+    }
 
     &__text{
     width: 450px;
     position: absolute;
-    bottom: 8%;
+    margin-top: 50px;
     left: 1%;
     font-size: 1.5em;
     line-height: 1.5;
+    display: none;
+
+    @include media('<screen') {
+      font-size: 20px;
+    }
+    @include media('<desktop') {
+      font-size: 18px;
+    }
+    @include media('<tablet') {
+      font-size: 10px;
+    }
+    @include media('<phone') {
+      font-size: 6px;
+    }
     }
   }
 
@@ -61,5 +90,11 @@
   }
   .activeRear{
     transform: perspective(1280px) rotateY(0deg); 
+   }
+   .display{
+     display: block;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 1s ease 0s forwards;
    }
 }

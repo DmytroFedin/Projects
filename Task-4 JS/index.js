@@ -22,8 +22,12 @@ const imgFront = document.createElement("img");
 imgFront.src = "./assets/image/maxresdefault.jpg";
 imgFront.classList.add("e-photo__front");
 
-const imgRear = document.createElement("div");
-imgRear.classList.add("e-photo__rear");
+const containerRear = document.createElement("div");
+containerRear.classList.add("e-photo__rear");
+
+const imgRear = document.createElement("img");
+imgRear.src = "./assets/image/Rsq8-rear.jpg";
+imgRear.classList.add("e-photo__rear__image");
 
 const textRear = document.createElement("div"); 
 textRear.classList.add("e-photo__rear__text");
@@ -34,6 +38,7 @@ textContent.classList.add("e-photo__calc");
 const toggleBtn = document.createElement("button");
 toggleBtn.classList.add("e-photo__toggle-btn");
 toggleBtn.addEventListener('click', () => {
+  textRear.classList.toggle( 'display');
   imgFront.classList.toggle('activeFront');
   imgRear.classList.toggle('activeRear');
   });
@@ -60,8 +65,9 @@ textResult.style.color = 'black';
 
 document.body.append(newDiv);
 newDiv.append(imgFront);
-newDiv.append(imgRear);
-imgRear.append(textRear);
+newDiv.append(containerRear);
+containerRear.append(imgRear);
+containerRear.append(textRear);
 newDiv.append(textContent);
 textContent.append(toggleBtn);
 toggleBtn.append(btnText);
