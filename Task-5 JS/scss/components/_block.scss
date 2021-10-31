@@ -1,0 +1,26 @@
+.c-homework{
+  width: 100%;
+  &__header{
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__wrapper{
+    margin: 200px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px; 
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  &__footer{
+    text-align: center;
+    font-size: 24px;
+    color: black;
+  }
+}
