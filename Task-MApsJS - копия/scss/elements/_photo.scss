@@ -1,0 +1,111 @@
+.e-photo{
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+justify-content: center;
+
+  &__item{
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid #343642;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  background-color: #80203E;
+  box-shadow: 3px 4px 7px rgba(black, .8);
+  align-items: center;
+
+ &__calc{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+ }
+
+  &__front{
+    margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10%;
+  transition: .35s cubic-bezier(.4,0,.2,1);;
+  backface-visibility: hidden;
+  transform: perspective(1280px) rotateY(0deg);
+  max-width: 300px;
+  max-height: 170px;
+  }
+
+  &__rear{
+    display: flex;
+    max-width: 1280px;
+    max-height: 720px;
+    height: fit-content;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // border-radius: 10%;
+    // transition: .35s cubic-bezier(.4,0,.2,1);
+    // backface-visibility: hidden;
+    // transform: perspective(1280px) rotateY(-180deg);
+    // background-image:  url("./assets/image/Rsq8-rear.jpg");
+    // linear-gradient(90deg, rgba(2,0,36,0.6922969871542367) 0%, rgba(1,1,25,0.34215693113182777) 5%),
+
+    &__image{
+    max-height: 720px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10%;
+    transition: .35s cubic-bezier(.4,0,.2,1);
+    backface-visibility: hidden;
+    transform: perspective(200px) rotateY(-180deg);
+    }
+
+    &__text{
+    width: 450px;
+    margin-top: 50px;
+    left: 1%;
+    font-size: 1.5em;
+    line-height: 1.5;
+    display: none;
+
+    @include media('<screen') {
+      font-size: 20px;
+    }
+    @include media('<desktop') {
+      font-size: 18px;
+    }
+    @include media('<tablet') {
+      font-size: 10px;
+    }
+    @include media('<phone') {
+      font-size: 6px;
+    }
+    }
+  }
+
+  &__toggle-btn{
+    width: 100px;
+    height: 50px;
+  }
+
+  .activeFront{
+   transform: perspective(1280px) rotateY(-180deg); 
+  }
+  .activeRear{
+    transform: perspective(1280px) rotateY(0deg); 
+   }
+   .display{
+     display: block;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 1s ease 0s forwards;
+   }
+  }
+}

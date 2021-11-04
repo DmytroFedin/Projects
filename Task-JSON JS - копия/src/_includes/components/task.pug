@@ -1,0 +1,33 @@
+mixin task(args)
+  - let text = args.text || 'default text';
+  - let addbtn = args.addbtn || 'default addbtn';
+  - let delbtn = args.delbtn || 'default delbtn';
+  - let taskInput = args.taskInput || 'default taskInput';
+  - let inputQuantity = args.inputQuantity || '0';
+  - let admin = args.admin || false;
+  
+
+  .e-task(id='js-admin')
+      h2.e-task__text=text
+      form.e-task__input
+        label First name
+        input(type="text" id='js-first-name' required)
+        label Last name
+        input(type="text" id='js-last-name' required)
+        label Email
+        input(type="email" id='js-email' required)
+        label Username
+        input(type="text" id='js-username' required)
+        label Password
+        input(type="password" id='js-password' required)
+        label Password
+        input(type="password" id='js-check-password' required)
+      button(id=addbtn).e-task__btn
+        span.e-task__btn__text Add
+      .e-task__delete-block
+        button(id=delbtn).e-task__btn
+          span.e-task__btn__text lang
+        select(id='js-select')
+          option(value = 'ua') Українська
+          option(value = 'ru') Русский
+          option(value = 'en') English
