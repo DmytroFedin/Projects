@@ -1,0 +1,25 @@
+mixin navigation()
+  nav.c-navigation 
+      ul.c-navigation__list
+        li.c-navigation__item
+          +link({
+            href: './index.html',
+            button: false,
+            text: 'Man',
+            lightText: true
+          })
+        li.c-navigation__item 
+          +link({
+            href: './about-us.html',
+            button: false,
+            text: 'Woman',
+            lightText: true
+          })
+        li.c-navigation__item 
+          +link({
+            href: './contact.html',
+            button: false,
+            text: 'New Arrivals',
+            lightText: true
+          })
+      +burger-menu()

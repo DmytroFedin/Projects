@@ -1,0 +1,21 @@
+mixin form-contact()
+  .hystmodal(id="js-contact" aria-hidden="true")
+    .hystmodal__wrap
+        .hystmodal__window(role="dialog" aria-modal="true")
+          form.c-form-contact(action='#' method='POST')
+            .c-form-contact__wrapper
+              h4.c-form-contact__title= 'Contact Form'
+              span.c-form-contact__text= 'Send us a message and we`ll get back to you as soon as we can!'
+              label.c-form-contact__item
+                .c-form-contact__label= 'Name'
+                input.c-form-contact__input(name= 'name' type= 'text' placeholder= 'Enter your name' required)
+              label.c-form-contact__item
+                .c-form-contact__label= 'Email Address'
+                input.c-form-contact__input(name= 'email' type= 'email' placeholder= 'Enter your email address' required)
+              label.c-form-contact__item
+                .c-form-contact__label= 'Your Message'
+                textarea.c-form-contact__input(name= 'message' placeholder= 'Enter your email address')
+              button.c-form-contact__button(type= 'submit' title="Click to submit")= 'Submit'
+            button(data-hystclose class="hystmodal__close") Закрыть 
+              
+

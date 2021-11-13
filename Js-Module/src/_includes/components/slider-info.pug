@@ -1,0 +1,38 @@
+mixin slider-info(args)
+  - let btnNumber = args.btnNumber || 0;
+  - let btnText1 = args.btnText1 || 'default text';
+  - let btnText2 = args.btnText2 || 'default text';
+  - let descrText = args.descrText || 'default text';
+  - let headerText = args.headerText || 'default text';
+  - let sliderTitle = args.sliderTitle || 'default title';
+  - let slideHeader1 = args.slideHeader1 || 'default header'
+  - let slideHeader2 = args.slideHeader2 || 'default header'
+  - let slideHeader3 = args.slideHeader3 || 'default header'
+  - let slideInfo1 = args.slideInfo1 || 'default info'
+  - let slideInfo2 = args.slideInfo2 || 'default info'
+  - let slideInfo3 = args.slideInfo3 || 'default info'
+  - let slideSrc1 = args.slideSrc1 || './assets/images/Placeholder.png'
+  - let slideSrc2 = args.slideSrc2 || './assets/images/Placeholder.png'
+  - let slideSrc3 = args.slideSrc3 || './assets/images/Placeholder.png'
+
+  section.c-slider-info
+    .c-slider-info__wrapper 
+      +advertisment-block({
+        headerText,
+        descrText,
+        btnNumber,
+        btnText1,
+        btnText2,
+      })
+      +slider({
+        sliderTitle,
+        slideHeader1,
+        slideHeader2,
+        slideHeader3,
+        slideInfo1,
+        slideInfo2,
+        slideInfo3,
+        slideSrc1,
+        slideSrc2,
+        slideSrc3,
+      })

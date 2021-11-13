@@ -1,0 +1,33 @@
+mixin banner(args={})
+  - let infoHeader = args.infoHeader || 'default text';
+  - let infoText = args.infoText || 'default text';
+  - let linkText = args.linkText || 'default text';
+  - let displaySubTitleMode = args.displaySubTitleMode || false;
+  - let displayMode = args.displayMode || false;
+  - let rightMode = args.rightMode || false;
+  - let colorMode = args.colorMode || false;
+  - let linkNone = args.linkNone || false;
+  - let logoMode = args.logoMode || false;
+  - let style = args.style || false;
+  - let src = args.src || false;
+
+  .c-banner(style=style)
+    .c-banner__wrapper.wrapper(class=`${(rightMode ? 'c-banner__wrapper--width-mode text-end justify-content-end' : '') + ' ' + (logoMode ? 'c-banner__wrapper--logo-mode' : '') + ' ' + (displaySubTitleMode ? 'c-banner__sub-title--display-none' : ' ')}`)
+      .c-banner__info
+        h2.c-banner__title.d-inline-block=infoHeader
+        h4.c-banner__sub-title=infoText
+        .c-banner__btn
+          +link({
+            href: './index.html',
+            lightText: true,
+            button: false,
+            text: linkText,
+            bannerStyle: true,
+            bannerStyleRed: colorMode,
+            linkMode: linkNone,
+          })
+      .c-banner__img(class=`${(displayMode ? 'c-banner__img--display-none' : ' ')}`)
+        +image({
+          src: './assets/images/logobanner.png',
+          alt: 'logo-b'
+        })

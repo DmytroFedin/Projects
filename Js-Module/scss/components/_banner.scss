@@ -1,0 +1,101 @@
+.c-banner {
+  background-size: cover;
+  background-position: 50% 50%;
+  
+  &__wrapper {
+    display: flex;
+    margin: 0px auto 0 auto;
+
+    @include media ('<phone'){
+      // margin: 230px auto 50px auto;
+      padding: 0 20px;
+    }
+
+    &--logo-mode {
+      justify-content: space-between;
+
+      @include media ('<tablet') {
+        flex-direction: column;
+      }
+    }
+
+    &--width-mode {
+
+      .c-banner {
+
+        &__info {
+          max-width: 540px;
+        }
+        
+        &__title {
+          font-size: em($fs-h2);
+
+          @include media ('<phone'){
+            font-size: em($fs-soc-icon);
+            max-width: 100%;
+          }
+        }
+  
+        &__sub-title {
+          max-width: 425px;
+        }
+      }
+    }
+  }
+
+  &__btn{
+    width: 180px;
+    height: 50px;
+  }
+
+  &__info {
+    margin-top: 500px;
+    max-width: 820px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: em($fs-h2);
+    line-height: $lh-base;
+    margin: 0 0 20px;
+
+    @include media ('<phone'){
+      font-size: em($fs-base);
+      max-width: 160px;
+    }
+
+    &--display-none {
+      display: none;
+    }
+  }
+
+  &__sub-title {
+    font-weight: 700;
+    font-size: em($fs-base);
+    display: inline-block;
+    line-height: $lh-big;
+    margin-bottom: 30px;
+
+    &--display-none {
+      display: none;
+    }
+  }
+
+  &__img {
+    @include size(200);
+
+    @include media ('<tablet') {
+      margin: 10px auto;
+    }
+
+    @include media ('<phone') {
+      display: none;
+    }
+
+    &--display-none {
+      display: none;
+    }
+  }
+}

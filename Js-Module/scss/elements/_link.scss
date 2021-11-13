@@ -1,0 +1,55 @@
+.e-link {
+  transition: $t-normal;
+  display: inline-block;
+
+  &--lighter-text {
+    padding: 5px 12px;
+    color: $c-black;
+
+    &:hover {
+      border-radius: 5px;
+      background-color: $c-darker-grey;
+      transition: $t-normal;
+      color: $c-white;
+    }
+  }
+
+  &--banner-style {
+    background-color: transparent;
+    border: 1px solid $c-white;
+    border-radius: 5px;
+    color: white;
+
+    &:hover {
+      background-color: $c-white;
+      color: $c-black;
+    }
+
+    &-red {
+      background-color: $c-white;
+      color: $c-black;
+
+      &:hover {
+        background-color: $c-light-pink;
+        border-color: $c-light-pink;
+        color: $c-white;
+      }
+    }
+  }
+
+  &--button-red {
+    background-color: $c-light-red;
+    border-radius: 5px;
+    padding: 5px 25px;
+    font-size: em(14);
+    color: $c-white;
+
+    &:hover {
+      background-color: $c-darker-grey;
+    }
+  }
+
+  &--display-none {
+    display: none;
+  }
+}

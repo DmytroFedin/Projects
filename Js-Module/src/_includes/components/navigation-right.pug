@@ -1,0 +1,31 @@
+mixin navigation-right(args)
+  nav.c-navigation 
+      ul.c-navigation__list
+        li.c-navigation__item
+          +link({
+            href: './index.html',
+            button: false,
+            text: 'Sustainability',
+            lightText: true
+          })
+        li.c-navigation__item 
+          +link({
+            href: './about-us.html',
+            button: false,
+            text: 'Stores',
+            lightText: true
+          })
+      ul.c-navigation__list--always-on-display
+        li.c-navigation__item 
+          +icon({
+            svgLink: 'icon-question-mark'
+          })
+        li.c-navigation__item 
+          +icon({
+            svgLink: 'icon-person'
+          })
+        li.c-navigation__item 
+          +icon({
+            svgLink: 'icon-shopping_bag',
+            shopBag: true,
+          })

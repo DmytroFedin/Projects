@@ -1,0 +1,74 @@
+extends ./src/_extends/common
+
+block title 
+  title Home
+
+block style 
+
+
+
+block content
+    +header()
+    +banner-home-start()
+    +section-favorites()
+    +banner-info-covid()
+    +slider-info({
+      headerText: 'Seasons Change. Your Shoes Don’t Have To.',
+      descrText: 'Soft and cozy wool shoes to keep you comfortable all year round.',
+      btnNumber: '2',
+      btnText1: 'Shop Men',
+      btnText2: 'Shop Women',
+      sliderTitle: 'Shop The Collections',
+      slideHeader1: 'New Arrivals',
+      slideHeader2: 'Natural Run Collection',
+      slideHeader3: 'Fresh Long Sleeve Tee Colors',
+      slideInfo1: 'The latest styles and limited edition colors that you can only find here (while they last, that is).',
+      slideInfo2: 'Looking for more sustainable ways to break a sweat? We’ve got you covered from head to toe.',
+      slideInfo3: 'It’s crisp, clean and ready for wherever the day takes you.',
+      slideSrc1: './assets/images/Rectangle(5).jpg',
+      slideSrc2: './assets/images/Rectangle(6).jpg',
+      slideSrc3: './assets/images/Rectangle(7).jpg',
+    })
+    +banner-adventure()
+    +slider-info({
+      headerText: 'Made From Nature, For Nature',
+      descrText: 'We craft with planet-friendly natural materials, like merino wool and eucalyptus trees, because they\'re our best chance for a sustainable future.',
+      btnNumber: '1',
+      btnText1: 'See How',
+      sliderTitle: 'New Arrivals',
+      slideHeader1: 'Men\'s Trail Runner SWT',
+      slideHeader2: 'Women\'s Trail Runner SWT',
+      slideHeader3: 'Men\'s Trail Runner SWT',
+      slideInfo1: 'Classic Color, Natural Black',
+      slideInfo2: 'Classic Color, Natural White',
+      slideInfo3: 'Limited Edition Color, Diablo',
+      slideSrc1: './assets/images/sneaker1.jpg',
+      slideSrc2: './assets/images/sneaker2.jpg',
+      slideSrc3: './assets/images/sneaker3.jpg',
+    })
+    
+    +slider-info({
+      headerText: 'Made From Nature, For Nature',
+      descrText: 'We craft with planet-friendly natural materials, like merino wool and eucalyptus trees, because they\'re our best chance for a sustainable future.',
+      btnNumber: '1',
+      btnText1: 'See How',
+      sliderTitle: 'New Arrivals',
+      slideHeader1: 'Men\'s Trail Runner SWT',
+      slideHeader2: 'Women\'s Trail Runner SWT',
+      slideHeader3: 'Men\'s Trail Runner SWT',
+      slideInfo1: 'Classic Color, Natural Black',
+      slideInfo2: 'Classic Color, Natural White',
+      slideInfo3: 'Limited Edition Color, Diablo',
+      slideSrc1: './assets/images/sneaker1.jpg',
+      slideSrc2: './assets/images/sneaker2.jpg',
+      slideSrc3: './assets/images/sneaker3.jpg',
+    })
+    div(id="map").c-map
+    +footer()
+    +form-contact()
+    +form-sign()
+
+
+
+
+

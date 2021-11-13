@@ -1,0 +1,15 @@
+mixin advertisment-block(args)
+  - let btnNumber = args.btnNumber || 0;
+  - let btnText1 = args.btnText1 || 'default text';
+  - let btnText2 = args.btnText2 || 'default text';
+  - let descrText = args.descrText || 'default text';
+  - let headerText = args.headerText || 'default text';
+
+  .c-advertisment-block 
+    h2.e-advertisment-block__header=headerText  
+    span.c-advertisment-block__description=descrText  
+    .c-advertisment-block__buttons 
+      - for (let i = 0; i < btnNumber; i++){
+          button.c-advertisment-block__button
+            span.c-advertisment-block__btn-text=((i === 1) ? btnText2 : btnText1)
+      -}

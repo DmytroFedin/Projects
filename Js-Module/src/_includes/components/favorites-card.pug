@@ -1,0 +1,24 @@
+mixin favorites-card(args)
+  - let text = args.text || 'Default text';
+  - let id = args.id || 'circle';
+  - let btnText1 = args.btnText1 || 'circle';
+  - let btnText2 = args.btnText2 || 'circle';
+  - let style = args.style || 'circle';
+  - let descriptionText = args.descriptionText || 'Default text'
+  - let illustrationImg = args.illustrationImg || 'default text'
+  - let illustrationText = args.illustrationText || 'Default text'
+
+  .c-favorites-card__item(id=id)
+    .c-favorites-card(style=style)
+      .c-favorites-card__buttons
+        a.c-favorites-card__button(href='#')
+          span.c-favorites-card__button__text=btnText1
+        a.c-favorites-card__button(href='#')
+          span.c-favorites-card__button__text=btnText2
+    .c-favorites-card__description
+      p.c-favorites-card__description__text=descriptionText
+      hr.c-favorites-card__line
+      .c-favorites-card__illustration
+        .c-favorites-card__illustration__icon
+          img(src=illustrationImg).c-favorites-card__illustration__image
+        p.c-favorites-card__illustration__text=illustrationText

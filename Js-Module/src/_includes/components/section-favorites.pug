@@ -1,0 +1,100 @@
+mixin section-favorites()
+  section.c-section-favorites
+    .c-section-favorites__wrapper.wrapper
+      .c-section-favorites__info
+
+        //- Title
+        .c-section-favorites__info__title
+          h2 Our Favorites
+        ul.c-section-favorites__info__subtitle.relative
+          li(id='js-favorites-tab-Everyday').c-section-favorites__tab.tab Everyday 
+          li(id='js-favorites-tab-Running').c-section-favorites__tab.tab Running 
+          li(id='js-favorites-tab-Travel').c-section-favorites__tab.tab Travel
+          li.c-section-favorites__tab__line
+        hr.c-section-favorites__tab-bar
+        //- Section content
+      .c-section-favorites__cards.relative
+        .c-section-favorites__cards__wrapper(id='Everyday').absolute
+            +favorites-card({
+              descriptionText:'Wool Runner',
+              id: 'Everyday1',
+              style: `background-image: url('./assets/images/Rectangle.jpg')`,
+              btnText1: 'Shop Men',
+              btnText2: 'Shop Women',
+              illustrationImg: './assets/images/icon.jpg',
+              illustrationText: 'Cozy Sneaker'
+            })
+            +favorites-card({
+              descriptionText:'Tree Runner',
+              id: 'Everyday2',
+              style: `background-image: url('./assets/images/Rectangle(2).jpg')`,
+              btnText1: 'Shop Men',
+              btnText2: 'Shop Women',
+              illustrationImg: './assets/images/icon-1.jpg',
+              illustrationText: 'Light and Breazy Sneaker'
+            })           
+            +favorites-card({
+              descriptionText:'Wool Runner Mizzle',
+              id: 'Everyday3',
+              style: `background-image: url('./assets/images/Rectangle(3).jpg')`,
+              btnText1: 'Shop Men',
+              btnText2: 'Shop Women',
+              illustrationImg: './assets/images/icon-2.jpg',
+              illustrationText: 'Rain-Ready Sneaker'
+              })
+        .c-section-favorites__cards__wrapper(id='Running').absolute
+            +favorites-card({
+              descriptionText:'Wool Runner',
+              id: 'Everyday1',
+              style: `background-image: url('./assets/images/Rectangle(3).jpg`,
+              btnText1: 'Shop Men',
+              btnText2: 'Shop Women',
+              illustrationImg: './assets/images/icon.jpg',
+              illustrationText: 'Cozy Sneaker'
+            })
+            +favorites-card({
+              descriptionText:'Tree Runner',
+              id: 'Everyday2',
+              style: `background-image: url('./assets/images/Rectangle(3).jpg`,
+              btnText1: 'Shop Men',
+              btnText2: 'Shop Women',
+              illustrationImg: './assets/images/icon-1.jpg',
+              illustrationText: 'Light and Breazy Sneaker'
+            })           
+            +favorites-card({
+              descriptionText:'Wool Runner Mizzle',
+              id: 'Everyday3',
+              style: `background-image: url('./assets/images/Rectangle(3).jpg`,
+              btnText1: 'Shop Men',
+              btnText2: 'Shop Women',
+              illustrationImg: './assets/images/icon-2.jpg',
+              illustrationText: 'Rain-Ready Sneaker'
+              })
+        .c-section-favorites__cards__wrapper(id='Travel').absolute
+            +favorites-card({
+              descriptionText:'Wool Runner',
+              id: 'Everyday1',
+              style: `background-image: url('./assets/images/Rectangle(3).jpg`,
+              btnText1: 'Shop Men',
+              btnText2: 'Shop Women',
+              illustrationImg: './assets/images/icon.jpg',
+              illustrationText: 'Cozy Sneaker'
+            })
+            +favorites-card({
+              descriptionText:'Tree Runner',
+              id: 'Everyday2',
+              style: `background-image: url('./assets/images/Rectangle(3).jpg`,
+              btnText1: 'Shop Men',
+              btnText2: 'Shop Women',
+              illustrationImg: './assets/images/icon-1.jpg',
+              illustrationText: 'Light and Breazy Sneaker'
+            })           
+            +favorites-card({
+              descriptionText:'Wool Runner Mizzle',
+              id: 'Everyday3',
+              style: `background-image: url('./assets/images/Rectangle(3).jpg`,
+              btnText1: 'Shop Men',
+              btnText2: 'Shop Women',
+              illustrationImg: './assets/images/icon-2.jpg',
+              illustrationText: 'Rain-Ready Sneaker'
+              })

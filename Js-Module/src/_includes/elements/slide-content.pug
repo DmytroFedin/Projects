@@ -1,0 +1,10 @@
+mixin slide-content(args)
+  - let slideHeader = args.slideHeader || 'default header'
+  - let slideInfo = args.slideInfo || 'default header'
+  - let slideSrc = args.slideSrc || './assets/images/Placeholder.png'
+
+    .c-slider__slide__image
+      img(src=slideSrc, alt='Clothing')
+    .c-slider__slide__info
+      .c-slider__slide__header=slideHeader
+      .c-slider__slide__description=slideInfo

@@ -11,17 +11,17 @@ mixin task(args)
       h2.e-task__text=text
       form.e-task__input
         label First name
-        input(type="text" id='js-first-name' required)
+        input(name='first-name' type="text" id='js-first-name' required)
         label Last name
-        input(type="text" id='js-last-name' required)
+        input(name='last-name' type="text" id='js-last-name' required)
         label Email
-        input(type="email" id='js-email' required)
+        input(name='email' type="email" id='js-email' required)
         label Username
-        input(type="text" id='js-username' required)
+        input(name='username' type="text" id='js-username' required)
         label Password
-        input(type="password" id='js-password' required)
+        input(name='password' type="password" id='js-password' required)
         label Password
-        input(type="password" id='js-check-password' required)
+        input(name='check password' type="password" id='js-check-password' required)
       button(id=addbtn).e-task__btn
         span.e-task__btn__text Add
       .e-task__delete-block

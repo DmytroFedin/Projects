@@ -1,0 +1,46 @@
+include ../_includes/elements/index
+include ../_includes/components/index
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    //- Bootstrap
+    //- Fontawesome
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous")
+    //- Font
+    link(href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css')
+    link(rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
+    //- Favicon
+    link(rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon")
+    link(rel="stylesheet" href="hystmodal.min.css")
+    //- Main style
+    link(rel='stylesheet' href='index.css')
+    block style
+    block title
+      title Group project
+  body
+    include ../../assets/icon/common/symbol-defs.svg
+
+    .l-common#page
+        block content
+        
+
+
+
+
+
+
+
+
+
+        //- main js
+        script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
+        script(src="./admin.js")
+        script(src="./bucket.js")
+        script(src="./hystmodal.min.js")
+        script(src="./index.js")
+        script( src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5Wydy5GqM8PQm_pMSKiyUJ9yHY5v1cas&callback=initMap")
+        //- ionicons
+

@@ -1,0 +1,44 @@
+.e-bucket{
+  position: absolute;
+  top: 55%;
+  right: 0;
+  color: black;
+  font-size: 14px;
+  margin-top: -5px;
+  margin-right: 60px;
+  width: 30px;
+  line-height: 0.8;
+  cursor: pointer;
+
+  @include media ('<phone') {
+    margin-right: 20px;
+  }
+
+  &__items{
+    position: fixed;
+    z-index: 1000;
+    right: -100%;
+    top: 60px;
+    background-color: #f25252;
+    text-align: start;
+    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 30%;
+    @include media ('<phone') {
+     max-width: 100%;
+    }
+
+    >li{
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid green;
+      line-height: 1;
+    }
+  }
+}
+.bucket-active{
+  right: 0;
+}
