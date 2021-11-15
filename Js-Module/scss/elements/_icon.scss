@@ -6,12 +6,7 @@
   &__svg{
     width: 35px;
     height: 35px;
-    fill: black;
+    fill: $c-black;
     cursor: pointer;
-
-    &--shopping-bag{
-      width: 50px;
-      height: 50px;
-    }
   }
 }

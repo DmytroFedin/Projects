@@ -4,6 +4,7 @@ mixin slider-info(args)
   - let btnText2 = args.btnText2 || 'default text';
   - let descrText = args.descrText || 'default text';
   - let headerText = args.headerText || 'default text';
+  - let sliderNumeration = args.sliderNumeration || 'default id';
   - let sliderTitle = args.sliderTitle || 'default title';
   - let slideHeader1 = args.slideHeader1 || 'default header'
   - let slideHeader2 = args.slideHeader2 || 'default header'
@@ -25,6 +26,7 @@ mixin slider-info(args)
         btnText2,
       })
       +slider({
+        sliderNumeration,
         sliderTitle,
         slideHeader1,
         slideHeader2,

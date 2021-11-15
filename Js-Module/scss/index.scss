@@ -1,11 +1,11 @@
-@import "./variables";
-// Fonts
-@import "./fonts";
-// Media
-@import "./media";
-// Config
 // Mixins
 @import "./mixins";
+// Fonts
+@import "./fonts";
+@import "./keyframes";
+@import "./variables";
+// Media
+@import "./media";
 // Plugins
 @import "./plugins/index";
 // Main style
@@ -13,4 +13,3 @@
 // All style
 @import "./elements/index";
 @import "./components/index";
-@import "./keyframes";

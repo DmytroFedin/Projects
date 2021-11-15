@@ -20,14 +20,14 @@
   }
 
   &__btn-text{
-    color: white;
+    color: $c-white;
   }
 
   &__button{
     max-width: 180px;
     width: 100%;
     height: 50px;
-    background-color: #212A2F;
+    background-color: $c-shadowy;
     outline: none;
     border: none;
   }

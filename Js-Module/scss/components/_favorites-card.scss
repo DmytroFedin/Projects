@@ -1,5 +1,5 @@
 .c-favorites-card {
-  background-color: $c-darker-grey;
+  background-color: $c-shadowy;
   justify-content: center;
   font-size: em($fs-h2);
   align-items: center;
@@ -14,54 +14,51 @@
   flex-direction: column;
   background-repeat: no-repeat;
 
-
-  &__illustration{
+  &__illustration {
     display: flex;
     margin-top: 20px;
     align-items: center;
 
-    &__icon{
+    &__icon {
       width: 30px;
       margin-right: 5px;
     }
 
-    &__text{
+    &__text {
       margin-bottom: 0;
-      font-size: 14px;
+      font-size: $fs-lowRes + px;
     }
   }
 
-
-  &__line{
+  &__line {
     width: 100%;
     margin: 0 auto;
   }
 
-  &__wrapper{
+  &__wrapper {
     display: none;
   }
 
-  &__buttons{
+  &__buttons {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
 
-  &__button{
+  &__button {
     width: 280px;
     outline: none;
     border: none;
     height: 50px;
-    background-color: white;
+    background-color: $c-white;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
 
-    &__text{
-      font-size: 20px;
+    &__text {
+      font-size: $fs-btn + px;
     }
-
   }
 
   &__item {
@@ -70,43 +67,29 @@
     display: flex;
     flex-direction: column;
 
-      @include media("<desktop") {
-        max-width: 320px;
-        margin-bottom: 40px;
-      }
+    @include media("<desktop") {
+      max-width: 320px;
+      margin-bottom: 40px;
+    }
   }
-  &__description{
+
+  &__description {
     width: 80%;
     margin: 20px auto;
 
-    &__text{
-      font-size: 22px;
+    &__text {
+      font-size: em($fs-btn);
       font-weight: 700;
       text-align: start;
     }
   }
-  &__number {
-    position: absolute;
-    font-size: em(14);
-    left: 30px;
-    top: 30px;
-    opacity: 1;
-    transform: translateY(3rem);
-    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
-  }
+
   &__title {
-    font-size: em(14);
+    font-size: em($fs-lowRes);
     text-align: center;
   }
-  &__icon {
-    width: 150px;
-    height: 150px;
-    padding: 5px;
-    position: absolute;
-    right: -40px;
-    bottom: -60px;
-  }
 }
+
 #icon-rectangle {
   fill: none;
 }

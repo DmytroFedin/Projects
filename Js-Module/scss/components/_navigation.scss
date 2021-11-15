@@ -1,32 +1,19 @@
 .c-navigation {
   display: flex;
 
-  &__list{
+  &__list {
     display: flex;
     justify-content: center;
     align-items: center;
 
     &--always-on-display {
-      >li{
+      > li {
         min-width: 35px;
         padding-left: 15px !important;
       }
       display: flex;
       justify-content: center;
       align-items: center;
-      
-      
-      >li:first-child{
-        @include media ('<tablet') {
-          display: none;
-        }
-      }
-      >li:nth-child(2){
-        @include media ('<tablet') {
-          display: none;
-        }
-      }
-
     }
   }
 
@@ -36,13 +23,12 @@
     font-size: em(15);
     padding-left: 30px;
 
-    &:first-child{
+    &:first-child {
       padding-left: 0;
     }
   }
 
   @include media("<desktop") {
-    
     &__list {
       height: 100%;
 
@@ -73,11 +59,11 @@
     }
   }
 }
-.pos-left{
+.pos-left {
   position: fixed;
   left: -100%;
 }
-.burger-item{
+.burger-item {
   height: 100%;
   max-height: 40px;
 }

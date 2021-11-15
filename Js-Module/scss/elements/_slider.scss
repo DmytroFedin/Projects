@@ -1,106 +1,108 @@
 :root {
   --swiper-theme-color: gray;
 }
+
 .swiper {
   width: 1250px;
   height: 540px;
 
- @include media ('<screen'){
-  width: 850px;
- }
- @include media ('<desktop'){
-  width: 400px;
- }
-@include media ('<phone'){
-  width: 300px;
+  @include media("<screen") {
+    width: 850px;
+  }
+  @include media("<desktop") {
+    width: 400px;
+  }
+  @include media("<phone") {
+    width: 300px;
+  }
 }
 
-}
-.swiper-slide{
+.swiper-slide {
   width: 400px;
 }
+
 .swiper-button-prev,
 .swiper-button-next {
-  background-color: white;
+  background-color: $c-white;
   transform: rotate(45deg);
   width: 35px;
   height: 35px;
   box-shadow: $bs-container;
 }
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   transform: scale(0.4) rotate(-45deg);
 }
 
-.c-slider{
+.c-slider {
   position: relative;
   max-width: 1340px;
   margin: 135px auto 0;
   width: 100%;
 
-  @include media ('<screen'){
+  @include media("<screen") {
     width: 940px;
-   }
+  }
 
-   @include media ('<desktop'){
+  @include media("<desktop") {
     width: 490px;
-   }
+  }
 
-   @include media ('<phone'){
+  @include media("<phone") {
     max-width: 390px;
     width: 100%;
   }
 
-   &__title{
-    color: black;
+  &__title {
+    color: $c-black;
     text-align: start;
     width: 100%;
     max-width: 600px;
     padding-left: 45px;
-    font-size: 32px;
+    font-size: em($fs-soc-icon);
     font-weight: 700;
     height: 48px;
 
-    @include media ('<phone'){
-      font-size: 24px;
+    @include media("<phone") {
+      font-size: em($fs-1-5em);
     }
-   }
+  }
 
-   &__slide{
-
-    &__header{
-      font-size: 22px;
+  &__slide {
+    &__header {
+      font-size: em($fs-btn);
       font-weight: 700;
     }
 
-    &__profile{
+    &__profile {
       display: flex;
-      color: black;
+      color: $c-black;
       padding: 0 20px;
-      border: 1px solid aliceblue;
-          }
+      border: 1px solid $c-ivory;
+    }
 
-    &__info{
+    &__info {
       width: 90%;
       margin-top: 20px;
       margin: 20px auto;
-      color: black; 
+      color: $c-black;
       text-align: start;
       display: flex;
       flex-direction: column;
     }
 
-    &__image{
+    &__image {
       height: 400px;
     }
 
-    &__description{
+    &__description {
       margin-top: 10px;
-      font-size: 16px;
+      font-size: em($fs-base);
       font-weight: 400;
     }
 
-    &__buy{
+    &__buy {
       width: 20%;
       margin-top: 20px;
       display: flex;
@@ -108,17 +110,18 @@
       gap: 10px;
     }
 
-    &__quantity{
+    &__quantity {
       width: 100%;
       padding-left: 5px;
       outline: none;
     }
-    &__btn{
+
+    &__btn {
       width: 100%;
       outline: none;
       border: none;
-      background-color: crimson;
-      color: white;
+      background-color: $c-red;
+      color: $c-white;
     }
   }
 }

@@ -1,7 +1,7 @@
 .c-sign-up {
   width: 100%;
-  color: black;
-  border: 1px solid #343642;
+  color: $c-black;
+  border: 1px solid $c-shadowy;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,16 +23,16 @@
     flex-direction: column;
     max-height: 200px;
     align-content: center;
-    
-    >input{
-      border: 1px solid black;
+
+    > input {
+      border: 1px solid $c-black;
       outline: none;
 
       &:focus,
       &:hover {
-      transition: $t-normal;
-      border-color: $c-light-red;
-    }
+        transition: $t-normal;
+        border-color: $c-light-red;
+      }
     }
   }
 
@@ -40,7 +40,7 @@
     margin-top: 25px;
     outline: none;
     border: none;
-    background-color: #298899;
+    background-color: $c-light-bllue;
     border-radius: 5%;
     padding: 5px;
     cursor: pointer;
@@ -48,6 +48,6 @@
     width: 100%;
   }
 }
-.hystmodal__window{
+.hystmodal__window {
   margin: 70px 0;
 }

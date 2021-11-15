@@ -1,13 +1,12 @@
 .c-form-contact {
-  color: $c-darker-grey;
+  color: $c-shadowy;
   width: 100%;
   padding: 20px;
 
-  &__wrapper{
+  &__wrapper {
     display: flex;
-  flex-direction: column;
+    flex-direction: column;
   }
-
 
   &__title {
     margin-bottom: 10px;
@@ -34,18 +33,15 @@
   }
 
   &__input {
-    border: 1px solid $c-darker-grey;
+    border: 1px solid $c-shadowy;
     padding: 8px 12px;
     border-radius: 3px;
     font-size: em(12);
     width: 100%;
     outline: none;
     transition: $t-normal;
-    color: $c-darker-grey;
+    color: $c-shadowy;
     min-height: 30px;
-
-    & placeholder {
-    }
 
     &:focus,
     &:hover {
@@ -65,7 +61,7 @@
     transition: $t-normal;
 
     &:hover {
-      background-color: $c-darker-grey;
+      background-color: $c-shadowy;
     }
   }
 }
