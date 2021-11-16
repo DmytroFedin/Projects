@@ -15,6 +15,7 @@ const check = document.createElement("div");
 check.classList.add('e-bucket');
 const slideBuyBtn = document.getElementsByClassName('c-slider__slide__btn');
 const slideBtnText = document.getElementsByClassName('c-slider__btn__text');
+const bucketDel = document.getElementsByClassName('e-bucket__del-btn');
 
 const toggleMenu = function() {
   checkInfo.classList.toggle('bucket-active');
@@ -34,12 +35,25 @@ const checkForBtn = (e) => {
     }
   }}
 
+  const checkForBtnLocal = (e) => {
+    const target = e.target;
+    for (let i = 0; i <= localBucket.length; i++) {
+      const its_delBtn = target == bucketDel[i];
+      console.log(target);
+      console.log(its_delBtn);
+      console.log(bucketDel[i]);
+      if (its_delBtn === true) {
+        return its_delBtn
+      }
+    }}
+
 document.addEventListener('click', function(e) {
   const target = e.target;
-  const its_checkInfo = target == checkInfo || checkInfo.contains(target);
+  const its_checkInfo = checkInfo.contains(target) || target == checkInfo;
   const its_bagFolder = target == bagFolder;
   const checkInfo_is_active = checkInfo.classList.contains('bucket-active');
-  if (!its_checkInfo && !its_bagFolder && checkInfo_is_active && !checkForBtn(e)) {
+
+  if (!its_checkInfo && !its_bagFolder && checkInfo_is_active && !checkForBtn(e) && !checkForBtnLocal(e)) {
     toggleMenu();
   }
 });
@@ -77,6 +91,6 @@ textResult.innerHTML = bucketQuantity;
 showPrice.innerHTML = '';
 showPrice.innerHTML = 'Цена: ' + bucketValue + ' грн';
 
-if (localBucket.length === 0) {
+if (!localBucket || localBucket.length === 0) {
   createOrder.innerHTML = 'Корзина пуста'
 }

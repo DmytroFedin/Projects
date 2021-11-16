@@ -211,8 +211,8 @@ const createBucket = (localBucket) => {
     textLi.innerHTML = 'Продукт: ' + element.name + ', Цена: ' + element.price + ', Количество: ' + element.quantity + ', Сумма: ' + element.sum;
     const bucketDel = document.createElement('button');
     itemLi.append(bucketDel);
-    bucketDel.setAttribute('id', 'js-bucket-del');
-    bucketDel.innerHTML = 'Удалить';
+    bucketDel.classList.add('e-bucket__del-btn');
+    bucketDel.innerHTML = '<span>Удалить<span/>';
     if (localBucket.length === 0) {
       createOrder.innerHTML = 'Корзина пуста'
     }
@@ -295,6 +295,7 @@ contactUs.setAttribute('data-hystmodal', "#js-contact");
 
 const contactModal = new HystModal({
   linkAttributeName: "data-hystmodal",
+  fixedSelectors: '.c-header'
 });
 
 const sign = document.getElementsByClassName('c-navigation__item')[11];

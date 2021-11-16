@@ -26,7 +26,7 @@
     &:nth-child(2).active ~ .c-section-favorites__tab__line {
       transform: translateX(100%) scaleX(1);
     }
-    
+
     &:nth-child(3).active ~ .c-section-favorites__tab__line {
       transform: translateX(calc(100% * 2)) scaleX(1);
     }
@@ -67,9 +67,9 @@
         font-size: em($fs-h2);
       }
 
-    @include media ('<=small') {
-      text-align: center;
-    }
+      @include media("<=small") {
+        text-align: center;
+      }
     }
 
     &__subtitle {

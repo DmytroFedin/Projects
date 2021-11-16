@@ -40,7 +40,15 @@
       border: 1px solid green;
       line-height: 1;
       padding: 5px;
+      align-items: center;
     }
+  }
+
+  &__del-btn{
+    outline: none;
+    border: none;
+    height: 30px;
+    padding: 5px 10px;
   }
 
   &__order{
@@ -52,7 +60,6 @@
       color: $c-white;
     }
   }
-
 }
 
 .bucket-active{
