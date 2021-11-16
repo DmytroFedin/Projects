@@ -6,10 +6,11 @@ mixin advertisment-block(args)
   - let headerText = args.headerText || 'default text';
 
   .c-advertisment-block 
-    h2.e-advertisment-block__header=headerText  
-    span.c-advertisment-block__description=descrText  
-    .c-advertisment-block__buttons 
-      - for (let i = 0; i < btnNumber; i++){
-          button.c-advertisment-block__button
-            span.c-advertisment-block__btn-text=((i === 1) ? btnText2 : btnText1)
-      -}
+    .c-advertisment-block__wrapper.wrapper
+      h2.e-advertisment-block__header=headerText  
+      span.c-advertisment-block__description=descrText  
+      .c-advertisment-block__buttons 
+        - for (let i = 0; i < btnNumber; i++){
+            a.c-advertisment-block__button(href='#')
+              span.c-advertisment-block__btn-text=((i === 1) ? btnText2 : btnText1)
+        -}

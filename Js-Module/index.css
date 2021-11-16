@@ -2481,9 +2481,14 @@ svg {
   min-width: 60px;
   width: 100%;
   height: 60px;
+  fill: #000;
 }
 
-.e-bucket {
+.e-logo__svg--white-mode {
+  fill: #fff;
+}
+
+.e-bucket__sum {
   position: absolute;
   top: 50%;
   right: 55px;
@@ -2495,7 +2500,7 @@ svg {
 }
 
 @media (max-width: 479px) {
-  .e-bucket {
+  .e-bucket__sum {
     right: 15px;
   }
 }
@@ -2518,7 +2523,8 @@ svg {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
-  max-width: 30%;
+  max-width: 40%;
+  color: #fff;
 }
 
 @media (max-width: 479px) {
@@ -2536,6 +2542,20 @@ svg {
           justify-content: space-between;
   border: 1px solid green;
   line-height: 1;
+  padding: 5px;
+}
+
+.e-bucket__order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.e-bucket__order__buy-btn {
+  cursor: pointer;
+  color: #fff;
 }
 
 .bucket-active {
@@ -2673,7 +2693,8 @@ svg {
 
 .swiper {
   width: 1250px;
-  height: 540px;
+  height: 560px;
+  cursor: pointer;
 }
 
 @media (max-width: 1399px) {
@@ -2799,7 +2820,6 @@ svg {
 
 .c-slider__slide__buy {
   width: 20%;
-  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2807,7 +2827,9 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .c-slider__slide__quantity {
@@ -2827,6 +2849,9 @@ svg {
 .c-advertisment-block {
   color: black;
   margin: 0 auto;
+}
+
+.c-advertisment-block__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2866,6 +2891,16 @@ svg {
   background-color: #222222;
   outline: none;
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
 }
 
 .c-header {
@@ -3323,6 +3358,12 @@ svg {
   font-size: 3em;
 }
 
+@media (max-width: 320px) {
+  .c-section-favorites__info__title {
+    text-align: center;
+  }
+}
+
 .c-section-favorites__info__subtitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3719,13 +3760,18 @@ svg {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-height: 200px;
+  max-height: 220px;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
 .c-sign-up__input > input {
   border: 1px solid #000;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.75em;
+  width: 100%;
   outline: none;
 }
 

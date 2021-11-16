@@ -21,11 +21,16 @@
     gap: 10px;
     justify-content: center;
     flex-direction: column;
-    max-height: 200px;
+    max-height: 220px;
     align-content: center;
 
     > input {
       border: 1px solid $c-black;
+      outline: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-size: 0.75em;
+      width: 100%;
       outline: none;
 
       &:focus,

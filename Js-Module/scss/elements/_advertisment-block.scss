@@ -1,9 +1,12 @@
 .c-advertisment-block{
   color: black;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
+  
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px; 
+  }
 
   &__description{
     margin-top: 50px;
@@ -30,5 +33,9 @@
     background-color: $c-shadowy;
     outline: none;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
   }
 }

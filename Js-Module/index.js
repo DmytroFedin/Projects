@@ -128,14 +128,11 @@ const createProduct = () => {
     SlideDescription.innerHTML = description[i] + '<br/>' + prices[i] + 'грн';
     const swiperSlideBuy = document.createElement('div');
     swiperSlideBuy.classList.add('c-slider__slide__buy');
-    const slideBuyQuantity = document.createElement('input');
-    slideBuyQuantity.classList.add('c-slider__slide__quantity');
-    slideBuyQuantity.placeholder = piece[i];
-    slideBuyQuantity.setAttribute('type', 'text');
     const slideBuyBtn = document.createElement('button');
     slideBuyBtn.classList.add('c-slider__slide__btn');
     const slideBtnText = document.createElement('span');
     slideBtnText.classList.add('c-slider__btn__text');
+
     swiperWrapper.append(swiperSlide);
     swiperSlide.append(swiperSlideImage);
     swiperSlideImage.append(slideImage);
@@ -144,15 +141,14 @@ const createProduct = () => {
     swiperSlideInfo.append(slideHeader);
     swiperSlideInfo.append(SlideDescription);
     swiperSlideProfile.append(swiperSlideBuy);
-    swiperSlideBuy.append(slideBuyQuantity);
     swiperSlideBuy.append(slideBuyBtn);
     slideBuyBtn.append(slideBtnText);
 
-    slideBtnText.insertAdjacentHTML('afterbegin', '<span>Buy</span>');
+    slideBtnText.insertAdjacentHTML('afterbegin', 'Buy');
     slideBuyBtn.addEventListener('click', () => {
       const bucketName = names[i];
       const bucketPrice = prices[i];
-      const valueInput = +slideBuyQuantity.value;
+      const valueInput = 1;
       const sum = bucketPrice * valueInput;
       let newbuyingCount = new bucketItem (bucketName, +bucketPrice, valueInput, sum);
 
@@ -199,20 +195,37 @@ const createProduct = () => {
   }
 };
 
+
 createProduct();
 
 const createBucket = (localBucket) => {
   localBucket.forEach(element => {
     const itemLi = document.createElement('li');
+    const textLi = document.createElement('span');
+    textLi.style.width = '70%';
     checkInfo.append(itemLi);
+    itemLi.append(textLi);
     bucketValue += element.sum;
     bucketQuantity +=element.quantity;
     textResult.innerHTML = bucketQuantity;
-    itemLi.innerHTML = 'Продукт: ' + element.name + ', Цена: ' + element.price + ', Количество: ' + element.quantity + ', Сумма: ' + element.sum;
+    textLi.innerHTML = 'Продукт: ' + element.name + ', Цена: ' + element.price + ', Количество: ' + element.quantity + ', Сумма: ' + element.sum;
     const bucketDel = document.createElement('button');
     itemLi.append(bucketDel);
     bucketDel.setAttribute('id', 'js-bucket-del');
     bucketDel.innerHTML = 'Удалить';
+    if (localBucket.length === 0) {
+      createOrder.innerHTML = 'Корзина пуста'
+    }
+    else {
+      createOrder.innerHTML = ''
+      createOrder.append(showPrice);
+      createOrder.append(bucketBuyBtn);
+      bucketBuyBtn.append(BuyBtnText);
+      showPrice.innerHTML = '';
+      showPrice.innerHTML = 'Цена: ' + bucketValue + ' грн';
+
+    }
+    
 
     bucketDel.addEventListener('click', () => {
       localBucket = JSON.parse(localStorage.getItem('product'));
@@ -224,13 +237,16 @@ const createBucket = (localBucket) => {
       bucketValue = 0;
       bucketQuantity = 0;
       textResult.innerHTML = bucketQuantity;
-      checkInfo.insertAdjacentElement('beforeend', showPrice);
+      checkInfo.insertAdjacentElement('beforeend', createOrder);
       showPrice.innerHTML = '';
       showPrice.innerHTML = 'Цена: ' + bucketValue + ' грн';
+      if (localBucket.length === 0) {
+        createOrder.innerHTML = 'Корзина пуста'
+      }
       createBucket(localBucket);
     })
 
-    checkInfo.insertAdjacentElement('beforeend', showPrice);
+    checkInfo.insertAdjacentElement('beforeend', createOrder);
     showPrice.innerHTML = '';
     showPrice.innerHTML = 'Цена: ' + bucketValue + ' грн';
     });
@@ -279,12 +295,17 @@ contactUs.setAttribute('data-hystmodal', "#js-contact");
 
 const contactModal = new HystModal({
   linkAttributeName: "data-hystmodal",
-  backscroll: false
 });
+
 const sign = document.getElementsByClassName('c-navigation__item')[11];
 sign.setAttribute('data-hystmodal', "#js-sign");
 
 const signModal = new HystModal({
   linkAttributeName: "data-hystmodal",
-  backscroll: false
+});
+
+bucketBuyBtn.setAttribute('data-hystmodal', "#js-order");
+
+const orderModal = new HystModal({
+  linkAttributeName: "data-hystmodal",
 });

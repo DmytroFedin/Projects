@@ -1,5 +1,7 @@
-mixin logo()
-  a(href='./index.html').e-logo
-    .e-logo__wrapper
-      svg(class="icon icon-logo").e-logo__svg
-        use(xlink:href="assets/images/Vector(1).svg#logo")
+mixin logo(args={})
+  - let whiteMode = args.whiteMode || false;
+
+    a(href='./index.html').e-logo
+      .e-logo__wrapper
+        svg.e-logo__svg.icon.icon-logo(class=`${(whiteMode ? 'e-logo__svg--white-mode' : '')}`)
+          use(xlink:href="assets/images/Vector(1).svg#logo")

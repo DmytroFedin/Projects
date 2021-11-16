@@ -5,7 +5,9 @@ mixin footer()
         .c-footer__top__info
           .c-footer__logo
             .c-footer__logo__wrapper
-              +logo() 
+              +logo({
+                whiteMode: true,
+              }) 
           +section-form()
         .c-footer__social-link
           +social-link({href:"https://twitter.com/?lang=ru", icon: "fa-twitter", target: "_blank"})

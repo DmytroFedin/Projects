@@ -2,9 +2,10 @@ mixin form-sign()
   .hystmodal(id="js-sign" aria-hidden="true")
     .hystmodal__wrap
         .hystmodal__window(role="dialog" aria-modal="true")
+          button(data-hystclose class="hystmodal__close") Закрыть 
           .c-sign-up(id='js-admin')
             h2.c-sign-up__text Sign Up
-            form.c-sign-up__input(action='#' method='POST')
+            form.c-sign-up__input
               label First name
               input(name='first name' type="text" id='js-first-name' required)
               label Last name
@@ -18,6 +19,5 @@ mixin form-sign()
               label Password
               input(name='check password' type="password" id='js-check-password' required)
             button(id='js-sign-up').c-sign-up__btn
-              span.c-sign-up__btn__text(type= 'submit' title="Click to submit") Create
-          button(data-hystclose class="hystmodal__close") Закрыть 
+              span.c-sign-up__btn__text(type= 'button' title="Click to submit") Create
               

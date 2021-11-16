@@ -4,7 +4,8 @@
 
 .swiper {
   width: 1250px;
-  height: 540px;
+  height: 560px;
+  cursor: pointer;
 
   @include media("<screen") {
     width: 850px;
@@ -104,10 +105,9 @@
 
     &__buy {
       width: 20%;
-      margin-top: 20px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      justify-content: center;
     }
 
     &__quantity {
